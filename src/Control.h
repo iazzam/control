@@ -16,6 +16,7 @@ class Control{
         int rps;
         int board_freq;
         int freq_timer;
+        const unsigned long bit_rate;
 
         Snapshot s;
 
@@ -23,12 +24,13 @@ class Control{
         void handleManual();
         // handleAutonomous() handles the autonomous bot controls
         void handleAutonomous();
-
+        // handleReadings() handles the reading and parsing of data
+        bool handleReadings();
         // parseCommands() parses the commands sent from the control system
         bool parseCommands(String* json_string);
 
     public:
-        Control(int rps, int board_freq);
+        Control(int rps, int board_freq, unsigned long bit_rate);
         ~Control();
 
         void setup();

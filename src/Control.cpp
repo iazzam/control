@@ -11,9 +11,13 @@ static const String BRAKE = "Brake";
 static const String SPEED = "Speed";
 static const String Autonomous = "Autonomous";
 
-Control::Control(int rps, int board_freq): rps{rps}, board_freq{board_freq}, freq_timer{0}{}
+Control::Control(int rps, int board_freq, unsigned long bit_rate): rps{rps}, board_freq{board_freq},
+                                                                   freq_timer{0}, bit_rate{bit_rate}{}
 
-Control::~Control() {}
+void Control::setup() {
+    // start Serial
+    Serial.begin(bit_rate);
+}
 
 bool Control::parseCommands(String* json_string) {
     const int BUFFER_SIZE = JSON_OBJECT_SIZE(2) + JSON_ARRAY_SIZE(1);
@@ -48,6 +52,21 @@ bool Control::parseCommands(String* json_string) {
     return false;
 }
 
+bool Control::handleReadings() {
+    // read from Serial
+    String command_str = "";
+
+    if (Serial.available())
+        command_str = Serial.readString();
+
+    // parse the commands
+    if (command_str != ""){
+        return parseCommands(&command_str);
+    } else{
+        return false;
+    }
+}
+
 void Control::handleManual() {
     // only allow certain things when there is emergency
     if (!s.is_emergency){
@@ -66,20 +85,11 @@ void Control::loop() {
         // reset the freq
         freq_timer = 0;
 
-        // read from Serial
-        String command_str = "";
-        bool isParsed = false;
-
-        if (Serial.available())
-            command_str = Serial.readString();
-
-        // parse the commands
-        if (command_str != ""){
-            isParsed = parseCommands(&command_str);
-        }
+        // read from Serial and update read_status based on that
+        bool read_status = handleReadings();
 
         // only run manual control when there is a command to execute
-        if (isParsed)
+        if (read_status)
             handleManual();
 
         // only handle autonomous controls when there is no emergency
