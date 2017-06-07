@@ -12,6 +12,7 @@ class Snapshot{
         int speed_percent = 0;
         bool is_emergency = false;
         bool brake = true;
+        bool run_autonomous = false;
 };
 
 #endif
