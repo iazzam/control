@@ -12,6 +12,11 @@
 
 class Control{
     private:
+        // board variables
+        int rps;
+        int board_freq;
+        int freq_timer;
+
         Snapshot s;
 
         // handleManual() handles all the manual controls for the bot
@@ -23,7 +28,7 @@ class Control{
         bool parseCommands(String* json_string);
 
     public:
-        Control();
+        Control(int rps, int board_freq);
         ~Control();
 
         void setup();

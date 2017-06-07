@@ -11,7 +11,7 @@ static const String BRAKE = "Brake";
 static const String SPEED = "Speed";
 static const String Autonomous = "Autonomous";
 
-Control::Control(){}
+Control::Control(int rps, int board_freq): rps{rps}, board_freq{board_freq}, freq_timer{0}{}
 
 Control::~Control() {}
 
@@ -62,25 +62,32 @@ void Control::handleAutonomous() {
 }
 
 void Control::loop() {
-    // read from Serial
-    String command_str = "";
-    bool isParsed = false;
+    if ((freq_timer % (board_freq / rps)) == 0){
+        // reset the freq
+        freq_timer = 0;
 
-    if (Serial.available())
-        command_str = Serial.readString();
+        // read from Serial
+        String command_str = "";
+        bool isParsed = false;
 
-    // parse the commands
-    if (command_str != ""){
-        isParsed = parseCommands(&command_str);
+        if (Serial.available())
+            command_str = Serial.readString();
+
+        // parse the commands
+        if (command_str != ""){
+            isParsed = parseCommands(&command_str);
+        }
+
+        // only run manual control when there is a command to execute
+        if (isParsed)
+            handleManual();
+
+        // only handle autonomous controls when there is no emergency
+        // and we want to run autonomous
+        if (!s.is_emergency && s.run_autonomous){
+            handleAutonomous();
+        }
     }
 
-    // only run manual control when there is a command to execute
-    if (isParsed)
-        handleManual();
-
-    // only handle autonomous controls when there is no emergency
-    // and we want to run autonomous
-    if (!s.is_emergency && s.run_autonomous){
-        handleAutonomous();
-    }
+    ++freq_timer;
 }
