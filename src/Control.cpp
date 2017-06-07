@@ -28,3 +28,13 @@ void Control::parseCommands(char* json_string) {
     }
 
 }
+
+void Control::loop() {
+    // read from Serial
+    char *command_char;
+    String command_str = Serial.readString();
+
+    command_str.toCharArray(command_char, command_str.length());
+
+    parseCommands(command_char);
+}
