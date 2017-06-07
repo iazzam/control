@@ -102,8 +102,9 @@
 					<Add option="-D__AVR_ATmega328P__"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/aJson"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/ArduinoJson/src"/>
 					<Add directory="D:/git/waterloop_projects/control/src"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/aJson"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI1/src"/>
@@ -166,8 +167,9 @@
 					<Add option="-D__AVR_ATmega328P__"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/aJson"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/ArduinoJson/src"/>
 					<Add directory="D:/git/waterloop_projects/control/src"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/aJson"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI1/src"/>
@@ -250,6 +252,9 @@
 			<Option target="control"/>
 		</Unit>
 		<Unit filename="D:/git/waterloop_projects/control/src/Control.h">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Snapshot.h">
 			<Option target="control"/>
 		</Unit>
 		<Unit filename="D:/git/waterloop_projects/control/src/main.cpp">

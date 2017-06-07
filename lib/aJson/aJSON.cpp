@@ -524,7 +524,7 @@ aJsonStream::flush()
 
 // Parse an object - create a new root, and populate.
 aJsonObject*
-aJsonClass::parse(char *value)
+aJsonClass::parse(String value)
 {
   aJsonStringStream stringStream(value, NULL);
   aJsonObject* result = parse(&stringStream);

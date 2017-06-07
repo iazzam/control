@@ -5,36 +5,50 @@
 
 #include "Control.h"
 
-Control::Control() {}
+Control::Control() : EMERGENCY {"Emergency Stop"}, BRAKE {"Brake"}, SPEED {"Speed"} {}
 
 Control::~Control() {}
 
-void Control::parseCommands(char* json_string) {
-    aJsonObject* stringObject = aJson.parse(json_string);
+void Control::parseCommands(String* json_string) {
+    const int BUFFER_SIZE = JSON_OBJECT_SIZE(2) + JSON_ARRAY_SIZE(1);
+    StaticJsonBuffer<BUFFER_SIZE> jsonBuffer;
 
-    String name = aJson.getObjectItem(stringObject, "Command")->valuestring;
+    char json_chars[json_string->length() + 1];
+    json_string->toCharArray(json_chars, json_string->length() + 1);
 
-    if (name == EMERGENCY){
-        s.is_emergency = true;
-        s.brake = true;
+    JsonObject &root = jsonBuffer.parseObject(json_chars);
+
+    if (root.success() && root.containsKey("Command"))
+    {
+        String command_name = root["Command"];
+
+        if (command_name == EMERGENCY){
+            s.is_emergency = true;
+            s.brake = true;
+        }
+        else if (command_name == BRAKE)
+            s.brake = true;
+        else if (command_name == SPEED){
+            int speed = root["Value"][0];
+
+            if (speed >= 0 && speed <= 100)
+                s.speed_percent = speed;
+        }
     }
-    else if (name == BRAKE)
-        s.brake = true;
-    else if (name == SPEED){
-        int speed = aJson.getObjectItem(stringObject, "Value")->valueint;
-
-        if (speed >= 0 && speed <= 100)
-            s.speed_percent = speed;
-    }
-
 }
 
 void Control::loop() {
     // read from Serial
-    char *command_char;
     String command_str = Serial.readString();
 
-    command_str.toCharArray(command_char, command_str.length());
+    if (command_str != ""){
+        parseCommands(&command_str);
 
-    parseCommands(command_char);
+        Serial.print("Emergency: ");
+        Serial.println(s.is_emergency);
+
+        while (1){
+
+        }
+    }
 }

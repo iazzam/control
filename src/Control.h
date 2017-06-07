@@ -6,15 +6,16 @@
 #ifndef CONTROL_CONTROL_H
 #define CONTROL_CONTROL_H
 
-#include <aJSON.h>
 #include "Snapshot.h"
+#include <Arduino.h>
+#include <ArduinoJson.h>
 
 class Control{
     private:
         // constants
-        static const String EMERGENCY{"Emergency Stop"};
-        static const String BRAKE{"Brake"};
-        static const String SPEED{"Speed"};
+        const String EMERGENCY;
+        const String BRAKE;
+        const String SPEED;
 
         Snapshot s;
 
@@ -24,7 +25,7 @@ class Control{
         void handleAutonomous();
 
         // parseCommands() parses the commands sent from the control system
-        void parseCommands(char* json_string);
+        void parseCommands(String* json_string);
 
     public:
         Control();

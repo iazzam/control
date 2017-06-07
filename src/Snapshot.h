@@ -9,9 +9,9 @@
 class Snapshot{
     public:
         // control logic values
-        static int speed_percent = 0;
-        static bool is_emergency = false;
-        static bool brake = true;
+        int speed_percent = 0;
+        bool is_emergency = false;
+        bool brake = true;
 };
 
 #endif
