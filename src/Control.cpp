@@ -63,8 +63,11 @@ void Control::handleAutonomous() {
 
 void Control::loop() {
     // read from Serial
-    String command_str = Serial.readString();
+    String command_str = "";
     bool isParsed = false;
+
+    if (Serial.available())
+        command_str = Serial.readString();
 
     // parse the commands
     if (command_str != ""){
