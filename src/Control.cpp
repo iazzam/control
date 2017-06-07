@@ -11,4 +11,20 @@ Control::~Control() {}
 
 void Control::parseCommands(char* json_string) {
     aJsonObject* stringObject = aJson.parse(json_string);
+
+    String name = aJson.getObjectItem(stringObject, "Command")->valuestring;
+
+    if (name == EMERGENCY){
+        s.is_emergency = true;
+        s.brake = true;
+    }
+    else if (name == BRAKE)
+        s.brake = true;
+    else if (name == SPEED){
+        int speed = aJson.getObjectItem(stringObject, "Value")->valueint;
+
+        if (speed >= 0 && speed <= 100)
+            s.speed_percent = speed;
+    }
+
 }
