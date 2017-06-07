@@ -1,8 +1,10 @@
 #include <Arduino.h>
 #include "Control.h"
-Control c;
+
+Control c{50, 14796, 115200};
+
 void setup(){
-    Serial.begin(115200);
+    c.setup();
 }
 
 void loop(){
