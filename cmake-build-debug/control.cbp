@@ -102,6 +102,7 @@
 					<Add option="-D__AVR_ATmega328P__"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/aJson"/>
 					<Add directory="D:/git/waterloop_projects/control/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
@@ -165,6 +166,7 @@
 					<Add option="-D__AVR_ATmega328P__"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/aJson"/>
 					<Add directory="D:/git/waterloop_projects/control/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>

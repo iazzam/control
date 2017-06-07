@@ -23,6 +23,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"
   "C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"
+  "../lib/aJson"
   "../src"
   "C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"
   "C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"

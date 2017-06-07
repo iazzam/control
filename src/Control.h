@@ -16,7 +16,7 @@ class Control{
         void handleAutonomous();
 
         // parseCommands() parses the commands sent from the control system
-        void parseCommands();
+        void parseCommands(char* json_string);
 
     public:
         Control();
