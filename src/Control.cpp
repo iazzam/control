@@ -44,6 +44,8 @@ bool Control::parseCommands(String* json_string) {
 
         return true;
     }
+
+    return false;
 }
 
 void Control::handleManual() {
