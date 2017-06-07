@@ -1,5 +1,6 @@
 //
-// Created by Deep6 on 2017-06-06.
+// Created by Deep on 2017-06-06.
+// Description: Snapshot holds the various variables related to pod
 //
 
 #ifndef CONTROL_SNAPSHOT_H
