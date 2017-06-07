@@ -14,9 +14,14 @@ class Control{
     private:
         // board variables
         int rps;
-        int board_freq;
+        long board_freq;
         int freq_timer;
         const unsigned long bit_rate;
+
+        // to measure loop speed
+        unsigned long start_time;
+        int curr_frames;
+        int last_frames;
 
         Snapshot s;
 
@@ -30,11 +35,11 @@ class Control{
         bool parseCommands(String* json_string);
 
     public:
-        Control(int rps, int board_freq, unsigned long bit_rate);
-        ~Control();
+        Control(int rps, long board_freq, unsigned long bit_rate);
 
         void setup();
         void loop();
+        int getRps();
 };
 
 #endif

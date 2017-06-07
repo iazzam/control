@@ -11,12 +11,19 @@ static const String BRAKE = "Brake";
 static const String SPEED = "Speed";
 static const String Autonomous = "Autonomous";
 
-Control::Control(int rps, int board_freq, unsigned long bit_rate): rps{rps}, board_freq{board_freq},
-                                                                   freq_timer{0}, bit_rate{bit_rate}{}
+Control::Control(int rps, long board_freq, unsigned long bit_rate): rps{rps}, board_freq{board_freq},
+                                                                   freq_timer{0}, bit_rate{bit_rate}{
+    start_time = 0;
+    curr_frames = 0;
+    last_frames = 0;
+}
 
 void Control::setup() {
     // start Serial
     Serial.begin(bit_rate);
+
+    start_time = millis();
+
 }
 
 bool Control::parseCommands(String* json_string) {
@@ -81,7 +88,17 @@ void Control::handleAutonomous() {
 }
 
 void Control::loop() {
+    // calculate time
+    if (millis() - start_time > 1000){
+        last_frames = curr_frames;
+        curr_frames = 0;
+        start_time = millis();
+    }
+
+    // metered loop
     if ((freq_timer % (board_freq / rps)) == 0){
+        ++curr_frames;
+
         // reset the freq
         freq_timer = 0;
 
@@ -100,4 +117,8 @@ void Control::loop() {
     }
 
     ++freq_timer;
+}
+
+int Control::getRps() {
+    return last_frames;
 }

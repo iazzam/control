@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include "Control.h"
 
-Control c{50, 14796, 115200};
+Control c{20, 15000, 115200};
 
 void setup(){
     c.setup();
