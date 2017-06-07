@@ -12,11 +12,6 @@
 
 class Control{
     private:
-        // constants
-        const String EMERGENCY;
-        const String BRAKE;
-        const String SPEED;
-
         Snapshot s;
 
         // handleManual() handles all the manual controls for the bot
@@ -25,7 +20,7 @@ class Control{
         void handleAutonomous();
 
         // parseCommands() parses the commands sent from the control system
-        void parseCommands(String* json_string);
+        bool parseCommands(String* json_string);
 
     public:
         Control();

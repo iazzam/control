@@ -5,11 +5,17 @@
 
 #include "Control.h"
 
-Control::Control() : EMERGENCY {"Emergency Stop"}, BRAKE {"Brake"}, SPEED {"Speed"} {}
+// static constants
+static const String EMERGENCY = "Emergency Stop";
+static const String BRAKE = "Brake";
+static const String SPEED = "Speed";
+static const String Autonomous = "Autonomous";
+
+Control::Control(){}
 
 Control::~Control() {}
 
-void Control::parseCommands(String* json_string) {
+bool Control::parseCommands(String* json_string) {
     const int BUFFER_SIZE = JSON_OBJECT_SIZE(2) + JSON_ARRAY_SIZE(1);
     StaticJsonBuffer<BUFFER_SIZE> jsonBuffer;
 
@@ -23,32 +29,53 @@ void Control::parseCommands(String* json_string) {
         String command_name = root["Command"];
 
         if (command_name == EMERGENCY){
-            s.is_emergency = true;
-            s.brake = true;
-        }
+            s.is_emergency = root["Value"][0];
+        } else if (command_name == Autonomous)
+            s.run_autonomous = root["Value"][0];
         else if (command_name == BRAKE)
-            s.brake = true;
+            s.brake = root["Value"][0];
         else if (command_name == SPEED){
             int speed = root["Value"][0];
 
             if (speed >= 0 && speed <= 100)
                 s.speed_percent = speed;
-        }
+        } else
+            return false;
+
+        return true;
     }
+}
+
+void Control::handleManual() {
+    // only allow certain things when there is emergency
+    if (!s.is_emergency){
+
+    } else{
+
+    }
+}
+
+void Control::handleAutonomous() {
+    Serial.println("I am running Autonomous");
 }
 
 void Control::loop() {
     // read from Serial
     String command_str = Serial.readString();
+    bool isParsed = false;
 
+    // parse the commands
     if (command_str != ""){
-        parseCommands(&command_str);
+        isParsed = parseCommands(&command_str);
+    }
 
-        Serial.print("Emergency: ");
-        Serial.println(s.is_emergency);
+    // only run manual control when there is a command to execute
+    if (isParsed)
+        handleManual();
 
-        while (1){
-
-        }
+    // only handle autonomous controls when there is no emergency
+    // and we want to run autonomous
+    if (!s.is_emergency && s.run_autonomous){
+        handleAutonomous();
     }
 }
