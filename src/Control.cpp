@@ -4,7 +4,6 @@
 //
 
 #include "Control.h"
-#include "Lev.h"
 
 // static constants
 static const String EMERGENCY = "Emergency Stop";
