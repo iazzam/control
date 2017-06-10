@@ -21,7 +21,7 @@ Control::Control(int rps, long board_freq, unsigned long bit_rate): rps{rps}, bo
     start_time = 0;
     curr_frames = 0;
     last_frames = 0;
-    lev = Lev();
+    lev = Lev(LEV_RELAY_A, LEV_RELAY_B);
 }
 
 void Control::setup() {
