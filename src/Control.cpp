@@ -68,6 +68,7 @@ bool Control::handleReadings() {
 
     // parse the commands
     if (command_str != ""){
+        Serial.println(command_str);
         return parseCommands(&command_str);
     } else{
         return false;
@@ -93,6 +94,8 @@ void Control::loop() {
         last_frames = curr_frames;
         curr_frames = 0;
         start_time = millis();
+
+        Serial.println(getRps());
     }
 
     // metered loop
