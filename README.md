@@ -7,7 +7,7 @@
 - [About](#about)
 - [How to Contribute](#how-to-contribute)
 - [How to Code in CLion](#how-to-code-in-clion)
-- [Control](#main-Control)
+- [Control](#control)
 - [Levitation](#levitation)
 
 ## About
