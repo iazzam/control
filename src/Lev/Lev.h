@@ -7,7 +7,7 @@
 #ifndef LEV_LEV_H
 #define LEV_LEV_H
 
-#include "Snapshot.h"
+#include "Control/Snapshot.h"
 #include <Arduino.h>
 #include <ArduinoJson.h>
 
