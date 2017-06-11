@@ -7,6 +7,7 @@
 #define CONTROL_CONTROL_H
 
 #include "Snapshot.h"
+#include "Lev.h"
 #include <Arduino.h>
 #include <ArduinoJson.h>
 
@@ -24,6 +25,7 @@ class Control{
         int last_frames;
 
         Snapshot s;
+        Lev lev;
 
         // handleManual() handles all the manual controls for the bot
         void handleManual();

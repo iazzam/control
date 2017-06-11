@@ -10,12 +10,17 @@ static const String EMERGENCY = "Emergency Stop";
 static const String BRAKE = "Brake";
 static const String SPEED = "Speed";
 static const String Autonomous = "Autonomous";
+static const String LEV = "Ball Valve";
+
+static const int LEV_RELAY_A = 7;
+static const int LEV_RELAY_B = 3;
 
 Control::Control(int rps, long board_freq, unsigned long bit_rate): rps{rps}, board_freq{board_freq},
                                                                    freq_timer{0}, bit_rate{bit_rate}{
     start_time = 0;
     curr_frames = 0;
     last_frames = 0;
+    lev = Lev(LEV_RELAY_A, LEV_RELAY_B);
 }
 
 void Control::setup() {
@@ -41,17 +46,31 @@ bool Control::parseCommands(String* json_string) {
 
         if (command_name == EMERGENCY){
             s.is_emergency = root["Value"][0];
-        } else if (command_name == Autonomous)
+
+        } else if (command_name == Autonomous) {
             s.run_autonomous = root["Value"][0];
-        else if (command_name == BRAKE)
+
+        } else if (command_name == BRAKE) {
             s.brake = root["Value"][0];
-        else if (command_name == SPEED){
+
+        } else if (command_name == SPEED){
             int speed = root["Value"][0];
 
             if (speed >= 0 && speed <= 100)
                 s.speed_percent = speed;
-        } else
+
+        } else if (command_name == LEV) {
+            int state = root["Value"][0];
+
+            if (state == 0 || state == 1) {
+                lev.control(state);
+            } else {
+                return false
+            }
+
+        } else {
             return false;
+        }
 
         return true;
     }
