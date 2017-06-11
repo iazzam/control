@@ -39,7 +39,7 @@ This project is created in Clion using a library called `platformio`. In order f
 * Import this project in CLion and you are good to go.
 * For further help regarding this let Deep Dhillon know.
   
-## Main Control
+## Control
 This directory will contain the code that will bind all the systems together. This will also contain project wide files
 and can be accessed by other subsystems. For further documentation read [`Control`](https://github.com/teamwaterloop/control/tree/master/src/Control/CONTROL_README.md) 
 
