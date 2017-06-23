@@ -16,10 +16,10 @@ class Lev{
     	int relayA, relayB;
 
     public:
-        Lev(int relayA, relayB);
+        Lev(int relayA, int relayB);
 
-        setup();
-        control(int state);
+        void setup();
+        void control(int state);
 };
 
 #endif

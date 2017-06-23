@@ -7,17 +7,18 @@
 #define CONTROL_CONTROL_H
 
 #include "Snapshot.h"
-#include "Lev/Lev.h"
 #include <Arduino.h>
 #include <ArduinoJson.h>
+#include "../Shared/Config.h"
+#include <TimerOne.h>
 
 class Control{
     private:
+        bool board_on;
         // board variables
         int rps;
         long board_freq;
         int freq_timer;
-        const unsigned long bit_rate;
 
         // to measure loop speed
         unsigned long start_time;
@@ -25,7 +26,7 @@ class Control{
         int last_frames;
 
         Snapshot s;
-        Lev lev;
+        //Lev lev;
 
         // handleManual() handles all the manual controls for the bot
         void handleManual();
@@ -37,10 +38,9 @@ class Control{
         bool parseCommands(String* json_string);
 
     public:
-        Control(int rps, long board_freq, unsigned long bit_rate);
+        Control();
 
-        void setup();
-        void loop();
+        void start();
         int getRps();
 };
 

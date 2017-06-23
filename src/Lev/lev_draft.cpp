@@ -1,3 +1,4 @@
+/*
 int relayA = 7;
 int relayB = 3;
 void setup() {
@@ -12,6 +13,7 @@ void loop() {
     ballValveControl(relayA, relayB, 1);
     
 }
+*/
 /* ballValveControl - Used to control motorized ball valve - levitation system
  *  Parameters
  *  ------------
@@ -21,7 +23,8 @@ void loop() {
  *  ------------
  *  6 second delay for allowing valve to open/close
  *  Return for error handling
-*/
+*//*
+
 int ballValveControl(int relayA, int relayB, int setState)
 {
     if(setState == 1)
@@ -40,4 +43,4 @@ int ballValveControl(int relayA, int relayB, int setState)
         return 1;
     }
     return 0;
-}
+}*/

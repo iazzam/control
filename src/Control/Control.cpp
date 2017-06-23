@@ -4,32 +4,19 @@
 //
 
 #include "Control.h"
+#include "TimerPool.h"
 
-// static constants
-static const String EMERGENCY = "Emergency Stop";
-static const String BRAKE = "Brake";
-static const String SPEED = "Speed";
-static const String Autonomous = "Autonomous";
-static const String LEV = "Ball Valve";
 
-static const int LEV_RELAY_A = 7;
-static const int LEV_RELAY_B = 3;
-
-Control::Control(int rps, long board_freq, unsigned long bit_rate): rps{rps}, board_freq{board_freq},
-                                                                   freq_timer{0}, bit_rate{bit_rate}{
-    start_time = 0;
-    curr_frames = 0;
-    last_frames = 0;
-    lev = Lev(LEV_RELAY_A, LEV_RELAY_B);
-}
-
-void Control::setup() {
-    // start Serial
+Control::Control(){
     Serial.begin(bit_rate);
-
-    start_time = millis();
-
 }
+
+void Control::start(){
+    while(board_on){
+
+    }
+}
+
 
 bool Control::parseCommands(String* json_string) {
     const int BUFFER_SIZE = JSON_OBJECT_SIZE(2) + JSON_ARRAY_SIZE(1);
@@ -63,9 +50,9 @@ bool Control::parseCommands(String* json_string) {
             int state = root["Value"][0];
 
             if (state == 0 || state == 1) {
-                lev.control(state);
+                //lev.control(state);
             } else {
-                return false
+                return false;
             }
 
         } else {
@@ -107,7 +94,9 @@ void Control::handleAutonomous() {
     Serial.println("I am running Autonomous");
 }
 
+
 void Control::loop() {
+
     // calculate time
     if (millis() - start_time > 1000){
         last_frames = curr_frames;

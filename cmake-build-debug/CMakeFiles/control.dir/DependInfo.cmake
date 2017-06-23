@@ -4,8 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/git/waterloop_projects/control/src/Control.cpp" "D:/git/waterloop_projects/control/cmake-build-debug/CMakeFiles/control.dir/src/Control.cpp.obj"
-  "D:/git/waterloop_projects/control/src/main.cpp" "D:/git/waterloop_projects/control/cmake-build-debug/CMakeFiles/control.dir/src/main.cpp.obj"
+  "D:/git/waterloop_projects/control/src/Control/Control.cpp" "D:/git/waterloop_projects/control/cmake-build-debug/CMakeFiles/control.dir/src/Control/Control.cpp.obj"
+  "D:/git/waterloop_projects/control/src/Control/main.cpp" "D:/git/waterloop_projects/control/cmake-build-debug/CMakeFiles/control.dir/src/Control/main.cpp.obj"
+  "D:/git/waterloop_projects/control/src/Lev/Lev.cpp" "D:/git/waterloop_projects/control/cmake-build-debug/CMakeFiles/control.dir/src/Lev/Lev.cpp.obj"
+  "D:/git/waterloop_projects/control/src/Lev/lev_draft.cpp" "D:/git/waterloop_projects/control/cmake-build-debug/CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -13,16 +15,17 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "ARDUINO=10618"
   "ARDUINO_ARCH_AVR"
-  "ARDUINO_AVR_UNO"
+  "ARDUINO_AVR_MEGA2560"
   "F_CPU=16000000L"
   "PLATFORMIO=30301"
-  "__AVR_ATmega328P__"
+  "__AVR_ATmega2560__"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"
-  "C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"
+  "C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/mega"
+  "../lib/TimerOne"
   "../lib/ArduinoJson/src"
   "../src"
   "../lib/aJson"

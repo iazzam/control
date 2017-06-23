@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/control.dir/src/Control.cpp.obj"
-  "CMakeFiles/control.dir/src/main.cpp.obj"
+  "CMakeFiles/control.dir/src/Control/Control.cpp.obj"
+  "CMakeFiles/control.dir/src/Control/main.cpp.obj"
+  "CMakeFiles/control.dir/src/Lev/Lev.cpp.obj"
+  "CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj"
   "control.pdb"
   "control.exe"
   "control.exe.manifest"

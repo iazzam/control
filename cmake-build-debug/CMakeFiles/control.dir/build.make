@@ -56,71 +56,125 @@ include CMakeFiles/control.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/control.dir/flags.make
 
-CMakeFiles/control.dir/src/Control.cpp.obj: CMakeFiles/control.dir/flags.make
-CMakeFiles/control.dir/src/Control.cpp.obj: CMakeFiles/control.dir/includes_CXX.rsp
-CMakeFiles/control.dir/src/Control.cpp.obj: ../src/Control.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/control.dir/src/Control.cpp.obj"
-	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\control.dir\src\Control.cpp.obj -c D:\git\waterloop_projects\control\src\Control.cpp
+CMakeFiles/control.dir/src/Control/Control.cpp.obj: CMakeFiles/control.dir/flags.make
+CMakeFiles/control.dir/src/Control/Control.cpp.obj: CMakeFiles/control.dir/includes_CXX.rsp
+CMakeFiles/control.dir/src/Control/Control.cpp.obj: ../src/Control/Control.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/control.dir/src/Control/Control.cpp.obj"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\control.dir\src\Control\Control.cpp.obj -c D:\git\waterloop_projects\control\src\Control\Control.cpp
 
-CMakeFiles/control.dir/src/Control.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/src/Control.cpp.i"
-	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\git\waterloop_projects\control\src\Control.cpp > CMakeFiles\control.dir\src\Control.cpp.i
+CMakeFiles/control.dir/src/Control/Control.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/src/Control/Control.cpp.i"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\git\waterloop_projects\control\src\Control\Control.cpp > CMakeFiles\control.dir\src\Control\Control.cpp.i
 
-CMakeFiles/control.dir/src/Control.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/src/Control.cpp.s"
-	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\git\waterloop_projects\control\src\Control.cpp -o CMakeFiles\control.dir\src\Control.cpp.s
+CMakeFiles/control.dir/src/Control/Control.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/src/Control/Control.cpp.s"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\git\waterloop_projects\control\src\Control\Control.cpp -o CMakeFiles\control.dir\src\Control\Control.cpp.s
 
-CMakeFiles/control.dir/src/Control.cpp.obj.requires:
+CMakeFiles/control.dir/src/Control/Control.cpp.obj.requires:
 
-.PHONY : CMakeFiles/control.dir/src/Control.cpp.obj.requires
+.PHONY : CMakeFiles/control.dir/src/Control/Control.cpp.obj.requires
 
-CMakeFiles/control.dir/src/Control.cpp.obj.provides: CMakeFiles/control.dir/src/Control.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control.cpp.obj.provides.build
-.PHONY : CMakeFiles/control.dir/src/Control.cpp.obj.provides
+CMakeFiles/control.dir/src/Control/Control.cpp.obj.provides: CMakeFiles/control.dir/src/Control/Control.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/Control.cpp.obj.provides.build
+.PHONY : CMakeFiles/control.dir/src/Control/Control.cpp.obj.provides
 
-CMakeFiles/control.dir/src/Control.cpp.obj.provides.build: CMakeFiles/control.dir/src/Control.cpp.obj
+CMakeFiles/control.dir/src/Control/Control.cpp.obj.provides.build: CMakeFiles/control.dir/src/Control/Control.cpp.obj
 
 
-CMakeFiles/control.dir/src/main.cpp.obj: CMakeFiles/control.dir/flags.make
-CMakeFiles/control.dir/src/main.cpp.obj: CMakeFiles/control.dir/includes_CXX.rsp
-CMakeFiles/control.dir/src/main.cpp.obj: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/control.dir/src/main.cpp.obj"
-	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\control.dir\src\main.cpp.obj -c D:\git\waterloop_projects\control\src\main.cpp
+CMakeFiles/control.dir/src/Control/main.cpp.obj: CMakeFiles/control.dir/flags.make
+CMakeFiles/control.dir/src/Control/main.cpp.obj: CMakeFiles/control.dir/includes_CXX.rsp
+CMakeFiles/control.dir/src/Control/main.cpp.obj: ../src/Control/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/control.dir/src/Control/main.cpp.obj"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\control.dir\src\Control\main.cpp.obj -c D:\git\waterloop_projects\control\src\Control\main.cpp
 
-CMakeFiles/control.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/src/main.cpp.i"
-	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\git\waterloop_projects\control\src\main.cpp > CMakeFiles\control.dir\src\main.cpp.i
+CMakeFiles/control.dir/src/Control/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/src/Control/main.cpp.i"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\git\waterloop_projects\control\src\Control\main.cpp > CMakeFiles\control.dir\src\Control\main.cpp.i
 
-CMakeFiles/control.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/src/main.cpp.s"
-	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\git\waterloop_projects\control\src\main.cpp -o CMakeFiles\control.dir\src\main.cpp.s
+CMakeFiles/control.dir/src/Control/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/src/Control/main.cpp.s"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\git\waterloop_projects\control\src\Control\main.cpp -o CMakeFiles\control.dir\src\Control\main.cpp.s
 
-CMakeFiles/control.dir/src/main.cpp.obj.requires:
+CMakeFiles/control.dir/src/Control/main.cpp.obj.requires:
 
-.PHONY : CMakeFiles/control.dir/src/main.cpp.obj.requires
+.PHONY : CMakeFiles/control.dir/src/Control/main.cpp.obj.requires
 
-CMakeFiles/control.dir/src/main.cpp.obj.provides: CMakeFiles/control.dir/src/main.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/main.cpp.obj.provides.build
-.PHONY : CMakeFiles/control.dir/src/main.cpp.obj.provides
+CMakeFiles/control.dir/src/Control/main.cpp.obj.provides: CMakeFiles/control.dir/src/Control/main.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/main.cpp.obj.provides.build
+.PHONY : CMakeFiles/control.dir/src/Control/main.cpp.obj.provides
 
-CMakeFiles/control.dir/src/main.cpp.obj.provides.build: CMakeFiles/control.dir/src/main.cpp.obj
+CMakeFiles/control.dir/src/Control/main.cpp.obj.provides.build: CMakeFiles/control.dir/src/Control/main.cpp.obj
+
+
+CMakeFiles/control.dir/src/Lev/Lev.cpp.obj: CMakeFiles/control.dir/flags.make
+CMakeFiles/control.dir/src/Lev/Lev.cpp.obj: CMakeFiles/control.dir/includes_CXX.rsp
+CMakeFiles/control.dir/src/Lev/Lev.cpp.obj: ../src/Lev/Lev.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/control.dir/src/Lev/Lev.cpp.obj"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\control.dir\src\Lev\Lev.cpp.obj -c D:\git\waterloop_projects\control\src\Lev\Lev.cpp
+
+CMakeFiles/control.dir/src/Lev/Lev.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/src/Lev/Lev.cpp.i"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\git\waterloop_projects\control\src\Lev\Lev.cpp > CMakeFiles\control.dir\src\Lev\Lev.cpp.i
+
+CMakeFiles/control.dir/src/Lev/Lev.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/src/Lev/Lev.cpp.s"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\git\waterloop_projects\control\src\Lev\Lev.cpp -o CMakeFiles\control.dir\src\Lev\Lev.cpp.s
+
+CMakeFiles/control.dir/src/Lev/Lev.cpp.obj.requires:
+
+.PHONY : CMakeFiles/control.dir/src/Lev/Lev.cpp.obj.requires
+
+CMakeFiles/control.dir/src/Lev/Lev.cpp.obj.provides: CMakeFiles/control.dir/src/Lev/Lev.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Lev/Lev.cpp.obj.provides.build
+.PHONY : CMakeFiles/control.dir/src/Lev/Lev.cpp.obj.provides
+
+CMakeFiles/control.dir/src/Lev/Lev.cpp.obj.provides.build: CMakeFiles/control.dir/src/Lev/Lev.cpp.obj
+
+
+CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj: CMakeFiles/control.dir/flags.make
+CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj: CMakeFiles/control.dir/includes_CXX.rsp
+CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj: ../src/Lev/lev_draft.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\control.dir\src\Lev\lev_draft.cpp.obj -c D:\git\waterloop_projects\control\src\Lev\lev_draft.cpp
+
+CMakeFiles/control.dir/src/Lev/lev_draft.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/src/Lev/lev_draft.cpp.i"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\git\waterloop_projects\control\src\Lev\lev_draft.cpp > CMakeFiles\control.dir\src\Lev\lev_draft.cpp.i
+
+CMakeFiles/control.dir/src/Lev/lev_draft.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/src/Lev/lev_draft.cpp.s"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\git\waterloop_projects\control\src\Lev\lev_draft.cpp -o CMakeFiles\control.dir\src\Lev\lev_draft.cpp.s
+
+CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj.requires:
+
+.PHONY : CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj.requires
+
+CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj.provides: CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj.provides.build
+.PHONY : CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj.provides
+
+CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj.provides.build: CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj
 
 
 # Object files for target control
 control_OBJECTS = \
-"CMakeFiles/control.dir/src/Control.cpp.obj" \
-"CMakeFiles/control.dir/src/main.cpp.obj"
+"CMakeFiles/control.dir/src/Control/Control.cpp.obj" \
+"CMakeFiles/control.dir/src/Control/main.cpp.obj" \
+"CMakeFiles/control.dir/src/Lev/Lev.cpp.obj" \
+"CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj"
 
 # External object files for target control
 control_EXTERNAL_OBJECTS =
 
-control.exe: CMakeFiles/control.dir/src/Control.cpp.obj
-control.exe: CMakeFiles/control.dir/src/main.cpp.obj
+control.exe: CMakeFiles/control.dir/src/Control/Control.cpp.obj
+control.exe: CMakeFiles/control.dir/src/Control/main.cpp.obj
+control.exe: CMakeFiles/control.dir/src/Lev/Lev.cpp.obj
+control.exe: CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj
 control.exe: CMakeFiles/control.dir/build.make
 control.exe: CMakeFiles/control.dir/linklibs.rsp
 control.exe: CMakeFiles/control.dir/objects1.rsp
 control.exe: CMakeFiles/control.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable control.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable control.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\control.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,8 +182,10 @@ CMakeFiles/control.dir/build: control.exe
 
 .PHONY : CMakeFiles/control.dir/build
 
-CMakeFiles/control.dir/requires: CMakeFiles/control.dir/src/Control.cpp.obj.requires
-CMakeFiles/control.dir/requires: CMakeFiles/control.dir/src/main.cpp.obj.requires
+CMakeFiles/control.dir/requires: CMakeFiles/control.dir/src/Control/Control.cpp.obj.requires
+CMakeFiles/control.dir/requires: CMakeFiles/control.dir/src/Control/main.cpp.obj.requires
+CMakeFiles/control.dir/requires: CMakeFiles/control.dir/src/Lev/Lev.cpp.obj.requires
+CMakeFiles/control.dir/requires: CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj.requires
 
 .PHONY : CMakeFiles/control.dir/requires
 

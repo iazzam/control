@@ -13,6 +13,7 @@ void Lev::setup() {
     pinMode(relayB,OUTPUT);
 }
 
+/*
 void Lev::ballValveControl(int state) {
     if (setState == 1) {
         digitalWrite(relayA, LOW);
@@ -29,4 +30,4 @@ void Lev::ballValveControl(int state) {
         return 1;
     }
     return 0;
-}
+}*/

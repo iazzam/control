@@ -226,59 +226,113 @@ PLATFORMIO_UPDATE_ALL/fast:
 	$(MAKE) -f CMakeFiles\PLATFORMIO_UPDATE_ALL.dir\build.make CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/build
 .PHONY : PLATFORMIO_UPDATE_ALL/fast
 
-src/Control.obj: src/Control.cpp.obj
+src/Control/Control.obj: src/Control/Control.cpp.obj
 
-.PHONY : src/Control.obj
-
-# target to build an object file
-src/Control.cpp.obj:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control.cpp.obj
-.PHONY : src/Control.cpp.obj
-
-src/Control.i: src/Control.cpp.i
-
-.PHONY : src/Control.i
-
-# target to preprocess a source file
-src/Control.cpp.i:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control.cpp.i
-.PHONY : src/Control.cpp.i
-
-src/Control.s: src/Control.cpp.s
-
-.PHONY : src/Control.s
-
-# target to generate assembly for a file
-src/Control.cpp.s:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control.cpp.s
-.PHONY : src/Control.cpp.s
-
-src/main.obj: src/main.cpp.obj
-
-.PHONY : src/main.obj
+.PHONY : src/Control/Control.obj
 
 # target to build an object file
-src/main.cpp.obj:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
+src/Control/Control.cpp.obj:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/Control.cpp.obj
+.PHONY : src/Control/Control.cpp.obj
 
-src/main.i: src/main.cpp.i
+src/Control/Control.i: src/Control/Control.cpp.i
 
-.PHONY : src/main.i
+.PHONY : src/Control/Control.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/Control/Control.cpp.i:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/Control.cpp.i
+.PHONY : src/Control/Control.cpp.i
 
-src/main.s: src/main.cpp.s
+src/Control/Control.s: src/Control/Control.cpp.s
 
-.PHONY : src/main.s
+.PHONY : src/Control/Control.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/Control/Control.cpp.s:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/Control.cpp.s
+.PHONY : src/Control/Control.cpp.s
+
+src/Control/main.obj: src/Control/main.cpp.obj
+
+.PHONY : src/Control/main.obj
+
+# target to build an object file
+src/Control/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/main.cpp.obj
+.PHONY : src/Control/main.cpp.obj
+
+src/Control/main.i: src/Control/main.cpp.i
+
+.PHONY : src/Control/main.i
+
+# target to preprocess a source file
+src/Control/main.cpp.i:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/main.cpp.i
+.PHONY : src/Control/main.cpp.i
+
+src/Control/main.s: src/Control/main.cpp.s
+
+.PHONY : src/Control/main.s
+
+# target to generate assembly for a file
+src/Control/main.cpp.s:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/main.cpp.s
+.PHONY : src/Control/main.cpp.s
+
+src/Lev/Lev.obj: src/Lev/Lev.cpp.obj
+
+.PHONY : src/Lev/Lev.obj
+
+# target to build an object file
+src/Lev/Lev.cpp.obj:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Lev/Lev.cpp.obj
+.PHONY : src/Lev/Lev.cpp.obj
+
+src/Lev/Lev.i: src/Lev/Lev.cpp.i
+
+.PHONY : src/Lev/Lev.i
+
+# target to preprocess a source file
+src/Lev/Lev.cpp.i:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Lev/Lev.cpp.i
+.PHONY : src/Lev/Lev.cpp.i
+
+src/Lev/Lev.s: src/Lev/Lev.cpp.s
+
+.PHONY : src/Lev/Lev.s
+
+# target to generate assembly for a file
+src/Lev/Lev.cpp.s:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Lev/Lev.cpp.s
+.PHONY : src/Lev/Lev.cpp.s
+
+src/Lev/lev_draft.obj: src/Lev/lev_draft.cpp.obj
+
+.PHONY : src/Lev/lev_draft.obj
+
+# target to build an object file
+src/Lev/lev_draft.cpp.obj:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj
+.PHONY : src/Lev/lev_draft.cpp.obj
+
+src/Lev/lev_draft.i: src/Lev/lev_draft.cpp.i
+
+.PHONY : src/Lev/lev_draft.i
+
+# target to preprocess a source file
+src/Lev/lev_draft.cpp.i:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Lev/lev_draft.cpp.i
+.PHONY : src/Lev/lev_draft.cpp.i
+
+src/Lev/lev_draft.s: src/Lev/lev_draft.cpp.s
+
+.PHONY : src/Lev/lev_draft.s
+
+# target to generate assembly for a file
+src/Lev/lev_draft.cpp.s:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Lev/lev_draft.cpp.s
+.PHONY : src/Lev/lev_draft.cpp.s
 
 # Help Target
 help:
@@ -297,12 +351,18 @@ help:
 	@echo ... PLATFORMIO_UPDATE_ALL
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... src/Control.obj
-	@echo ... src/Control.i
-	@echo ... src/Control.s
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
+	@echo ... src/Control/Control.obj
+	@echo ... src/Control/Control.i
+	@echo ... src/Control/Control.s
+	@echo ... src/Control/main.obj
+	@echo ... src/Control/main.i
+	@echo ... src/Control/main.s
+	@echo ... src/Lev/Lev.obj
+	@echo ... src/Lev/Lev.i
+	@echo ... src/Lev/Lev.s
+	@echo ... src/Lev/lev_draft.obj
+	@echo ... src/Lev/lev_draft.i
+	@echo ... src/Lev/lev_draft.s
 .PHONY : help
 
 

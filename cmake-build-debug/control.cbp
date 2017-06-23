@@ -97,11 +97,12 @@
 					<Add option="-DF_CPU=16000000L"/>
 					<Add option="-DPLATFORMIO=30301"/>
 					<Add option="-DARDUINO_ARCH_AVR"/>
-					<Add option="-DARDUINO_AVR_UNO"/>
+					<Add option="-DARDUINO_AVR_MEGA2560"/>
 					<Add option="-DARDUINO=10618"/>
-					<Add option="-D__AVR_ATmega328P__"/>
+					<Add option="-D__AVR_ATmega2560__"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"/>
+					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/mega"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/TimerOne"/>
 					<Add directory="D:/git/waterloop_projects/control/lib/ArduinoJson/src"/>
 					<Add directory="D:/git/waterloop_projects/control/src"/>
 					<Add directory="D:/git/waterloop_projects/control/lib/aJson"/>
@@ -162,11 +163,12 @@
 					<Add option="-DF_CPU=16000000L"/>
 					<Add option="-DPLATFORMIO=30301"/>
 					<Add option="-DARDUINO_ARCH_AVR"/>
-					<Add option="-DARDUINO_AVR_UNO"/>
+					<Add option="-DARDUINO_AVR_MEGA2560"/>
 					<Add option="-DARDUINO=10618"/>
-					<Add option="-D__AVR_ATmega328P__"/>
+					<Add option="-D__AVR_ATmega2560__"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"/>
+					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/mega"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/TimerOne"/>
 					<Add directory="D:/git/waterloop_projects/control/lib/ArduinoJson/src"/>
 					<Add directory="D:/git/waterloop_projects/control/src"/>
 					<Add directory="D:/git/waterloop_projects/control/lib/aJson"/>
@@ -248,16 +250,34 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/git/waterloop_projects/control/src/Control.cpp">
+		<Unit filename="D:/git/waterloop_projects/control/src/Control/CONTROL_README.md">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/Control.h">
+		<Unit filename="D:/git/waterloop_projects/control/src/Control/Control.cpp">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/Snapshot.h">
+		<Unit filename="D:/git/waterloop_projects/control/src/Control/Control.h">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/main.cpp">
+		<Unit filename="D:/git/waterloop_projects/control/src/Control/Snapshot.h">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Control/main.cpp">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Lev/LEV_README.md">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Lev/Lev.cpp">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Lev/Lev.h">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Lev/lev_draft.cpp">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Shared/Config.h">
 			<Option target="control"/>
 		</Unit>
 		<Unit filename="D:/git/waterloop_projects/control/CMakeLists.txt">
