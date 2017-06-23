@@ -253,6 +253,60 @@ src/Control/Control.cpp.s:
 	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/Control.cpp.s
 .PHONY : src/Control/Control.cpp.s
 
+src/Control/Timer.obj: src/Control/Timer.cpp.obj
+
+.PHONY : src/Control/Timer.obj
+
+# target to build an object file
+src/Control/Timer.cpp.obj:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/Timer.cpp.obj
+.PHONY : src/Control/Timer.cpp.obj
+
+src/Control/Timer.i: src/Control/Timer.cpp.i
+
+.PHONY : src/Control/Timer.i
+
+# target to preprocess a source file
+src/Control/Timer.cpp.i:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/Timer.cpp.i
+.PHONY : src/Control/Timer.cpp.i
+
+src/Control/Timer.s: src/Control/Timer.cpp.s
+
+.PHONY : src/Control/Timer.s
+
+# target to generate assembly for a file
+src/Control/Timer.cpp.s:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/Timer.cpp.s
+.PHONY : src/Control/Timer.cpp.s
+
+src/Control/TimerPool.obj: src/Control/TimerPool.cpp.obj
+
+.PHONY : src/Control/TimerPool.obj
+
+# target to build an object file
+src/Control/TimerPool.cpp.obj:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj
+.PHONY : src/Control/TimerPool.cpp.obj
+
+src/Control/TimerPool.i: src/Control/TimerPool.cpp.i
+
+.PHONY : src/Control/TimerPool.i
+
+# target to preprocess a source file
+src/Control/TimerPool.cpp.i:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/TimerPool.cpp.i
+.PHONY : src/Control/TimerPool.cpp.i
+
+src/Control/TimerPool.s: src/Control/TimerPool.cpp.s
+
+.PHONY : src/Control/TimerPool.s
+
+# target to generate assembly for a file
+src/Control/TimerPool.cpp.s:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/TimerPool.cpp.s
+.PHONY : src/Control/TimerPool.cpp.s
+
 src/Control/main.obj: src/Control/main.cpp.obj
 
 .PHONY : src/Control/main.obj
@@ -354,6 +408,12 @@ help:
 	@echo ... src/Control/Control.obj
 	@echo ... src/Control/Control.i
 	@echo ... src/Control/Control.s
+	@echo ... src/Control/Timer.obj
+	@echo ... src/Control/Timer.i
+	@echo ... src/Control/Timer.s
+	@echo ... src/Control/TimerPool.obj
+	@echo ... src/Control/TimerPool.i
+	@echo ... src/Control/TimerPool.s
 	@echo ... src/Control/main.obj
 	@echo ... src/Control/main.i
 	@echo ... src/Control/main.s

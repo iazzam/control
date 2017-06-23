@@ -6,6 +6,8 @@
 #ifndef CONTROL_CONFIG_H
 #define CONTROL_CONFIG_H
 
+#include <Arduino.h>
+
 // commands received from pi
 static const String EMERGENCY = "Emergency Stop";
 static const String BRAKE = "Brake";
@@ -22,11 +24,14 @@ static const int LEV_RELAY_B = 3;
 // imu sensors
 
 
+// timer
+static const int num_timers = 3;
 
 
 // controlled loop related variables
 //static const unsigned int board_freq;    // 16MHz
-static const unsigned long function_rate = (1000000/120);   // 120 times per second
+static const unsigned long execute_rate = (1000000/180);    // 180 times per second
+static const unsigned long parse_rate = (1000000/120);      // 120 times per second
 static const unsigned long sensor_read_rate = (1000000/60); // 60 times per second
 static const unsigned long bit_rate = 115200;
 

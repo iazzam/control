@@ -81,10 +81,60 @@ CMakeFiles/control.dir/src/Control/Control.cpp.obj.provides: CMakeFiles/control.
 CMakeFiles/control.dir/src/Control/Control.cpp.obj.provides.build: CMakeFiles/control.dir/src/Control/Control.cpp.obj
 
 
+CMakeFiles/control.dir/src/Control/Timer.cpp.obj: CMakeFiles/control.dir/flags.make
+CMakeFiles/control.dir/src/Control/Timer.cpp.obj: CMakeFiles/control.dir/includes_CXX.rsp
+CMakeFiles/control.dir/src/Control/Timer.cpp.obj: ../src/Control/Timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/control.dir/src/Control/Timer.cpp.obj"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\control.dir\src\Control\Timer.cpp.obj -c D:\git\waterloop_projects\control\src\Control\Timer.cpp
+
+CMakeFiles/control.dir/src/Control/Timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/src/Control/Timer.cpp.i"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\git\waterloop_projects\control\src\Control\Timer.cpp > CMakeFiles\control.dir\src\Control\Timer.cpp.i
+
+CMakeFiles/control.dir/src/Control/Timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/src/Control/Timer.cpp.s"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\git\waterloop_projects\control\src\Control\Timer.cpp -o CMakeFiles\control.dir\src\Control\Timer.cpp.s
+
+CMakeFiles/control.dir/src/Control/Timer.cpp.obj.requires:
+
+.PHONY : CMakeFiles/control.dir/src/Control/Timer.cpp.obj.requires
+
+CMakeFiles/control.dir/src/Control/Timer.cpp.obj.provides: CMakeFiles/control.dir/src/Control/Timer.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/Timer.cpp.obj.provides.build
+.PHONY : CMakeFiles/control.dir/src/Control/Timer.cpp.obj.provides
+
+CMakeFiles/control.dir/src/Control/Timer.cpp.obj.provides.build: CMakeFiles/control.dir/src/Control/Timer.cpp.obj
+
+
+CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj: CMakeFiles/control.dir/flags.make
+CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj: CMakeFiles/control.dir/includes_CXX.rsp
+CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj: ../src/Control/TimerPool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\control.dir\src\Control\TimerPool.cpp.obj -c D:\git\waterloop_projects\control\src\Control\TimerPool.cpp
+
+CMakeFiles/control.dir/src/Control/TimerPool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/control.dir/src/Control/TimerPool.cpp.i"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\git\waterloop_projects\control\src\Control\TimerPool.cpp > CMakeFiles\control.dir\src\Control\TimerPool.cpp.i
+
+CMakeFiles/control.dir/src/Control/TimerPool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/control.dir/src/Control/TimerPool.cpp.s"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\git\waterloop_projects\control\src\Control\TimerPool.cpp -o CMakeFiles\control.dir\src\Control\TimerPool.cpp.s
+
+CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj.requires:
+
+.PHONY : CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj.requires
+
+CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj.provides: CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj.provides.build
+.PHONY : CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj.provides
+
+CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj.provides.build: CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj
+
+
 CMakeFiles/control.dir/src/Control/main.cpp.obj: CMakeFiles/control.dir/flags.make
 CMakeFiles/control.dir/src/Control/main.cpp.obj: CMakeFiles/control.dir/includes_CXX.rsp
 CMakeFiles/control.dir/src/Control/main.cpp.obj: ../src/Control/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/control.dir/src/Control/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/control.dir/src/Control/main.cpp.obj"
 	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\control.dir\src\Control\main.cpp.obj -c D:\git\waterloop_projects\control\src\Control\main.cpp
 
 CMakeFiles/control.dir/src/Control/main.cpp.i: cmake_force
@@ -109,7 +159,7 @@ CMakeFiles/control.dir/src/Control/main.cpp.obj.provides.build: CMakeFiles/contr
 CMakeFiles/control.dir/src/Lev/Lev.cpp.obj: CMakeFiles/control.dir/flags.make
 CMakeFiles/control.dir/src/Lev/Lev.cpp.obj: CMakeFiles/control.dir/includes_CXX.rsp
 CMakeFiles/control.dir/src/Lev/Lev.cpp.obj: ../src/Lev/Lev.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/control.dir/src/Lev/Lev.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/control.dir/src/Lev/Lev.cpp.obj"
 	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\control.dir\src\Lev\Lev.cpp.obj -c D:\git\waterloop_projects\control\src\Lev\Lev.cpp
 
 CMakeFiles/control.dir/src/Lev/Lev.cpp.i: cmake_force
@@ -134,7 +184,7 @@ CMakeFiles/control.dir/src/Lev/Lev.cpp.obj.provides.build: CMakeFiles/control.di
 CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj: CMakeFiles/control.dir/flags.make
 CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj: CMakeFiles/control.dir/includes_CXX.rsp
 CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj: ../src/Lev/lev_draft.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj"
 	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\control.dir\src\Lev\lev_draft.cpp.obj -c D:\git\waterloop_projects\control\src\Lev\lev_draft.cpp
 
 CMakeFiles/control.dir/src/Lev/lev_draft.cpp.i: cmake_force
@@ -159,6 +209,8 @@ CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj.provides.build: CMakeFiles/cont
 # Object files for target control
 control_OBJECTS = \
 "CMakeFiles/control.dir/src/Control/Control.cpp.obj" \
+"CMakeFiles/control.dir/src/Control/Timer.cpp.obj" \
+"CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj" \
 "CMakeFiles/control.dir/src/Control/main.cpp.obj" \
 "CMakeFiles/control.dir/src/Lev/Lev.cpp.obj" \
 "CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj"
@@ -167,6 +219,8 @@ control_OBJECTS = \
 control_EXTERNAL_OBJECTS =
 
 control.exe: CMakeFiles/control.dir/src/Control/Control.cpp.obj
+control.exe: CMakeFiles/control.dir/src/Control/Timer.cpp.obj
+control.exe: CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj
 control.exe: CMakeFiles/control.dir/src/Control/main.cpp.obj
 control.exe: CMakeFiles/control.dir/src/Lev/Lev.cpp.obj
 control.exe: CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj
@@ -174,7 +228,7 @@ control.exe: CMakeFiles/control.dir/build.make
 control.exe: CMakeFiles/control.dir/linklibs.rsp
 control.exe: CMakeFiles/control.dir/objects1.rsp
 control.exe: CMakeFiles/control.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable control.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable control.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\control.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -183,6 +237,8 @@ CMakeFiles/control.dir/build: control.exe
 .PHONY : CMakeFiles/control.dir/build
 
 CMakeFiles/control.dir/requires: CMakeFiles/control.dir/src/Control/Control.cpp.obj.requires
+CMakeFiles/control.dir/requires: CMakeFiles/control.dir/src/Control/Timer.cpp.obj.requires
+CMakeFiles/control.dir/requires: CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj.requires
 CMakeFiles/control.dir/requires: CMakeFiles/control.dir/src/Control/main.cpp.obj.requires
 CMakeFiles/control.dir/requires: CMakeFiles/control.dir/src/Lev/Lev.cpp.obj.requires
 CMakeFiles/control.dir/requires: CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj.requires

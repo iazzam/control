@@ -6,25 +6,17 @@
 #ifndef CONTROL_CONTROL_H
 #define CONTROL_CONTROL_H
 
-#include "Snapshot.h"
+#include "Configurations/Snapshot.h"
 #include <Arduino.h>
 #include <ArduinoJson.h>
 #include "../Shared/Config.h"
-#include <TimerOne.h>
+#include "Control/Timer/TimerPool.h"
 
 class Control{
     private:
         bool board_on;
-        // board variables
-        int rps;
-        long board_freq;
-        int freq_timer;
 
-        // to measure loop speed
-        unsigned long start_time;
-        int curr_frames;
-        int last_frames;
-
+        TimerPool pool;
         Snapshot s;
         //Lev lev;
 
@@ -36,6 +28,10 @@ class Control{
         bool handleReadings();
         // parseCommands() parses the commands sent from the control system
         bool parseCommands(String* json_string);
+
+        void readSensors();
+        void readCommands();
+        void execute();
 
     public:
         Control();

@@ -102,9 +102,9 @@
 					<Add option="-D__AVR_ATmega2560__"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/mega"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/TimerOne"/>
 					<Add directory="D:/git/waterloop_projects/control/lib/ArduinoJson/src"/>
 					<Add directory="D:/git/waterloop_projects/control/src"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/TimerOne"/>
 					<Add directory="D:/git/waterloop_projects/control/lib/aJson"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
@@ -168,9 +168,9 @@
 					<Add option="-D__AVR_ATmega2560__"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/mega"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/TimerOne"/>
 					<Add directory="D:/git/waterloop_projects/control/lib/ArduinoJson/src"/>
 					<Add directory="D:/git/waterloop_projects/control/src"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/TimerOne"/>
 					<Add directory="D:/git/waterloop_projects/control/lib/aJson"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
@@ -260,6 +260,18 @@
 			<Option target="control"/>
 		</Unit>
 		<Unit filename="D:/git/waterloop_projects/control/src/Control/Snapshot.h">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Control/Timer.cpp">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Control/Timer.h">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Control/TimerPool.cpp">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Control/TimerPool.h">
 			<Option target="control"/>
 		</Unit>
 		<Unit filename="D:/git/waterloop_projects/control/src/Control/main.cpp">

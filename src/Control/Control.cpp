@@ -2,19 +2,32 @@
 // Created by Deep on 2017-06-06.
 // Description: Implementation of Control class
 //
-
+/*
 #include "Control.h"
-#include "TimerPool.h"
 
 
-Control::Control(){
+Control::Control() : pool{TimerPool{3}}{
     Serial.begin(bit_rate);
+
+    // add timers
+    pool.addTimer(new TimerPool::Timer{sensor_read_rate, readSensors});
+    pool.addTimer(new TimerPool::Timer{parse_rate, readCommands});
+    pool.addTimer(new TimerPool::Timer{execute_rate, execute});
 }
 
-void Control::start(){
-    while(board_on){
 
-    }
+void Control::readSensors() {
+    Serial.println("Reading Sensors");
+}
+
+
+void Control::readCommands() {
+    Serial.println("Reading Commands");
+}
+
+
+void Control::execute() {
+    Serial.println("Executing");
 }
 
 
@@ -92,9 +105,8 @@ void Control::handleManual() {
 
 void Control::handleAutonomous() {
     Serial.println("I am running Autonomous");
-}
-
-
+}*/
+/*
 void Control::loop() {
 
     // calculate time
@@ -132,4 +144,4 @@ void Control::loop() {
 
 int Control::getRps() {
     return last_frames;
-}
+} */
