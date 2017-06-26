@@ -48,7 +48,8 @@ This project is created in Clion using a library called `platformio`. In order f
 ## Control Overview
 This directory will contain the code that will bind all the systems together. This will also contain project wide files
 and can be accessed by other subsystems. Control will directly communicate with Pi. Communication is as follows:
-#####Sending Data to Dashboard
+
+**Sending Data to Dashboard**
 
     * Every Sensor will write to Serial
     * Pi will read from Serial and will send it to the Server
@@ -61,7 +62,7 @@ How to convert your data to JSON
 * Read the method to get understanding of what it needs.
 
 
-#####Receiving Commands from Dashboard
+**Receiving Commands from Dashboard**
 
     * Read from Serial
     * Parse the command from JSON format
@@ -82,8 +83,9 @@ An example command is:
 {"cmd":"emg","val":[1]} // turns emergency on
 ```
 
-
 ## Subsystems
+
 ### Lev
+
 This library contains code for the functionality of Levitation on the pod. For further documentation read [`Levitation`](https://github.com/teamwaterloop/control/blob/master/src/Subsystems/Lev/LEV_README.md)
 
