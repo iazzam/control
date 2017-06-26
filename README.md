@@ -17,7 +17,7 @@ Anyone who is willing to work on this can clone this repo and then work on sub b
 Once finished with your part, you can make a pull request and I will review the code and then we can
 merge it to the main branch. When working on a new system, do following:
 
-#####What to Do
+**What to Do**
 * Make a separate folder insider src folder for your particular system. All the code for that system goes in that folder.
 * Create a README file for your particular sensor and document as well as you can.
 * If you need any library, add it inside lib folder.
@@ -25,8 +25,8 @@ merge it to the main branch. When working on a new system, do following:
   how to do this, look at sensors repo.
 * For testing you can create your main.cpp file but make sure there are not multiple main files. In order to avoid this,
   add your main file to `.gitignore`. This way everyone can have their separate main files.
-  
-#####What Not to Do
+ 
+**What Not to Do**
 * Do not touch `Main` directory inside `src` folder. Just add the code for your subsystem and I will integrate
  everything at the end.
 
