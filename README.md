@@ -49,17 +49,20 @@ This project is created in Clion using a library called `platformio`. In order f
 This directory will contain the code that will bind all the systems together. This will also contain project wide files
 and can be accessed by other subsystems. Control will directly communicate with Pi. Communication is as follows:
 #####Sending Data to Dashboard
+
     * Every Sensor will write to Serial
     * Pi will read from Serial and will send it to the Server
     * Server will then display data
 
 How to convert your data to JSON
+
 * Import `DataHandler.h` file from `Shared` folder.
 * Create an object and then call getJSONString method.
 * Read the method to get understanding of what it needs.
 
 
 #####Receiving Commands from Dashboard
+
     * Read from Serial
     * Parse the command from JSON format
     
