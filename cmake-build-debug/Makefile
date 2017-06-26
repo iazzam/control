@@ -47,10 +47,10 @@ RM = "D:\applications\jetbrains\CLion 2017.1.2\bin\cmake\bin\cmake.exe" -E remov
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\git\waterloop_projects\control
+CMAKE_SOURCE_DIR = D:\git\waterloop_projects\Control-Pod
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\git\waterloop_projects\control\cmake-build-debug
+CMAKE_BINARY_DIR = D:\git\waterloop_projects\Control-Pod\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -201,19 +201,6 @@ PLATFORMIO_PROGRAM/fast:
 .PHONY : PLATFORMIO_PROGRAM/fast
 
 #=============================================================================
-# Target rules for targets named control
-
-# Build rule for target.
-control: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 control
-.PHONY : control
-
-# fast build rule for target.
-control/fast:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/build
-.PHONY : control/fast
-
-#=============================================================================
 # Target rules for targets named PLATFORMIO_UPDATE_ALL
 
 # Build rule for target.
@@ -226,167 +213,180 @@ PLATFORMIO_UPDATE_ALL/fast:
 	$(MAKE) -f CMakeFiles\PLATFORMIO_UPDATE_ALL.dir\build.make CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/build
 .PHONY : PLATFORMIO_UPDATE_ALL/fast
 
-src/Control/Control.obj: src/Control/Control.cpp.obj
+#=============================================================================
+# Target rules for targets named Control-Pod
 
-.PHONY : src/Control/Control.obj
+# Build rule for target.
+Control-Pod: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Control-Pod
+.PHONY : Control-Pod
 
-# target to build an object file
-src/Control/Control.cpp.obj:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/Control.cpp.obj
-.PHONY : src/Control/Control.cpp.obj
+# fast build rule for target.
+Control-Pod/fast:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/build
+.PHONY : Control-Pod/fast
 
-src/Control/Control.i: src/Control/Control.cpp.i
+src/Main/Control.obj: src/Main/Control.cpp.obj
 
-.PHONY : src/Control/Control.i
-
-# target to preprocess a source file
-src/Control/Control.cpp.i:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/Control.cpp.i
-.PHONY : src/Control/Control.cpp.i
-
-src/Control/Control.s: src/Control/Control.cpp.s
-
-.PHONY : src/Control/Control.s
-
-# target to generate assembly for a file
-src/Control/Control.cpp.s:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/Control.cpp.s
-.PHONY : src/Control/Control.cpp.s
-
-src/Control/Timer.obj: src/Control/Timer.cpp.obj
-
-.PHONY : src/Control/Timer.obj
+.PHONY : src/Main/Control.obj
 
 # target to build an object file
-src/Control/Timer.cpp.obj:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/Timer.cpp.obj
-.PHONY : src/Control/Timer.cpp.obj
+src/Main/Control.cpp.obj:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.obj
+.PHONY : src/Main/Control.cpp.obj
 
-src/Control/Timer.i: src/Control/Timer.cpp.i
+src/Main/Control.i: src/Main/Control.cpp.i
 
-.PHONY : src/Control/Timer.i
+.PHONY : src/Main/Control.i
 
 # target to preprocess a source file
-src/Control/Timer.cpp.i:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/Timer.cpp.i
-.PHONY : src/Control/Timer.cpp.i
+src/Main/Control.cpp.i:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.i
+.PHONY : src/Main/Control.cpp.i
 
-src/Control/Timer.s: src/Control/Timer.cpp.s
+src/Main/Control.s: src/Main/Control.cpp.s
 
-.PHONY : src/Control/Timer.s
+.PHONY : src/Main/Control.s
 
 # target to generate assembly for a file
-src/Control/Timer.cpp.s:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/Timer.cpp.s
-.PHONY : src/Control/Timer.cpp.s
+src/Main/Control.cpp.s:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.s
+.PHONY : src/Main/Control.cpp.s
 
-src/Control/TimerPool.obj: src/Control/TimerPool.cpp.obj
+src/Main/Controller.obj: src/Main/Controller.cpp.obj
 
-.PHONY : src/Control/TimerPool.obj
+.PHONY : src/Main/Controller.obj
 
 # target to build an object file
-src/Control/TimerPool.cpp.obj:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/TimerPool.cpp.obj
-.PHONY : src/Control/TimerPool.cpp.obj
+src/Main/Controller.cpp.obj:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.obj
+.PHONY : src/Main/Controller.cpp.obj
 
-src/Control/TimerPool.i: src/Control/TimerPool.cpp.i
+src/Main/Controller.i: src/Main/Controller.cpp.i
 
-.PHONY : src/Control/TimerPool.i
+.PHONY : src/Main/Controller.i
 
 # target to preprocess a source file
-src/Control/TimerPool.cpp.i:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/TimerPool.cpp.i
-.PHONY : src/Control/TimerPool.cpp.i
+src/Main/Controller.cpp.i:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.i
+.PHONY : src/Main/Controller.cpp.i
 
-src/Control/TimerPool.s: src/Control/TimerPool.cpp.s
+src/Main/Controller.s: src/Main/Controller.cpp.s
 
-.PHONY : src/Control/TimerPool.s
+.PHONY : src/Main/Controller.s
 
 # target to generate assembly for a file
-src/Control/TimerPool.cpp.s:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/TimerPool.cpp.s
-.PHONY : src/Control/TimerPool.cpp.s
+src/Main/Controller.cpp.s:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.s
+.PHONY : src/Main/Controller.cpp.s
 
-src/Control/main.obj: src/Control/main.cpp.obj
+src/Shared/DataHandler.obj: src/Shared/DataHandler.cpp.obj
 
-.PHONY : src/Control/main.obj
+.PHONY : src/Shared/DataHandler.obj
 
 # target to build an object file
-src/Control/main.cpp.obj:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/main.cpp.obj
-.PHONY : src/Control/main.cpp.obj
+src/Shared/DataHandler.cpp.obj:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.obj
+.PHONY : src/Shared/DataHandler.cpp.obj
 
-src/Control/main.i: src/Control/main.cpp.i
+src/Shared/DataHandler.i: src/Shared/DataHandler.cpp.i
 
-.PHONY : src/Control/main.i
+.PHONY : src/Shared/DataHandler.i
 
 # target to preprocess a source file
-src/Control/main.cpp.i:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/main.cpp.i
-.PHONY : src/Control/main.cpp.i
+src/Shared/DataHandler.cpp.i:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.i
+.PHONY : src/Shared/DataHandler.cpp.i
 
-src/Control/main.s: src/Control/main.cpp.s
+src/Shared/DataHandler.s: src/Shared/DataHandler.cpp.s
 
-.PHONY : src/Control/main.s
+.PHONY : src/Shared/DataHandler.s
 
 # target to generate assembly for a file
-src/Control/main.cpp.s:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Control/main.cpp.s
-.PHONY : src/Control/main.cpp.s
+src/Shared/DataHandler.cpp.s:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.s
+.PHONY : src/Shared/DataHandler.cpp.s
 
-src/Lev/Lev.obj: src/Lev/Lev.cpp.obj
+src/Subsystems/Lev/Lev.obj: src/Subsystems/Lev/Lev.cpp.obj
 
-.PHONY : src/Lev/Lev.obj
+.PHONY : src/Subsystems/Lev/Lev.obj
 
 # target to build an object file
-src/Lev/Lev.cpp.obj:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Lev/Lev.cpp.obj
-.PHONY : src/Lev/Lev.cpp.obj
+src/Subsystems/Lev/Lev.cpp.obj:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/Lev.cpp.obj
+.PHONY : src/Subsystems/Lev/Lev.cpp.obj
 
-src/Lev/Lev.i: src/Lev/Lev.cpp.i
+src/Subsystems/Lev/Lev.i: src/Subsystems/Lev/Lev.cpp.i
 
-.PHONY : src/Lev/Lev.i
+.PHONY : src/Subsystems/Lev/Lev.i
 
 # target to preprocess a source file
-src/Lev/Lev.cpp.i:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Lev/Lev.cpp.i
-.PHONY : src/Lev/Lev.cpp.i
+src/Subsystems/Lev/Lev.cpp.i:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/Lev.cpp.i
+.PHONY : src/Subsystems/Lev/Lev.cpp.i
 
-src/Lev/Lev.s: src/Lev/Lev.cpp.s
+src/Subsystems/Lev/Lev.s: src/Subsystems/Lev/Lev.cpp.s
 
-.PHONY : src/Lev/Lev.s
+.PHONY : src/Subsystems/Lev/Lev.s
 
 # target to generate assembly for a file
-src/Lev/Lev.cpp.s:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Lev/Lev.cpp.s
-.PHONY : src/Lev/Lev.cpp.s
+src/Subsystems/Lev/Lev.cpp.s:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/Lev.cpp.s
+.PHONY : src/Subsystems/Lev/Lev.cpp.s
 
-src/Lev/lev_draft.obj: src/Lev/lev_draft.cpp.obj
+src/Subsystems/Lev/lev_draft.obj: src/Subsystems/Lev/lev_draft.cpp.obj
 
-.PHONY : src/Lev/lev_draft.obj
+.PHONY : src/Subsystems/Lev/lev_draft.obj
 
 # target to build an object file
-src/Lev/lev_draft.cpp.obj:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Lev/lev_draft.cpp.obj
-.PHONY : src/Lev/lev_draft.cpp.obj
+src/Subsystems/Lev/lev_draft.cpp.obj:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/lev_draft.cpp.obj
+.PHONY : src/Subsystems/Lev/lev_draft.cpp.obj
 
-src/Lev/lev_draft.i: src/Lev/lev_draft.cpp.i
+src/Subsystems/Lev/lev_draft.i: src/Subsystems/Lev/lev_draft.cpp.i
 
-.PHONY : src/Lev/lev_draft.i
+.PHONY : src/Subsystems/Lev/lev_draft.i
 
 # target to preprocess a source file
-src/Lev/lev_draft.cpp.i:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Lev/lev_draft.cpp.i
-.PHONY : src/Lev/lev_draft.cpp.i
+src/Subsystems/Lev/lev_draft.cpp.i:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/lev_draft.cpp.i
+.PHONY : src/Subsystems/Lev/lev_draft.cpp.i
 
-src/Lev/lev_draft.s: src/Lev/lev_draft.cpp.s
+src/Subsystems/Lev/lev_draft.s: src/Subsystems/Lev/lev_draft.cpp.s
 
-.PHONY : src/Lev/lev_draft.s
+.PHONY : src/Subsystems/Lev/lev_draft.s
 
 # target to generate assembly for a file
-src/Lev/lev_draft.cpp.s:
-	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Lev/lev_draft.cpp.s
-.PHONY : src/Lev/lev_draft.cpp.s
+src/Subsystems/Lev/lev_draft.cpp.s:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/lev_draft.cpp.s
+.PHONY : src/Subsystems/Lev/lev_draft.cpp.s
+
+src/Timer/TimerPool.obj: src/Timer/TimerPool.cpp.obj
+
+.PHONY : src/Timer/TimerPool.obj
+
+# target to build an object file
+src/Timer/TimerPool.cpp.obj:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Timer/TimerPool.cpp.obj
+.PHONY : src/Timer/TimerPool.cpp.obj
+
+src/Timer/TimerPool.i: src/Timer/TimerPool.cpp.i
+
+.PHONY : src/Timer/TimerPool.i
+
+# target to preprocess a source file
+src/Timer/TimerPool.cpp.i:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Timer/TimerPool.cpp.i
+.PHONY : src/Timer/TimerPool.cpp.i
+
+src/Timer/TimerPool.s: src/Timer/TimerPool.cpp.s
+
+.PHONY : src/Timer/TimerPool.s
+
+# target to generate assembly for a file
+src/Timer/TimerPool.cpp.s:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Timer/TimerPool.cpp.s
+.PHONY : src/Timer/TimerPool.cpp.s
 
 # Help Target
 help:
@@ -401,28 +401,28 @@ help:
 	@echo ... PLATFORMIO_REBUILD_PROJECT_INDEX
 	@echo ... PLATFORMIO_TEST
 	@echo ... PLATFORMIO_PROGRAM
-	@echo ... control
 	@echo ... PLATFORMIO_UPDATE_ALL
 	@echo ... edit_cache
+	@echo ... Control-Pod
 	@echo ... rebuild_cache
-	@echo ... src/Control/Control.obj
-	@echo ... src/Control/Control.i
-	@echo ... src/Control/Control.s
-	@echo ... src/Control/Timer.obj
-	@echo ... src/Control/Timer.i
-	@echo ... src/Control/Timer.s
-	@echo ... src/Control/TimerPool.obj
-	@echo ... src/Control/TimerPool.i
-	@echo ... src/Control/TimerPool.s
-	@echo ... src/Control/main.obj
-	@echo ... src/Control/main.i
-	@echo ... src/Control/main.s
-	@echo ... src/Lev/Lev.obj
-	@echo ... src/Lev/Lev.i
-	@echo ... src/Lev/Lev.s
-	@echo ... src/Lev/lev_draft.obj
-	@echo ... src/Lev/lev_draft.i
-	@echo ... src/Lev/lev_draft.s
+	@echo ... src/Main/Control.obj
+	@echo ... src/Main/Control.i
+	@echo ... src/Main/Control.s
+	@echo ... src/Main/Controller.obj
+	@echo ... src/Main/Controller.i
+	@echo ... src/Main/Controller.s
+	@echo ... src/Shared/DataHandler.obj
+	@echo ... src/Shared/DataHandler.i
+	@echo ... src/Shared/DataHandler.s
+	@echo ... src/Subsystems/Lev/Lev.obj
+	@echo ... src/Subsystems/Lev/Lev.i
+	@echo ... src/Subsystems/Lev/Lev.s
+	@echo ... src/Subsystems/Lev/lev_draft.obj
+	@echo ... src/Subsystems/Lev/lev_draft.i
+	@echo ... src/Subsystems/Lev/lev_draft.s
+	@echo ... src/Timer/TimerPool.obj
+	@echo ... src/Timer/TimerPool.i
+	@echo ... src/Timer/TimerPool.s
 .PHONY : help
 
 

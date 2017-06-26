@@ -1,0 +1,8 @@
+List of commands
+
+{"cmd":"emg","val":[0]}
+{"cmd":"brk","val":[0]}
+{"cmd":"spd","val":[50]}
+{"cmd":"man","val":[0]}
+{"cmd":"scpt","val":[0]}
+{"cmd":"auto","val":[0]}

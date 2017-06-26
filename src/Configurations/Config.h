@@ -9,11 +9,16 @@
 #include <Arduino.h>
 
 // commands received from pi
-static const String EMERGENCY = "Emergency Stop";
-static const String BRAKE = "Brake";
-static const String SPEED = "Speed";
-static const String Autonomous = "Autonomous";
-static const String LEV = "Ball Valve";
+static const String EMERGENCY = "emg";
+static const String BRAKE = "brk";
+static const String SPEED = "spd";
+static const String AUTONOMOUS = "auto";
+static const String MANUAL = "man";
+static const String SCRIPT = "scpt";
+
+
+// Serial
+static const long band_rate = 115200;
 
 
 // lev constants
@@ -25,7 +30,7 @@ static const int LEV_RELAY_B = 3;
 
 
 // timer
-static const int num_timers = 3;
+static const int num_timers = 2;
 
 
 // controlled loop related variables

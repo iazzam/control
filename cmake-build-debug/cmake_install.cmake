@@ -1,8 +1,8 @@
-# Install script for directory: D:/git/waterloop_projects/control
+# Install script for directory: D:/git/waterloop_projects/Control-Pod
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/control")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Control-Pod")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/git/waterloop_projects/control/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/git/waterloop_projects/Control-Pod/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

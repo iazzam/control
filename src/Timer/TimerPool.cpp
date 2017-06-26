@@ -4,8 +4,21 @@
 
 #include "TimerPool.h"
 
+TimerPool::Timer::Timer(const unsigned long interrupt_time, void (*func)()) :
+        interrupt_time{interrupt_time}, func{func}{}
 
-TimerPool::TimerPool() : counter{0}{
+
+void TimerPool::Timer::execute() {
+    func();
+}
+
+
+unsigned long TimerPool::Timer::get_time() {
+    return interrupt_time;
+}
+
+
+TimerPool::TimerPool(int num_timers) : counter{0}, num_timers{num_timers}{
     timers = new Timer*[num_timers];
     current_micros = new unsigned long[num_timers];
 }

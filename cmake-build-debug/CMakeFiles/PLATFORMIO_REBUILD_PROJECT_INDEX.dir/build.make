@@ -42,10 +42,10 @@ RM = "D:\applications\jetbrains\CLion 2017.1.2\bin\cmake\bin\cmake.exe" -E remov
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\git\waterloop_projects\control
+CMAKE_SOURCE_DIR = D:\git\waterloop_projects\Control-Pod
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\git\waterloop_projects\control\cmake-build-debug
+CMAKE_BINARY_DIR = D:\git\waterloop_projects\Control-Pod\cmake-build-debug
 
 # Utility rule file for PLATFORMIO_REBUILD_PROJECT_INDEX.
 
@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = D:\git\waterloop_projects\control\cmake-build-debug
 include CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/progress.make
 
 CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX:
-	cd /d D:\git\waterloop_projects\control && C:\Python27\Scripts\platformio.exe -f -c clion init --ide clion
+	cd /d D:\git\waterloop_projects\Control-Pod && C:\Python27\Scripts\platformio.exe -f -c clion init --ide clion
 
 PLATFORMIO_REBUILD_PROJECT_INDEX: CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX
 PLATFORMIO_REBUILD_PROJECT_INDEX: CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/build.make
@@ -70,6 +70,6 @@ CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/clean:
 .PHONY : CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/clean
 
 CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\git\waterloop_projects\control D:\git\waterloop_projects\control D:\git\waterloop_projects\control\cmake-build-debug D:\git\waterloop_projects\control\cmake-build-debug D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles\PLATFORMIO_REBUILD_PROJECT_INDEX.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\git\waterloop_projects\Control-Pod D:\git\waterloop_projects\Control-Pod D:\git\waterloop_projects\Control-Pod\cmake-build-debug D:\git\waterloop_projects\Control-Pod\cmake-build-debug D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles\PLATFORMIO_REBUILD_PROJECT_INDEX.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/depend
 
