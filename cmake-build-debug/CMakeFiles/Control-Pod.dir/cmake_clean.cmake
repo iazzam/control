@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj"
   "CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.obj"
   "CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.obj"
   "CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.obj"

@@ -226,6 +226,33 @@ Control-Pod/fast:
 	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/build
 .PHONY : Control-Pod/fast
 
+src/DocMain.obj: src/DocMain.cpp.obj
+
+.PHONY : src/DocMain.obj
+
+# target to build an object file
+src/DocMain.cpp.obj:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj
+.PHONY : src/DocMain.cpp.obj
+
+src/DocMain.i: src/DocMain.cpp.i
+
+.PHONY : src/DocMain.i
+
+# target to preprocess a source file
+src/DocMain.cpp.i:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/DocMain.cpp.i
+.PHONY : src/DocMain.cpp.i
+
+src/DocMain.s: src/DocMain.cpp.s
+
+.PHONY : src/DocMain.s
+
+# target to generate assembly for a file
+src/DocMain.cpp.s:
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/DocMain.cpp.s
+.PHONY : src/DocMain.cpp.s
+
 src/Main/Control.obj: src/Main/Control.cpp.obj
 
 .PHONY : src/Main/Control.obj
@@ -405,6 +432,9 @@ help:
 	@echo ... edit_cache
 	@echo ... Control-Pod
 	@echo ... rebuild_cache
+	@echo ... src/DocMain.obj
+	@echo ... src/DocMain.i
+	@echo ... src/DocMain.s
 	@echo ... src/Main/Control.obj
 	@echo ... src/Main/Control.i
 	@echo ... src/Main/Control.s

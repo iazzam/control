@@ -1,10 +1,7 @@
-/*
- * IMUData.h
- *
- *  Created on: May 25, 2017
- *  Author: Deep Dhillon
- *  Description: DataHandler handles sensor data and provides various methods
- *               to handle that data
+/*!
+ * @author Deep Dhillon
+ * @date 2017-05-25
+ * @brief This class handles sensor data and provides methods to manipulate data
  */
 
 #ifndef SRC_IMUDATA_H_
@@ -12,11 +9,18 @@
 
 #include "ArduinoJson.h"
 #include <Arduino.h>
+#include <Configurations/State.h>
 
 class DataHandler {
-    public:
-        // getJSONString() creates and returns a JSON string from the particular sensor
-        String getJSONString(String sensor_name, float *sensor_data, int num_data);
+public:
+    /*!
+     * Creates a JSON String from the data provided
+     * @param sensor_name name of the sensor from which data is obtained
+     * @param sensor_data an array of data points
+     * @param num_data  number of data points in the array
+     * @return data formatted in JSON String
+     */
+    String getJSONString(const String &sensor_name, const float *sensor_data, const int &num_data);
 };
 
 #endif

@@ -4,7 +4,7 @@
 # compile CXX with C:/Users/Deep6/.platformio/packages/toolchain-atmelavr/bin/avr-g++.exe
 CXX_FLAGS = -g   -std=gnu++11
 
-CXX_DEFINES = -DARDUINO=10618 -DARDUINO_ARCH_AVR -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DPLATFORMIO=30301 -D__AVR_ATmega2560__
+CXX_DEFINES = -DARDUINO=10618 -DARDUINO_ARCH_AVR -DARDUINO_AVR_UNO -DF_CPU=16000000L -DPLATFORMIO=30301 -D__AVR_ATmega328P__
 
 CXX_INCLUDES = @CMakeFiles/Control-Pod.dir/includes_CXX.rsp
 

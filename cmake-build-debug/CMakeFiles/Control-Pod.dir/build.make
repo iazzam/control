@@ -56,10 +56,35 @@ include CMakeFiles/Control-Pod.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Control-Pod.dir/flags.make
 
+CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj: CMakeFiles/Control-Pod.dir/flags.make
+CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj: CMakeFiles/Control-Pod.dir/includes_CXX.rsp
+CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj: ../src/DocMain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Control-Pod.dir\src\DocMain.cpp.obj -c D:\git\waterloop_projects\Control-Pod\src\DocMain.cpp
+
+CMakeFiles/Control-Pod.dir/src/DocMain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Control-Pod.dir/src/DocMain.cpp.i"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\git\waterloop_projects\Control-Pod\src\DocMain.cpp > CMakeFiles\Control-Pod.dir\src\DocMain.cpp.i
+
+CMakeFiles/Control-Pod.dir/src/DocMain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Control-Pod.dir/src/DocMain.cpp.s"
+	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\git\waterloop_projects\Control-Pod\src\DocMain.cpp -o CMakeFiles\Control-Pod.dir\src\DocMain.cpp.s
+
+CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj.requires
+
+CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj.provides: CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj.provides.build
+.PHONY : CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj.provides
+
+CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj.provides.build: CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj
+
+
 CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.obj: CMakeFiles/Control-Pod.dir/flags.make
 CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.obj: CMakeFiles/Control-Pod.dir/includes_CXX.rsp
 CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.obj: ../src/Main/Control.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.obj"
 	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Control-Pod.dir\src\Main\Control.cpp.obj -c D:\git\waterloop_projects\Control-Pod\src\Main\Control.cpp
 
 CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.i: cmake_force
@@ -84,7 +109,7 @@ CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.obj.provides.build: CMakeFiles/C
 CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.obj: CMakeFiles/Control-Pod.dir/flags.make
 CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.obj: CMakeFiles/Control-Pod.dir/includes_CXX.rsp
 CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.obj: ../src/Main/Controller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.obj"
 	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Control-Pod.dir\src\Main\Controller.cpp.obj -c D:\git\waterloop_projects\Control-Pod\src\Main\Controller.cpp
 
 CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.i: cmake_force
@@ -109,7 +134,7 @@ CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.obj.provides.build: CMakeFile
 CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.obj: CMakeFiles/Control-Pod.dir/flags.make
 CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.obj: CMakeFiles/Control-Pod.dir/includes_CXX.rsp
 CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.obj: ../src/Shared/DataHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.obj"
 	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Control-Pod.dir\src\Shared\DataHandler.cpp.obj -c D:\git\waterloop_projects\Control-Pod\src\Shared\DataHandler.cpp
 
 CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.i: cmake_force
@@ -134,7 +159,7 @@ CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.obj.provides.build: CMakeF
 CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/Lev.cpp.obj: CMakeFiles/Control-Pod.dir/flags.make
 CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/Lev.cpp.obj: CMakeFiles/Control-Pod.dir/includes_CXX.rsp
 CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/Lev.cpp.obj: ../src/Subsystems/Lev/Lev.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/Lev.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/Lev.cpp.obj"
 	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Control-Pod.dir\src\Subsystems\Lev\Lev.cpp.obj -c D:\git\waterloop_projects\Control-Pod\src\Subsystems\Lev\Lev.cpp
 
 CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/Lev.cpp.i: cmake_force
@@ -159,7 +184,7 @@ CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/Lev.cpp.obj.provides.build: CMakeF
 CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/lev_draft.cpp.obj: CMakeFiles/Control-Pod.dir/flags.make
 CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/lev_draft.cpp.obj: CMakeFiles/Control-Pod.dir/includes_CXX.rsp
 CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/lev_draft.cpp.obj: ../src/Subsystems/Lev/lev_draft.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/lev_draft.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/lev_draft.cpp.obj"
 	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Control-Pod.dir\src\Subsystems\Lev\lev_draft.cpp.obj -c D:\git\waterloop_projects\Control-Pod\src\Subsystems\Lev\lev_draft.cpp
 
 CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/lev_draft.cpp.i: cmake_force
@@ -184,7 +209,7 @@ CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/lev_draft.cpp.obj.provides.build: 
 CMakeFiles/Control-Pod.dir/src/Timer/TimerPool.cpp.obj: CMakeFiles/Control-Pod.dir/flags.make
 CMakeFiles/Control-Pod.dir/src/Timer/TimerPool.cpp.obj: CMakeFiles/Control-Pod.dir/includes_CXX.rsp
 CMakeFiles/Control-Pod.dir/src/Timer/TimerPool.cpp.obj: ../src/Timer/TimerPool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Control-Pod.dir/src/Timer/TimerPool.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Control-Pod.dir/src/Timer/TimerPool.cpp.obj"
 	C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Control-Pod.dir\src\Timer\TimerPool.cpp.obj -c D:\git\waterloop_projects\Control-Pod\src\Timer\TimerPool.cpp
 
 CMakeFiles/Control-Pod.dir/src/Timer/TimerPool.cpp.i: cmake_force
@@ -208,6 +233,7 @@ CMakeFiles/Control-Pod.dir/src/Timer/TimerPool.cpp.obj.provides.build: CMakeFile
 
 # Object files for target Control-Pod
 Control__Pod_OBJECTS = \
+"CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj" \
 "CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.obj" \
 "CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.obj" \
 "CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.obj" \
@@ -218,6 +244,7 @@ Control__Pod_OBJECTS = \
 # External object files for target Control-Pod
 Control__Pod_EXTERNAL_OBJECTS =
 
+Control-Pod.exe: CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj
 Control-Pod.exe: CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.obj
 Control-Pod.exe: CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.obj
 Control-Pod.exe: CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.obj
@@ -228,7 +255,7 @@ Control-Pod.exe: CMakeFiles/Control-Pod.dir/build.make
 Control-Pod.exe: CMakeFiles/Control-Pod.dir/linklibs.rsp
 Control-Pod.exe: CMakeFiles/Control-Pod.dir/objects1.rsp
 Control-Pod.exe: CMakeFiles/Control-Pod.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Control-Pod.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Control-Pod.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Control-Pod.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -236,6 +263,7 @@ CMakeFiles/Control-Pod.dir/build: Control-Pod.exe
 
 .PHONY : CMakeFiles/Control-Pod.dir/build
 
+CMakeFiles/Control-Pod.dir/requires: CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj.requires
 CMakeFiles/Control-Pod.dir/requires: CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.obj.requires
 CMakeFiles/Control-Pod.dir/requires: CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.obj.requires
 CMakeFiles/Control-Pod.dir/requires: CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.obj.requires

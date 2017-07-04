@@ -1,0 +1,83 @@
+\hypertarget{_control_8cpp}{}\section{D\+:/git/waterloop\+\_\+projects/\+Control-\/\+Pod/src/\+Main/\+Control.cpp File Reference}
+\label{_control_8cpp}\index{D\+:/git/waterloop\+\_\+projects/\+Control-\/\+Pod/src/\+Main/\+Control.\+cpp@{D\+:/git/waterloop\+\_\+projects/\+Control-\/\+Pod/src/\+Main/\+Control.\+cpp}}
+
+
+This is the main file that will use \hyperlink{class_controller}{Controller} and Timer Pool to execute the program.  
+
+
+{\ttfamily \#include $<$Arduino.\+h$>$}\newline
+{\ttfamily \#include $<$Timer/\+Timer\+Pool.\+h$>$}\newline
+{\ttfamily \#include $<$Configurations/\+Config.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Controller.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_control_8cpp_ab2474de57ea9de1def29ca73c9d66686}{read\+Commands} ()
+\item 
+void \hyperlink{_control_8cpp_a61af3e60b94ae3e748f6fbac1e794af7}{execute} ()
+\item 
+void \hyperlink{_control_8cpp_a4fc01d736fe50cf5b977f755b675f11d}{setup} ()
+\item 
+void \hyperlink{_control_8cpp_afe461d27b9c48d5921c00d521181f12f}{loop} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_timer_pool}{Timer\+Pool} \hyperlink{_control_8cpp_a453e0b757b80b276cb44ba2a1d2b3113}{pool} \{\hyperlink{_config_8h_aef8e054ee87e9fc13a9b5562da5886cb}{num\+\_\+timers}\}
+\item 
+\hyperlink{class_controller}{Controller} \hyperlink{_control_8cpp_acee2e3b517ce316c0a70532a865279ef}{c} \{\hyperlink{_config_8h_a54a8be312066625db378aeafc475d4a4}{band\+\_\+rate}\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the main file that will use \hyperlink{class_controller}{Controller} and Timer Pool to execute the program. 
+
+\begin{DoxyAuthor}{Author}
+Deep Dhillon 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017-\/06-\/25 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_control_8cpp_a61af3e60b94ae3e748f6fbac1e794af7}\label{_control_8cpp_a61af3e60b94ae3e748f6fbac1e794af7}} 
+\index{Control.\+cpp@{Control.\+cpp}!execute@{execute}}
+\index{execute@{execute}!Control.\+cpp@{Control.\+cpp}}
+\subsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Timer interrupt calls this function to execute the functioning of the pod. It uses \hyperlink{class_controller}{Controller}\textquotesingle{}s method to execute commands \mbox{\Hypertarget{_control_8cpp_afe461d27b9c48d5921c00d521181f12f}\label{_control_8cpp_afe461d27b9c48d5921c00d521181f12f}} 
+\index{Control.\+cpp@{Control.\+cpp}!loop@{loop}}
+\index{loop@{loop}!Control.\+cpp@{Control.\+cpp}}
+\subsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Overriden from Arduino.\+h class and it updates Timers in a continuous loop and timers call other parts of the code. \mbox{\Hypertarget{_control_8cpp_ab2474de57ea9de1def29ca73c9d66686}\label{_control_8cpp_ab2474de57ea9de1def29ca73c9d66686}} 
+\index{Control.\+cpp@{Control.\+cpp}!read\+Commands@{read\+Commands}}
+\index{read\+Commands@{read\+Commands}!Control.\+cpp@{Control.\+cpp}}
+\subsubsection{\texorpdfstring{read\+Commands()}{readCommands()}}
+{\footnotesize\ttfamily void read\+Commands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Timer interrupt calls this function to execute reading Commands. It uses \hyperlink{class_controller}{Controller}\textquotesingle{}s method to read commands \mbox{\Hypertarget{_control_8cpp_a4fc01d736fe50cf5b977f755b675f11d}\label{_control_8cpp_a4fc01d736fe50cf5b977f755b675f11d}} 
+\index{Control.\+cpp@{Control.\+cpp}!setup@{setup}}
+\index{setup@{setup}!Control.\+cpp@{Control.\+cpp}}
+\subsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Overriden from Arduino.\+h class and it holds the code to setup the Arduino when it runs 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_control_8cpp_acee2e3b517ce316c0a70532a865279ef}\label{_control_8cpp_acee2e3b517ce316c0a70532a865279ef}} 
+\index{Control.\+cpp@{Control.\+cpp}!c@{c}}
+\index{c@{c}!Control.\+cpp@{Control.\+cpp}}
+\subsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily \hyperlink{class_controller}{Controller} c \{\hyperlink{_config_8h_a54a8be312066625db378aeafc475d4a4}{band\+\_\+rate}\}}
+
+\hyperlink{class_controller}{Controller} runs the pod as it contains the major code \mbox{\Hypertarget{_control_8cpp_a453e0b757b80b276cb44ba2a1d2b3113}\label{_control_8cpp_a453e0b757b80b276cb44ba2a1d2b3113}} 
+\index{Control.\+cpp@{Control.\+cpp}!pool@{pool}}
+\index{pool@{pool}!Control.\+cpp@{Control.\+cpp}}
+\subsubsection{\texorpdfstring{pool}{pool}}
+{\footnotesize\ttfamily \hyperlink{class_timer_pool}{Timer\+Pool} pool \{\hyperlink{_config_8h_aef8e054ee87e9fc13a9b5562da5886cb}{num\+\_\+timers}\}}
+
+Timer Pool contains Timers used to run parts at different times 

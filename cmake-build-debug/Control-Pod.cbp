@@ -117,13 +117,14 @@
 					<Add option="-DF_CPU=16000000L"/>
 					<Add option="-DPLATFORMIO=30301"/>
 					<Add option="-DARDUINO_ARCH_AVR"/>
-					<Add option="-DARDUINO_AVR_MEGA2560"/>
+					<Add option="-DARDUINO_AVR_UNO"/>
 					<Add option="-DARDUINO=10618"/>
-					<Add option="-D__AVR_ATmega2560__"/>
+					<Add option="-D__AVR_ATmega328P__"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/mega"/>
+					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"/>
 					<Add directory="D:/git/waterloop_projects/Control-Pod/lib/ArduinoJson/src"/>
 					<Add directory="D:/git/waterloop_projects/Control-Pod/src"/>
+					<Add directory="D:/git/waterloop_projects/Control-Pod/lib/Sensors/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI1/src"/>
@@ -181,13 +182,14 @@
 					<Add option="-DF_CPU=16000000L"/>
 					<Add option="-DPLATFORMIO=30301"/>
 					<Add option="-DARDUINO_ARCH_AVR"/>
-					<Add option="-DARDUINO_AVR_MEGA2560"/>
+					<Add option="-DARDUINO_AVR_UNO"/>
 					<Add option="-DARDUINO=10618"/>
-					<Add option="-D__AVR_ATmega2560__"/>
+					<Add option="-D__AVR_ATmega328P__"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/mega"/>
+					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"/>
 					<Add directory="D:/git/waterloop_projects/Control-Pod/lib/ArduinoJson/src"/>
 					<Add directory="D:/git/waterloop_projects/Control-Pod/src"/>
+					<Add directory="D:/git/waterloop_projects/Control-Pod/lib/Sensors/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI1/src"/>
@@ -250,6 +252,9 @@
 			<Option target="Control-Pod"/>
 		</Unit>
 		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/Configurations/State.h">
+			<Option target="Control-Pod"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/DocMain.cpp">
 			<Option target="Control-Pod"/>
 		</Unit>
 		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/Main/Control.cpp">

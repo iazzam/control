@@ -1,44 +1,33 @@
-//
-// Created by Deep on 2017-06-23.
-// Description: All the configurations will be in this file
-//
+/*!
+ * @file
+ * @author Deep Dhillon
+ * @date 2017-06-23
+ * @brief This file holds all the configurations used by the code
+ */
 
 #ifndef CONTROL_CONFIG_H
 #define CONTROL_CONFIG_H
 
-#include <Arduino.h>
-
 // commands received from pi
-static const String EMERGENCY = "emg";
-static const String BRAKE = "brk";
-static const String SPEED = "spd";
-static const String AUTONOMOUS = "auto";
-static const String MANUAL = "man";
-static const String SCRIPT = "scpt";
+static const String EMERGENCY = "emg"; /*!< Serial command for emergency */
+static const String BRAKE = "brk"; /*!< Serial command for brake */
+static const String SPEED = "spd"; /*!< Serial command for speed */
+static const String AUTONOMOUS = "auto"; /*!< Serial command for autonomous */
+static const String MANUAL = "man"; /*!< Serial command for manual */
+static const String SCRIPT = "scpt"; /*!< Serial command for script */
 
 
-// Serial
-static const long band_rate = 115200;
+// Serial and timer configurations
+static const long band_rate = 115200; /*!< Serial bit rate being used */
+static const int num_timers = 2; /*!< Number of timers being used */
+static const unsigned long execute_rate = (1000000/180); /*!< Time interrupt in millis for executing commands */
+static const unsigned long parse_rate = (1000000/120); /*!< Time interrupt in millis for parsing commands */
+
+// configurations for subsystems
 
 
 // lev constants
-static const int LEV_RELAY_A = 7;
-static const int LEV_RELAY_B = 3;
-
-
-// imu sensors
-
-
-// timer
-static const int num_timers = 2;
-
-
-// controlled loop related variables
-//static const unsigned int board_freq;    // 16MHz
-static const unsigned long execute_rate = (1000000/180);    // 180 times per second
-static const unsigned long parse_rate = (1000000/120);      // 120 times per second
-static const unsigned long sensor_read_rate = (1000000/60); // 60 times per second
-static const unsigned long bit_rate = 115200;
-
+static const int LEV_RELAY_A = 7; /*!< Lev Relay A pin */
+static const int LEV_RELAY_B = 3; /*!< Lev Relay B pin */
 
 #endif //CONTROL_CONFIG_H

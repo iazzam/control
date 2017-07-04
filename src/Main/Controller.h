@@ -1,8 +1,8 @@
-//
-// Created by Deep on 2017-06-25.
-// Description: Controller is used to control the pod and will provide for an
-//              interface to make everything work
-//
+/*!
+ * @author Deep Dhillon
+ * @date 2017-06-25
+ * @brief This class is used to control the pod and provide for an interface to make everything work
+ */
 
 #ifndef CONTROL_POD_CONTROLLER_H
 #define CONTROL_POD_CONTROLLER_H
@@ -13,49 +13,87 @@
 #include <Configurations/Config.h>
 
 class Controller {
-    // Serial fields
+    // Serial related field
     const unsigned long band_rate;
 
-    // Reading JSON Strings fields
-    const int max_char = 100;
+    // Fields for Serial Commands
+    const int max_char = 30; /*!< Maximum length of commands allowed */
     char *received_chars;
     bool new_data = false;
     bool reading = false;
     int char_index = 0;
-    char start_marker = '{';
-    char end_marker = '}';
+    char start_marker = '{'; /*!< Will only read commands that start with { */
+    char end_marker = '}'; /*!< Will only read commands that end with } */
 
-    // state of the pod
+    // Field for State object
     State s;
 
-    // readCommand() reads characters from the Serial and makes a String
+    /*!
+     * Reading listener to keep listening for commands that are being passed
+     * through Serial
+     */
     void readCommand();
 
-    // parseCommand() parses JSON string and set flags
+    /*!
+     * Parses the command read from the Serial and signals for the change
+     * of the state based on that
+     * @param json_string a JSON String representing the command
+     */
     void parseCommand(String command);
 
-    // emergency_protocol() handles the case when there is emergency
-    void emergency_protocol();
+    /*!
+     * Handles the case when there is emergency and an action has to be taken. This
+     * has the top most priority and is executed as quickly as possible
+     */
+    void emergencyProtocol();
 
-    // handle_manual() handles the case where the pod is in manual control
-    void handle_manual();
+    /*!
+     * Handles all the manual controls for the pod. This allows us to
+     * manually adjust various features of the pod from the control panel
+     */
+    void handleManual();
 
-    // handle_script() handles the case where the pod will function on predefined script
-    void handle_script();
+    /*!
+     * Allows us to run a script when we need to test something. The code will keep executing
+     * what is defined in this function
+     */
+    void handleScript();
 
-    // handle_autonomous() handles the case where the pod will function autonomously
-    void handle_autonomous();
+    /*!
+     * Handles all the manual controls for the pod. This allows us to
+     * manually adjust various features of the pod from the control panel
+     */
+    void handleAutonomous();
 public:
+    /*!
+     * The only constructor for this class. It uses bit rate to determine the
+     * data flow rate of Serial connection
+     * @param band_rate bit rate of Serial connection
+     */
     Controller(const unsigned long band_rate);
+
+    /*!
+     * Destructor deletes all the subsystems on the pod when Control
+     * goes off the scope
+     */
     ~Controller();
 
-    // setup() initializes the controller
+    /*!
+     * This method holds the code that will be run at the beginning. Is used
+     * for initializing various pod parts
+     */
     void setup();
 
-    // handleCommands() will parse commands received from Serial
+    /*!
+     * This method is in charge of handling and parsing commands received from
+     * Serial. It calls other methods to do it's tasks
+     */
     void handleCommands();
 
-    // control() will handle the overall control of the pod
+    /*!
+     * This method acts as a loop that controls the working of the pod. It handles
+     * various function modes like: Autonomous, Manual and Script
+     */
     void control();
 };
 

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/git/waterloop_projects/Control-Pod/src/DocMain.cpp" "D:/git/waterloop_projects/Control-Pod/cmake-build-debug/CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj"
   "D:/git/waterloop_projects/Control-Pod/src/Main/Control.cpp" "D:/git/waterloop_projects/Control-Pod/cmake-build-debug/CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.obj"
   "D:/git/waterloop_projects/Control-Pod/src/Main/Controller.cpp" "D:/git/waterloop_projects/Control-Pod/cmake-build-debug/CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.obj"
   "D:/git/waterloop_projects/Control-Pod/src/Shared/DataHandler.cpp" "D:/git/waterloop_projects/Control-Pod/cmake-build-debug/CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.obj"
@@ -17,18 +18,19 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "ARDUINO=10618"
   "ARDUINO_ARCH_AVR"
-  "ARDUINO_AVR_MEGA2560"
+  "ARDUINO_AVR_UNO"
   "F_CPU=16000000L"
   "PLATFORMIO=30301"
-  "__AVR_ATmega2560__"
+  "__AVR_ATmega328P__"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"
-  "C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/mega"
+  "C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"
   "../lib/ArduinoJson/src"
   "../src"
+  "../lib/Sensors/src"
   "C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"
   "C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"
   "C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI1/src"

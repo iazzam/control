@@ -1,7 +1,3 @@
-//
-// Created by Deep6 on 2017-06-23.
-//
-
 #include "TimerPool.h"
 
 TimerPool::Timer::Timer(const unsigned long interrupt_time, void (*func)()) :
@@ -13,7 +9,7 @@ void TimerPool::Timer::execute() {
 }
 
 
-unsigned long TimerPool::Timer::get_time() {
+unsigned long TimerPool::Timer::getTime() {
     return interrupt_time;
 }
 
@@ -46,7 +42,7 @@ void TimerPool::addTimer(Timer *t) {
 
 void TimerPool::handleTimers() {
     for (int i = 0; i < num_timers; ++i) {
-        if (micros() - current_micros[i] >= timers[i]->get_time()){
+        if (micros() - current_micros[i] >= timers[i]->getTime()){
             timers[i]->execute();
             current_micros[i] = micros();
         }

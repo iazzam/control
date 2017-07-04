@@ -1,7 +1,3 @@
-//
-// Created by Deep6 on 2017-06-25.
-//
-
 #include "Controller.h"
 
 Controller::Controller(const unsigned long band_rate) : band_rate{band_rate}{}
@@ -13,6 +9,7 @@ Controller::~Controller(){
 
 
 void Controller::setup() {
+    s.board_on = true;
     Serial.begin(band_rate);
     received_chars = new char[max_char];
 }
@@ -21,6 +18,7 @@ void Controller::setup() {
 int getValue(JsonObject &root){
     return root["val"][0];
 }
+
 
 void Controller::parseCommand(String command) {
     const int BUFFER_SIZE = JSON_OBJECT_SIZE(2) + JSON_ARRAY_SIZE(1) + 40;
@@ -69,7 +67,7 @@ void Controller::readCommand() {
     char curr_char;
 
     while (Serial.available() > 0 && !new_data) {
-        curr_char = Serial.read();
+        curr_char = (char)Serial.read();
 
         if (reading) {
             if (curr_char != end_marker) {
@@ -108,26 +106,26 @@ void Controller::handleCommands() {
 }
 
 
-void Controller::emergency_protocol() {
+void Controller::emergencyProtocol() {
     /*
      * Emergency Code here
      */
     exit(1);
 }
 
-void Controller::handle_manual() {
+void Controller::handleManual() {
     /*
      * Manual Code here
      */
 }
 
-void Controller::handle_script() {
+void Controller::handleScript() {
     /*
      * Script Code here
      */
 }
 
-void Controller::handle_autonomous() {
+void Controller::handleAutonomous() {
     /*
      * Autonomous Code here
      */
@@ -136,15 +134,15 @@ void Controller::handle_autonomous() {
 void Controller::control() {
     // emergency always has the most priority
     if (s.emergency){
-        emergency_protocol();
+        emergencyProtocol();
         return;
     }
 
     if (s.run_manual){
-        handle_manual();
+        handleManual();
     } else if (s.run_script){
-        handle_script();
+        handleScript();
     } else if (s.run_autonomous){
-        handle_autonomous();
+        handleAutonomous();
     }
 }
