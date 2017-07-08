@@ -1,7 +1,7 @@
 #include "Controller.h"
 #include <ColorSensor.h>
 #include <IMUPool.h>
-#include <Serial/WSerial.h>
+#include <WSerial.h>
 
 
 Controller::Controller(const unsigned long band_rate) : band_rate{band_rate}{}
