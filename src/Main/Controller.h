@@ -13,7 +13,7 @@
 #include <Configurations/Config.h>
 #include <ColorSensor.h>
 #include <Subsystems/Lev/BallValve.h>
-#include <Serial/WSerial.h>
+#include <WSerial.h>
 
 class Controller {
     // Serial related field
