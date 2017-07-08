@@ -12,12 +12,13 @@ class State{
         bool board_on = false; /*!< status of board */
 
         // components state
+        bool ballValve = 0; /*!< ball valve value*/
         int speed = 0; /*!< speed percentage of the pod */
         bool emergency = false; /*!< emergency flag*/
         bool brake = true; /*!< brake flag to determine if the pod braked*/
         bool run_autonomous = false; /*!< autonomous flag to determine when to run autonomous*/
         bool run_manual = false; /*!< manual flag to determine when to allow manual controls*/
-        bool run_script = false; /*!< script flag to determine when to run a script*/
+        bool run_script = true; /*!< script flag to determine when to run a script*/
 
 
         // lev snapshots

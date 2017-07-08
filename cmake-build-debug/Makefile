@@ -47,10 +47,10 @@ RM = "D:\applications\jetbrains\CLion 2017.1.2\bin\cmake\bin\cmake.exe" -E remov
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\git\waterloop_projects\Control-Pod
+CMAKE_SOURCE_DIR = D:\git\waterloop_projects\control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\git\waterloop_projects\Control-Pod\cmake-build-debug
+CMAKE_BINARY_DIR = D:\git\waterloop_projects\control\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -201,6 +201,19 @@ PLATFORMIO_PROGRAM/fast:
 .PHONY : PLATFORMIO_PROGRAM/fast
 
 #=============================================================================
+# Target rules for targets named control
+
+# Build rule for target.
+control: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 control
+.PHONY : control
+
+# fast build rule for target.
+control/fast:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/build
+.PHONY : control/fast
+
+#=============================================================================
 # Target rules for targets named PLATFORMIO_UPDATE_ALL
 
 # Build rule for target.
@@ -213,26 +226,13 @@ PLATFORMIO_UPDATE_ALL/fast:
 	$(MAKE) -f CMakeFiles\PLATFORMIO_UPDATE_ALL.dir\build.make CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/build
 .PHONY : PLATFORMIO_UPDATE_ALL/fast
 
-#=============================================================================
-# Target rules for targets named Control-Pod
-
-# Build rule for target.
-Control-Pod: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Control-Pod
-.PHONY : Control-Pod
-
-# fast build rule for target.
-Control-Pod/fast:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/build
-.PHONY : Control-Pod/fast
-
 src/DocMain.obj: src/DocMain.cpp.obj
 
 .PHONY : src/DocMain.obj
 
 # target to build an object file
 src/DocMain.cpp.obj:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/DocMain.cpp.obj
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/DocMain.cpp.obj
 .PHONY : src/DocMain.cpp.obj
 
 src/DocMain.i: src/DocMain.cpp.i
@@ -241,7 +241,7 @@ src/DocMain.i: src/DocMain.cpp.i
 
 # target to preprocess a source file
 src/DocMain.cpp.i:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/DocMain.cpp.i
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/DocMain.cpp.i
 .PHONY : src/DocMain.cpp.i
 
 src/DocMain.s: src/DocMain.cpp.s
@@ -250,7 +250,7 @@ src/DocMain.s: src/DocMain.cpp.s
 
 # target to generate assembly for a file
 src/DocMain.cpp.s:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/DocMain.cpp.s
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/DocMain.cpp.s
 .PHONY : src/DocMain.cpp.s
 
 src/Main/Control.obj: src/Main/Control.cpp.obj
@@ -259,7 +259,7 @@ src/Main/Control.obj: src/Main/Control.cpp.obj
 
 # target to build an object file
 src/Main/Control.cpp.obj:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.obj
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Main/Control.cpp.obj
 .PHONY : src/Main/Control.cpp.obj
 
 src/Main/Control.i: src/Main/Control.cpp.i
@@ -268,7 +268,7 @@ src/Main/Control.i: src/Main/Control.cpp.i
 
 # target to preprocess a source file
 src/Main/Control.cpp.i:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.i
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Main/Control.cpp.i
 .PHONY : src/Main/Control.cpp.i
 
 src/Main/Control.s: src/Main/Control.cpp.s
@@ -277,7 +277,7 @@ src/Main/Control.s: src/Main/Control.cpp.s
 
 # target to generate assembly for a file
 src/Main/Control.cpp.s:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Main/Control.cpp.s
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Main/Control.cpp.s
 .PHONY : src/Main/Control.cpp.s
 
 src/Main/Controller.obj: src/Main/Controller.cpp.obj
@@ -286,7 +286,7 @@ src/Main/Controller.obj: src/Main/Controller.cpp.obj
 
 # target to build an object file
 src/Main/Controller.cpp.obj:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.obj
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Main/Controller.cpp.obj
 .PHONY : src/Main/Controller.cpp.obj
 
 src/Main/Controller.i: src/Main/Controller.cpp.i
@@ -295,7 +295,7 @@ src/Main/Controller.i: src/Main/Controller.cpp.i
 
 # target to preprocess a source file
 src/Main/Controller.cpp.i:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.i
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Main/Controller.cpp.i
 .PHONY : src/Main/Controller.cpp.i
 
 src/Main/Controller.s: src/Main/Controller.cpp.s
@@ -304,7 +304,7 @@ src/Main/Controller.s: src/Main/Controller.cpp.s
 
 # target to generate assembly for a file
 src/Main/Controller.cpp.s:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Main/Controller.cpp.s
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Main/Controller.cpp.s
 .PHONY : src/Main/Controller.cpp.s
 
 src/Shared/DataHandler.obj: src/Shared/DataHandler.cpp.obj
@@ -313,7 +313,7 @@ src/Shared/DataHandler.obj: src/Shared/DataHandler.cpp.obj
 
 # target to build an object file
 src/Shared/DataHandler.cpp.obj:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.obj
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Shared/DataHandler.cpp.obj
 .PHONY : src/Shared/DataHandler.cpp.obj
 
 src/Shared/DataHandler.i: src/Shared/DataHandler.cpp.i
@@ -322,7 +322,7 @@ src/Shared/DataHandler.i: src/Shared/DataHandler.cpp.i
 
 # target to preprocess a source file
 src/Shared/DataHandler.cpp.i:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.i
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Shared/DataHandler.cpp.i
 .PHONY : src/Shared/DataHandler.cpp.i
 
 src/Shared/DataHandler.s: src/Shared/DataHandler.cpp.s
@@ -331,35 +331,35 @@ src/Shared/DataHandler.s: src/Shared/DataHandler.cpp.s
 
 # target to generate assembly for a file
 src/Shared/DataHandler.cpp.s:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Shared/DataHandler.cpp.s
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Shared/DataHandler.cpp.s
 .PHONY : src/Shared/DataHandler.cpp.s
 
-src/Subsystems/Lev/Lev.obj: src/Subsystems/Lev/Lev.cpp.obj
+src/Subsystems/Lev/BallValve.obj: src/Subsystems/Lev/BallValve.cpp.obj
 
-.PHONY : src/Subsystems/Lev/Lev.obj
+.PHONY : src/Subsystems/Lev/BallValve.obj
 
 # target to build an object file
-src/Subsystems/Lev/Lev.cpp.obj:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/Lev.cpp.obj
-.PHONY : src/Subsystems/Lev/Lev.cpp.obj
+src/Subsystems/Lev/BallValve.cpp.obj:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Subsystems/Lev/BallValve.cpp.obj
+.PHONY : src/Subsystems/Lev/BallValve.cpp.obj
 
-src/Subsystems/Lev/Lev.i: src/Subsystems/Lev/Lev.cpp.i
+src/Subsystems/Lev/BallValve.i: src/Subsystems/Lev/BallValve.cpp.i
 
-.PHONY : src/Subsystems/Lev/Lev.i
+.PHONY : src/Subsystems/Lev/BallValve.i
 
 # target to preprocess a source file
-src/Subsystems/Lev/Lev.cpp.i:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/Lev.cpp.i
-.PHONY : src/Subsystems/Lev/Lev.cpp.i
+src/Subsystems/Lev/BallValve.cpp.i:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Subsystems/Lev/BallValve.cpp.i
+.PHONY : src/Subsystems/Lev/BallValve.cpp.i
 
-src/Subsystems/Lev/Lev.s: src/Subsystems/Lev/Lev.cpp.s
+src/Subsystems/Lev/BallValve.s: src/Subsystems/Lev/BallValve.cpp.s
 
-.PHONY : src/Subsystems/Lev/Lev.s
+.PHONY : src/Subsystems/Lev/BallValve.s
 
 # target to generate assembly for a file
-src/Subsystems/Lev/Lev.cpp.s:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/Lev.cpp.s
-.PHONY : src/Subsystems/Lev/Lev.cpp.s
+src/Subsystems/Lev/BallValve.cpp.s:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Subsystems/Lev/BallValve.cpp.s
+.PHONY : src/Subsystems/Lev/BallValve.cpp.s
 
 src/Subsystems/Lev/lev_draft.obj: src/Subsystems/Lev/lev_draft.cpp.obj
 
@@ -367,7 +367,7 @@ src/Subsystems/Lev/lev_draft.obj: src/Subsystems/Lev/lev_draft.cpp.obj
 
 # target to build an object file
 src/Subsystems/Lev/lev_draft.cpp.obj:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/lev_draft.cpp.obj
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Subsystems/Lev/lev_draft.cpp.obj
 .PHONY : src/Subsystems/Lev/lev_draft.cpp.obj
 
 src/Subsystems/Lev/lev_draft.i: src/Subsystems/Lev/lev_draft.cpp.i
@@ -376,7 +376,7 @@ src/Subsystems/Lev/lev_draft.i: src/Subsystems/Lev/lev_draft.cpp.i
 
 # target to preprocess a source file
 src/Subsystems/Lev/lev_draft.cpp.i:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/lev_draft.cpp.i
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Subsystems/Lev/lev_draft.cpp.i
 .PHONY : src/Subsystems/Lev/lev_draft.cpp.i
 
 src/Subsystems/Lev/lev_draft.s: src/Subsystems/Lev/lev_draft.cpp.s
@@ -385,7 +385,7 @@ src/Subsystems/Lev/lev_draft.s: src/Subsystems/Lev/lev_draft.cpp.s
 
 # target to generate assembly for a file
 src/Subsystems/Lev/lev_draft.cpp.s:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Subsystems/Lev/lev_draft.cpp.s
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Subsystems/Lev/lev_draft.cpp.s
 .PHONY : src/Subsystems/Lev/lev_draft.cpp.s
 
 src/Timer/TimerPool.obj: src/Timer/TimerPool.cpp.obj
@@ -394,7 +394,7 @@ src/Timer/TimerPool.obj: src/Timer/TimerPool.cpp.obj
 
 # target to build an object file
 src/Timer/TimerPool.cpp.obj:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Timer/TimerPool.cpp.obj
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Timer/TimerPool.cpp.obj
 .PHONY : src/Timer/TimerPool.cpp.obj
 
 src/Timer/TimerPool.i: src/Timer/TimerPool.cpp.i
@@ -403,7 +403,7 @@ src/Timer/TimerPool.i: src/Timer/TimerPool.cpp.i
 
 # target to preprocess a source file
 src/Timer/TimerPool.cpp.i:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Timer/TimerPool.cpp.i
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Timer/TimerPool.cpp.i
 .PHONY : src/Timer/TimerPool.cpp.i
 
 src/Timer/TimerPool.s: src/Timer/TimerPool.cpp.s
@@ -412,7 +412,7 @@ src/Timer/TimerPool.s: src/Timer/TimerPool.cpp.s
 
 # target to generate assembly for a file
 src/Timer/TimerPool.cpp.s:
-	$(MAKE) -f CMakeFiles\Control-Pod.dir\build.make CMakeFiles/Control-Pod.dir/src/Timer/TimerPool.cpp.s
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Timer/TimerPool.cpp.s
 .PHONY : src/Timer/TimerPool.cpp.s
 
 # Help Target
@@ -428,9 +428,9 @@ help:
 	@echo ... PLATFORMIO_REBUILD_PROJECT_INDEX
 	@echo ... PLATFORMIO_TEST
 	@echo ... PLATFORMIO_PROGRAM
+	@echo ... control
 	@echo ... PLATFORMIO_UPDATE_ALL
 	@echo ... edit_cache
-	@echo ... Control-Pod
 	@echo ... rebuild_cache
 	@echo ... src/DocMain.obj
 	@echo ... src/DocMain.i
@@ -444,9 +444,9 @@ help:
 	@echo ... src/Shared/DataHandler.obj
 	@echo ... src/Shared/DataHandler.i
 	@echo ... src/Shared/DataHandler.s
-	@echo ... src/Subsystems/Lev/Lev.obj
-	@echo ... src/Subsystems/Lev/Lev.i
-	@echo ... src/Subsystems/Lev/Lev.s
+	@echo ... src/Subsystems/Lev/BallValve.obj
+	@echo ... src/Subsystems/Lev/BallValve.i
+	@echo ... src/Subsystems/Lev/BallValve.s
 	@echo ... src/Subsystems/Lev/lev_draft.obj
 	@echo ... src/Subsystems/Lev/lev_draft.i
 	@echo ... src/Subsystems/Lev/lev_draft.s

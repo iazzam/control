@@ -1,3 +1,0 @@
-"D:\applications\jetbrains\CLion 2017.1.2\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\Control-Pod.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\Control-Pod.dir/objects.a @CMakeFiles\Control-Pod.dir\objects1.rsp
-C:\Users\Deep6\.platformio\packages\toolchain-atmelavr\bin\avr-g++.exe  -g   -Wl,--whole-archive CMakeFiles\Control-Pod.dir/objects.a -Wl,--no-whole-archive  -o Control-Pod.exe -Wl,--out-implib,libControl-Pod.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Control-Pod.dir\linklibs.rsp

@@ -1,4 +1,8 @@
 #include "Controller.h"
+#include <ColorSensor.h>
+#include <IMUPool.h>
+#include <Serial/WSerial.h>
+
 
 Controller::Controller(const unsigned long band_rate) : band_rate{band_rate}{}
 
@@ -12,6 +16,8 @@ void Controller::setup() {
     s.board_on = true;
     Serial.begin(band_rate);
     received_chars = new char[max_char];
+
+    ballValve.setup(LEV_RELAY_A, LEV_RELAY_B);
 }
 
 
@@ -56,8 +62,14 @@ void Controller::parseCommand(String command) {
             s.brake = (bool)value;
         }
         else if (name == SPEED){
+            serial << "Hello" << endl;
             if (value < 0 && value > 100) return;
+
             s.speed = value;
+        } else if (name == BALLValve){
+            if (value < 0 && value > 1) return;
+
+            s.ballValve = (bool)value;
         }
     }
 }
@@ -107,10 +119,7 @@ void Controller::handleCommands() {
 
 
 void Controller::emergencyProtocol() {
-    /*
-     * Emergency Code here
-     */
-    exit(1);
+
 }
 
 void Controller::handleManual() {
@@ -123,6 +132,8 @@ void Controller::handleScript() {
     /*
      * Script Code here
      */
+
+    ballValve.control(s.ballValve);
 }
 
 void Controller::handleAutonomous() {

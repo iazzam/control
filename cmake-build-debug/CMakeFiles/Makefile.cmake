@@ -57,6 +57,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir/DependInfo.cmake"
   "CMakeFiles/PLATFORMIO_TEST.dir/DependInfo.cmake"
   "CMakeFiles/PLATFORMIO_PROGRAM.dir/DependInfo.cmake"
+  "CMakeFiles/control.dir/DependInfo.cmake"
   "CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/DependInfo.cmake"
-  "CMakeFiles/Control-Pod.dir/DependInfo.cmake"
   )

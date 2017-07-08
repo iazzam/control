@@ -8,108 +8,108 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/git/waterloop_projects/Control-Pod/cmake-build-debug"/>
+				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_UPLOADFS">
-				<Option working_dir="D:/git/waterloop_projects/Control-Pod/cmake-build-debug"/>
+				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOADFS"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOADFS"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_BUILD">
-				<Option working_dir="D:/git/waterloop_projects/Control-Pod/cmake-build-debug"/>
+				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_UPLOAD">
-				<Option working_dir="D:/git/waterloop_projects/Control-Pod/cmake-build-debug"/>
+				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOAD"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOAD"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_CLEAN">
-				<Option working_dir="D:/git/waterloop_projects/Control-Pod/cmake-build-debug"/>
+				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_CLEAN"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_CLEAN"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_REBUILD_PROJECT_INDEX">
-				<Option working_dir="D:/git/waterloop_projects/Control-Pod/cmake-build-debug"/>
+				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_REBUILD_PROJECT_INDEX"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_REBUILD_PROJECT_INDEX"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_TEST">
-				<Option working_dir="D:/git/waterloop_projects/Control-Pod/cmake-build-debug"/>
+				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_TEST"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_TEST"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_PROGRAM">
-				<Option working_dir="D:/git/waterloop_projects/Control-Pod/cmake-build-debug"/>
+				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_PROGRAM"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_PROGRAM"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_UPDATE_ALL">
-				<Option working_dir="D:/git/waterloop_projects/Control-Pod/cmake-build-debug"/>
+				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPDATE_ALL"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPDATE_ALL"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/git/waterloop_projects/Control-Pod/cmake-build-debug"/>
+				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Control-Pod">
-				<Option output="D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Control-Pod.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/git/waterloop_projects/Control-Pod/cmake-build-debug"/>
+				<Option output="D:/git/waterloop_projects/control/cmake-build-debug/Control-Pod.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -122,9 +122,9 @@
 					<Add option="-D__AVR_ATmega328P__"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"/>
-					<Add directory="D:/git/waterloop_projects/Control-Pod/lib/ArduinoJson/src"/>
-					<Add directory="D:/git/waterloop_projects/Control-Pod/src"/>
-					<Add directory="D:/git/waterloop_projects/Control-Pod/lib/Sensors/src"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/ArduinoJson/src"/>
+					<Add directory="D:/git/waterloop_projects/control/src"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/Sensors"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI1/src"/>
@@ -166,15 +166,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 Control-Pod"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 Control-Pod"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Control-Pod/fast">
-				<Option output="D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Control-Pod.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/git/waterloop_projects/Control-Pod/cmake-build-debug"/>
+				<Option output="D:/git/waterloop_projects/control/cmake-build-debug/Control-Pod.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -187,9 +187,9 @@
 					<Add option="-D__AVR_ATmega328P__"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"/>
-					<Add directory="D:/git/waterloop_projects/Control-Pod/lib/ArduinoJson/src"/>
-					<Add directory="D:/git/waterloop_projects/Control-Pod/src"/>
-					<Add directory="D:/git/waterloop_projects/Control-Pod/lib/Sensors/src"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/ArduinoJson/src"/>
+					<Add directory="D:/git/waterloop_projects/control/src"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/Sensors"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI1/src"/>
@@ -231,69 +231,69 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 Control-Pod/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 Control-Pod/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/git/waterloop_projects/Control-Pod/cmake-build-debug"/>
+				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/Control-Pod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/Configurations/Config.h">
+		<Unit filename="D:/git/waterloop_projects/control/src/Configurations/Config.h">
 			<Option target="Control-Pod"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/Configurations/State.h">
+		<Unit filename="D:/git/waterloop_projects/control/src/Configurations/State.h">
 			<Option target="Control-Pod"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/DocMain.cpp">
+		<Unit filename="D:/git/waterloop_projects/control/src/DocMain.cpp">
 			<Option target="Control-Pod"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/Main/Control.cpp">
+		<Unit filename="D:/git/waterloop_projects/control/src/Main/Control.cpp">
 			<Option target="Control-Pod"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/Main/Controller.cpp">
+		<Unit filename="D:/git/waterloop_projects/control/src/Main/Controller.cpp">
 			<Option target="Control-Pod"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/Main/Controller.h">
+		<Unit filename="D:/git/waterloop_projects/control/src/Main/Controller.h">
 			<Option target="Control-Pod"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/Shared/DataHandler.cpp">
+		<Unit filename="D:/git/waterloop_projects/control/src/Shared/DataHandler.cpp">
 			<Option target="Control-Pod"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/Shared/DataHandler.h">
+		<Unit filename="D:/git/waterloop_projects/control/src/Shared/DataHandler.h">
 			<Option target="Control-Pod"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/Subsystems/Lev/LEV_README.md">
+		<Unit filename="D:/git/waterloop_projects/control/src/Subsystems/Lev/LEV_README.md">
 			<Option target="Control-Pod"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/Subsystems/Lev/Lev.cpp">
+		<Unit filename="D:/git/waterloop_projects/control/src/Subsystems/Lev/Lev.cpp">
 			<Option target="Control-Pod"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/Subsystems/Lev/Lev.h">
+		<Unit filename="D:/git/waterloop_projects/control/src/Subsystems/Lev/Lev.h">
 			<Option target="Control-Pod"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/Subsystems/Lev/lev_draft.cpp">
+		<Unit filename="D:/git/waterloop_projects/control/src/Subsystems/Lev/lev_draft.cpp">
 			<Option target="Control-Pod"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/Timer/TimerPool.cpp">
+		<Unit filename="D:/git/waterloop_projects/control/src/Timer/TimerPool.cpp">
 			<Option target="Control-Pod"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/src/Timer/TimerPool.h">
+		<Unit filename="D:/git/waterloop_projects/control/src/Timer/TimerPool.h">
 			<Option target="Control-Pod"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/CMakeLists.txt">
+		<Unit filename="D:/git/waterloop_projects/control/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/Control-Pod/CMakeListsPrivate.txt">
+		<Unit filename="D:/git/waterloop_projects/control/CMakeListsPrivate.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

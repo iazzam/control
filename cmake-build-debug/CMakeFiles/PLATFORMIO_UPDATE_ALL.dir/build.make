@@ -42,10 +42,10 @@ RM = "D:\applications\jetbrains\CLion 2017.1.2\bin\cmake\bin\cmake.exe" -E remov
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\git\waterloop_projects\Control-Pod
+CMAKE_SOURCE_DIR = D:\git\waterloop_projects\control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\git\waterloop_projects\Control-Pod\cmake-build-debug
+CMAKE_BINARY_DIR = D:\git\waterloop_projects\control\cmake-build-debug
 
 # Utility rule file for PLATFORMIO_UPDATE_ALL.
 
@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = D:\git\waterloop_projects\Control-Pod\cmake-build-debug
 include CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/progress.make
 
 CMakeFiles/PLATFORMIO_UPDATE_ALL:
-	cd /d D:\git\waterloop_projects\Control-Pod && C:\Python27\Scripts\platformio.exe -f -c clion update
+	cd /d D:\git\waterloop_projects\control && C:\Python27\Scripts\platformio.exe -f -c clion update
 
 PLATFORMIO_UPDATE_ALL: CMakeFiles/PLATFORMIO_UPDATE_ALL
 PLATFORMIO_UPDATE_ALL: CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/build.make
@@ -70,6 +70,6 @@ CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/clean:
 .PHONY : CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/clean
 
 CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\git\waterloop_projects\Control-Pod D:\git\waterloop_projects\Control-Pod D:\git\waterloop_projects\Control-Pod\cmake-build-debug D:\git\waterloop_projects\Control-Pod\cmake-build-debug D:\git\waterloop_projects\Control-Pod\cmake-build-debug\CMakeFiles\PLATFORMIO_UPDATE_ALL.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\git\waterloop_projects\control D:\git\waterloop_projects\control D:\git\waterloop_projects\control\cmake-build-debug D:\git\waterloop_projects\control\cmake-build-debug D:\git\waterloop_projects\control\cmake-build-debug\CMakeFiles\PLATFORMIO_UPDATE_ALL.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PLATFORMIO_UPDATE_ALL.dir/depend
 

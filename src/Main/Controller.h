@@ -11,6 +11,9 @@
 #include <ArduinoJson.h>
 #include <Configurations/State.h>
 #include <Configurations/Config.h>
+#include <ColorSensor.h>
+#include <Subsystems/Lev/BallValve.h>
+#include <Serial/WSerial.h>
 
 class Controller {
     // Serial related field
@@ -27,6 +30,13 @@ class Controller {
 
     // Field for State object
     State s;
+
+    // sensors objects
+    ColorSensor colorSensor;
+    BallValve ballValve;
+
+    // serial objects
+    WSerial serial;
 
     /*!
      * Reading listener to keep listening for commands that are being passed
