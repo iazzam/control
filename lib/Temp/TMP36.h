@@ -8,7 +8,8 @@
 #define SENSORS_TMP36_H
 
 #include <Arduino.h>
-#include <shared/DataHandler.h>
+#include <DataHandler.h>
+#include <WSerial.h>
 
 class TMP36 {
     const String name;      /*!< name of the sensor */
@@ -27,7 +28,7 @@ public:
     /*!
      * Prints temperature data to the Serial
      */
-    void serialPrint();
+    void serialPrint(WSerial &serial);
 
     /*!
      * Gives access to temperature

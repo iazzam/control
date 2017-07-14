@@ -1,8 +1,18 @@
 #include "IMU.h"
 #include <Wire.h>
 
-IMU::IMU() {
-    imu.begin();
+#define LSM9DS1_M	0x1E // Would be 0x1C if SDO_M is LOW
+#define LSM9DS1_AG	0x6B // Would be 0x6A if SDO_AG is LOW
+
+#define DECLINATION -8.58 // Declination (degrees) in Boulder, CO.
+
+void IMU::setup(){
+    imu.settings.device.commInterface = IMU_MODE_I2C;
+    imu.settings.device.mAddress = LSM9DS1_M;
+    imu.settings.device.agAddress = LSM9DS1_AG;
+}
+
+void IMU::calibrate(){
     imu.calibrate();
     imu.calibrateMag();
 }
@@ -108,4 +118,82 @@ float IMU::getZ(imu_comp comp) {
     }
 
     return error_val;
+}
+
+float IMU::getRoll(){
+    float ay = getY(ACCEL);
+    float az = getZ(ACCEL);
+
+    float roll = atan2(ay, az);
+    roll  *= 180.0 / PI;
+    return roll;
+}
+
+float IMU::getPitch(){
+    float ax = getX(ACCEL);
+    float ay = getY(ACCEL);
+    float az = getZ(ACCEL);
+
+    float pitch = atan2(-ax, sqrt(ay * ay + az * az));
+    pitch *= 180.0 / PI;
+    return pitch;
+}
+
+float IMU::getHeading(){
+    float mx = getX(MAG);
+    float my = getY(MAG);
+
+    float heading;
+    if (my == 0)
+        heading = (mx < 0) ? PI : 0;
+    else
+        heading = atan2(mx, my);
+
+    heading -= DECLINATION * PI / 180;
+
+    if (heading > PI) heading -= (2 * PI);
+    else if (heading < -PI) heading += (2 * PI);
+    else if (heading < 0) heading += 2 * PI;
+
+    heading *= 180.0 / PI;
+
+    return heading;
+}
+
+void IMU::serialPrint(imu_comp comp, WSerial &serial){
+    float *data = new float[6];
+    data[0] = getX(comp);
+    data[1] = getY(comp);
+    data[2] = getZ(comp);
+    data[3] = getRoll();
+    data[4] = getPitch();
+    data[5] = getHeading();
+
+    if (data[0] <= -1000 || data[1] <= -1000 || data[2] <= -1000){
+        delete [] data;
+        return;
+    }
+
+    String name = "";
+    int check = -1;
+
+    if (comp == GYRO){
+        name = "gyro";
+        check = counter;
+        ++counter;
+
+        serial << dh.getJSONString(name, data, 6, check) << endl;
+
+        delete [] data;
+
+        return;
+    }
+    else if (comp == ACCEL)
+        name = "accel";
+    else if (comp == MAG)
+        name = "mag";
+
+    serial << dh.getJSONString(name, data, 6) << endl;
+
+    delete [] data;
 }

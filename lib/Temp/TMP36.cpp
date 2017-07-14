@@ -4,21 +4,16 @@
 TMP36::TMP36(const String name, const uint8_t io_pin) : name{name}, io_pin{io_pin}{}
 
 
-void TMP36::serialPrint() {
+void TMP36::serialPrint(WSerial &serial) {
     float *temp = new float[1];
     temp[0] = getTemp();
 
-    Serial.println(handler.getJSONString(name, temp, 1));
+    serial << handler.getJSONString(name, temp, 1) << endl;
     delete [] temp;
 }
 
 
 float TMP36::getTemp() const{
-    int8_t sensorInput = analogRead(io_pin);            //read the analog sensor and store it
-    float temp = (double)sensorInput / 1024;            //find percentage of input reading
-    temp = temp * 5;                                    //multiply by 5V to get voltage
-    temp = temp - 0.5;                                  //Subtract the offset
-    temp = temp * 100;                                  //Convert to degrees
-
+    float temp = (5.0 * analogRead(io_pin) * 100.0) / 1024;
     return temp;
 }

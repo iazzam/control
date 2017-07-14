@@ -11,7 +11,8 @@
 
 
 #include <SparkFunLSM9DS1.h>
-
+#include <DataHandler.h>
+#include <WSerial.h>
 
 /*!
  * @enum imu_comp
@@ -36,13 +37,22 @@ enum imu_comp {
 };
 
 class IMU {
+    int counter = 0;
+
     LSM9DS1 imu;
     const float error_val = -99999.00000; /*!<when a sensor does not have a value, this error value is given */
+    DataHandler dh;
+
 public:
     /*!
-     * Single no param constructor that creates initializes imu and makes it ready to supply data
+     * initializes imu and makes it ready to supply data
      */
-    IMU();
+    void setup();
+
+    /*!
+     * calibrates imu
+     */
+    void calibrate();
 
     /*!
      * This method returns true if sensor is working and false otherwise
@@ -98,6 +108,14 @@ public:
      * @return the z value of that component
      */
     float getZ(imu_comp comp);
+
+    float getRoll();
+
+    float getPitch();
+
+    float getHeading();
+
+    void serialPrint(imu_comp comp, WSerial &serial);
 };
 
 

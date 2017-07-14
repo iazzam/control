@@ -16,6 +16,9 @@ class WSerial{
     friend WSerial &operator<<(WSerial& serial, const int &val);
     friend WSerial &operator<<(WSerial& serial, const double &val);
     friend WSerial &operator<<(WSerial& serial, const float &val);
+
+public:
+    begin(const long bitRate);
 };
 
 WSerial &operator<<(WSerial& serial, const String &val);

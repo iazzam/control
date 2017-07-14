@@ -6,3 +6,6 @@ List of commands
 {"cmd":"man","val":[0]}
 {"cmd":"scpt","val":[0]}
 {"cmd":"auto","val":[0]}
+{"cmd":"bv","val":[0]}
+{"cmd":"dpr","val":[0]}
+{"cmd":"check","val":[1]}

@@ -39,7 +39,7 @@ void IMUPool::serialPrint(unsigned int sensor, imu_comp comp) {
     else if (comp == ACCEL) sensor_name = "accelerometer";
     else if (comp == MAG) sensor_name = "magnetometer";
 
-    Serial.println(data_handler.getJSONString(sensor_name, comp_data, 4));
+    serial << data_handler.getJSONString(sensor_name, comp_data, 4) << endl;
 
     delete [] comp_data;
 }

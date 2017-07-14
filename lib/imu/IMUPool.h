@@ -9,6 +9,7 @@
 #ifndef SRC_IMUSUBSYSTEM_H_
 #define SRC_IMUSUBSYSTEM_H_
 
+#include <WSerial.h>
 #include "IMU.h"
 #include "../shared/DataHandler.h"
 
@@ -19,6 +20,7 @@ private:
 
     IMU **sensors;
     DataHandler data_handler;
+    WSerial serial;
 
 public:
     /*!

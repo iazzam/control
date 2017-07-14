@@ -50,7 +50,7 @@ void ColorSensor::serialPrint() {
 
     data[0] = getColorRange();
 
-    Serial.println(data_handler.getJSONString("color", data, 1));
+    Serial.println(data_handler.getJSONString("color", data, 6));
 
     delete [] data;
 }

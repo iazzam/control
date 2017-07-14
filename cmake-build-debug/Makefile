@@ -253,6 +253,33 @@ src/DocMain.cpp.s:
 	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/DocMain.cpp.s
 .PHONY : src/DocMain.cpp.s
 
+src/Listeners/CommandListener.obj: src/Listeners/CommandListener.cpp.obj
+
+.PHONY : src/Listeners/CommandListener.obj
+
+# target to build an object file
+src/Listeners/CommandListener.cpp.obj:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Listeners/CommandListener.cpp.obj
+.PHONY : src/Listeners/CommandListener.cpp.obj
+
+src/Listeners/CommandListener.i: src/Listeners/CommandListener.cpp.i
+
+.PHONY : src/Listeners/CommandListener.i
+
+# target to preprocess a source file
+src/Listeners/CommandListener.cpp.i:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Listeners/CommandListener.cpp.i
+.PHONY : src/Listeners/CommandListener.cpp.i
+
+src/Listeners/CommandListener.s: src/Listeners/CommandListener.cpp.s
+
+.PHONY : src/Listeners/CommandListener.s
+
+# target to generate assembly for a file
+src/Listeners/CommandListener.cpp.s:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Listeners/CommandListener.cpp.s
+.PHONY : src/Listeners/CommandListener.cpp.s
+
 src/Main/Control.obj: src/Main/Control.cpp.obj
 
 .PHONY : src/Main/Control.obj
@@ -388,6 +415,33 @@ src/Subsystems/Lev/lev_draft.cpp.s:
 	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Subsystems/Lev/lev_draft.cpp.s
 .PHONY : src/Subsystems/Lev/lev_draft.cpp.s
 
+src/Subsystems/LevDPR.obj: src/Subsystems/LevDPR.cpp.obj
+
+.PHONY : src/Subsystems/LevDPR.obj
+
+# target to build an object file
+src/Subsystems/LevDPR.cpp.obj:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Subsystems/LevDPR.cpp.obj
+.PHONY : src/Subsystems/LevDPR.cpp.obj
+
+src/Subsystems/LevDPR.i: src/Subsystems/LevDPR.cpp.i
+
+.PHONY : src/Subsystems/LevDPR.i
+
+# target to preprocess a source file
+src/Subsystems/LevDPR.cpp.i:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Subsystems/LevDPR.cpp.i
+.PHONY : src/Subsystems/LevDPR.cpp.i
+
+src/Subsystems/LevDPR.s: src/Subsystems/LevDPR.cpp.s
+
+.PHONY : src/Subsystems/LevDPR.s
+
+# target to generate assembly for a file
+src/Subsystems/LevDPR.cpp.s:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Subsystems/LevDPR.cpp.s
+.PHONY : src/Subsystems/LevDPR.cpp.s
+
 src/Timer/TimerPool.obj: src/Timer/TimerPool.cpp.obj
 
 .PHONY : src/Timer/TimerPool.obj
@@ -415,6 +469,33 @@ src/Timer/TimerPool.cpp.s:
 	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Timer/TimerPool.cpp.s
 .PHONY : src/Timer/TimerPool.cpp.s
 
+src/Watchdog/Watchdog.obj: src/Watchdog/Watchdog.cpp.obj
+
+.PHONY : src/Watchdog/Watchdog.obj
+
+# target to build an object file
+src/Watchdog/Watchdog.cpp.obj:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Watchdog/Watchdog.cpp.obj
+.PHONY : src/Watchdog/Watchdog.cpp.obj
+
+src/Watchdog/Watchdog.i: src/Watchdog/Watchdog.cpp.i
+
+.PHONY : src/Watchdog/Watchdog.i
+
+# target to preprocess a source file
+src/Watchdog/Watchdog.cpp.i:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Watchdog/Watchdog.cpp.i
+.PHONY : src/Watchdog/Watchdog.cpp.i
+
+src/Watchdog/Watchdog.s: src/Watchdog/Watchdog.cpp.s
+
+.PHONY : src/Watchdog/Watchdog.s
+
+# target to generate assembly for a file
+src/Watchdog/Watchdog.cpp.s:
+	$(MAKE) -f CMakeFiles\control.dir\build.make CMakeFiles/control.dir/src/Watchdog/Watchdog.cpp.s
+.PHONY : src/Watchdog/Watchdog.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -435,6 +516,9 @@ help:
 	@echo ... src/DocMain.obj
 	@echo ... src/DocMain.i
 	@echo ... src/DocMain.s
+	@echo ... src/Listeners/CommandListener.obj
+	@echo ... src/Listeners/CommandListener.i
+	@echo ... src/Listeners/CommandListener.s
 	@echo ... src/Main/Control.obj
 	@echo ... src/Main/Control.i
 	@echo ... src/Main/Control.s
@@ -450,9 +534,15 @@ help:
 	@echo ... src/Subsystems/Lev/lev_draft.obj
 	@echo ... src/Subsystems/Lev/lev_draft.i
 	@echo ... src/Subsystems/Lev/lev_draft.s
+	@echo ... src/Subsystems/LevDPR.obj
+	@echo ... src/Subsystems/LevDPR.i
+	@echo ... src/Subsystems/LevDPR.s
 	@echo ... src/Timer/TimerPool.obj
 	@echo ... src/Timer/TimerPool.i
 	@echo ... src/Timer/TimerPool.s
+	@echo ... src/Watchdog/Watchdog.obj
+	@echo ... src/Watchdog/Watchdog.i
+	@echo ... src/Watchdog/Watchdog.s
 .PHONY : help
 
 

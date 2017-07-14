@@ -7,49 +7,27 @@
 #ifndef CONTROL_POD_CONTROLLER_H
 #define CONTROL_POD_CONTROLLER_H
 
-#include <HardwareSerial.h>
+#include <Arduino.h>
 #include <ArduinoJson.h>
-#include <Configurations/State.h>
 #include <Configurations/Config.h>
-#include <ColorSensor.h>
-#include <Subsystems/Lev/BallValve.h>
 #include <WSerial.h>
+#include <Watchdog/State.h>
+#include <Timer/TimerPool.h>
+#include <Listeners/CommandListener.h>
+
 
 class Controller {
-    // Serial related field
-    const unsigned long band_rate;
-
-    // Fields for Serial Commands
-    const int max_char = 30; /*!< Maximum length of commands allowed */
-    char *received_chars;
-    bool new_data = false;
-    bool reading = false;
-    int char_index = 0;
-    char start_marker = '{'; /*!< Will only read commands that start with { */
-    char end_marker = '}'; /*!< Will only read commands that end with } */
-
     // Field for State object
-    State s;
+    State *s;
 
-    // sensors objects
-    ColorSensor colorSensor;
-    BallValve ballValve;
+    void (*resetBoard)();
 
     // serial objects
     WSerial serial;
 
-    /*!
-     * Reading listener to keep listening for commands that are being passed
-     * through Serial
-     */
-    void readCommand();
+    // command listener
+    CommandListener listener{s};
 
-    /*!
-     * Parses the command read from the Serial and signals for the change
-     * of the state based on that
-     * @param json_string a JSON String representing the command
-     */
-    void parseCommand(String command);
 
     /*!
      * Handles the case when there is emergency and an action has to be taken. This
@@ -80,7 +58,7 @@ public:
      * data flow rate of Serial connection
      * @param band_rate bit rate of Serial connection
      */
-    Controller(const unsigned long band_rate);
+    Controller(State *s, void(*reset)());
 
     /*!
      * Destructor deletes all the subsystems on the pod when Control
@@ -94,17 +72,18 @@ public:
      */
     void setup();
 
-    /*!
-     * This method is in charge of handling and parsing commands received from
-     * Serial. It calls other methods to do it's tasks
-     */
-    void handleCommands();
 
     /*!
      * This method acts as a loop that controls the working of the pod. It handles
      * various function modes like: Autonomous, Manual and Script
      */
     void control();
+
+    /*!
+     * This method is used to stop the pod. It contains the code to stop necessary
+     * components and stop the pod
+     */
+    void stop();
 };
 
 

@@ -102,21 +102,22 @@
 					<Add option="-D__AVR_ATmega328P__"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/StandardCplusplus"/>
 					<Add directory="D:/git/waterloop_projects/control/lib/ArduinoJson/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire/src"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/SparkFunLSM9DS1/src"/>
 					<Add directory="D:/git/waterloop_projects/control/lib/shared"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/imu"/>
 					<Add directory="D:/git/waterloop_projects/control/lib/color"/>
-					<Add directory="D:/git/waterloop_projects/control/src"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/Serial"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/Temp"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/lev"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/Serial"/>
+					<Add directory="D:/git/waterloop_projects/control/src"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/SparkFunLSM9DS1/src"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/Temp"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/imu"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/lev"/>
+					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI1/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Servo/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SoftwareSerial/src"/>
+					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire1/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground/utility"/>
@@ -173,21 +174,22 @@
 					<Add option="-D__AVR_ATmega328P__"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/StandardCplusplus"/>
 					<Add directory="D:/git/waterloop_projects/control/lib/ArduinoJson/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire/src"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/SparkFunLSM9DS1/src"/>
 					<Add directory="D:/git/waterloop_projects/control/lib/shared"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/imu"/>
 					<Add directory="D:/git/waterloop_projects/control/lib/color"/>
-					<Add directory="D:/git/waterloop_projects/control/src"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/Serial"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/Temp"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/lev"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/Serial"/>
+					<Add directory="D:/git/waterloop_projects/control/src"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/SparkFunLSM9DS1/src"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/Temp"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/imu"/>
+					<Add directory="D:/git/waterloop_projects/control/lib/lev"/>
+					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI1/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Servo/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SoftwareSerial/src"/>
+					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire1/src"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground"/>
 					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground/utility"/>
@@ -269,6 +271,12 @@
 		<Unit filename="D:/git/waterloop_projects/control/src/DocMain.cpp">
 			<Option target="control"/>
 		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Listeners/CommandListener.cpp">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Listeners/CommandListener.h">
+			<Option target="control"/>
+		</Unit>
 		<Unit filename="D:/git/waterloop_projects/control/src/Main/Control.cpp">
 			<Option target="control"/>
 		</Unit>
@@ -296,10 +304,25 @@
 		<Unit filename="D:/git/waterloop_projects/control/src/Subsystems/Lev/lev_draft.cpp">
 			<Option target="control"/>
 		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Subsystems/LevDPR.cpp">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Subsystems/LevDPR.h">
+			<Option target="control"/>
+		</Unit>
 		<Unit filename="D:/git/waterloop_projects/control/src/Timer/TimerPool.cpp">
 			<Option target="control"/>
 		</Unit>
 		<Unit filename="D:/git/waterloop_projects/control/src/Timer/TimerPool.h">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Watchdog/State.h">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Watchdog/Watchdog.cpp">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="D:/git/waterloop_projects/control/src/Watchdog/Watchdog.h">
 			<Option target="control"/>
 		</Unit>
 		<Unit filename="D:/git/waterloop_projects/control/CMakeLists.txt">
