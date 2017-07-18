@@ -44,6 +44,11 @@ public:
      */
     void restartBoard(State &s);
 
+    /*!
+     * Restarts the board as soon as possible. State of the board is not saved
+     */
+    void restartBoard();
+
 };
 
 

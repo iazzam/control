@@ -1,16 +1,22 @@
 #ifndef CONTROL_STATE_H
 #define CONTROL_STATE_H
 
+#include <stdint.h>
+
 class State {
 public:
+    // connection with pi
+    bool connect = false;
+    bool piCheck = false;
+    
     // on off states for overall pod functioning
     bool emergency = false;
-    bool restart = false;
-    bool piCheck = false;
+    bool restartSaved = false;
+    bool restartUnsaved = false;
     bool stopped = false;
     bool autonomous = false;
     bool manual = false;
-    bool script = true;
+    bool script = false;
 
     // on off components' states
     bool ballValve = 0;
@@ -18,7 +24,7 @@ public:
     bool brake;
 
     // variable components' states
-    int speed = 0;
+    uint8_t speed = 0;
 
     // board resetting
     bool reset = false;

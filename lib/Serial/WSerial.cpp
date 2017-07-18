@@ -1,6 +1,6 @@
 #include "WSerial.h"
 
-WSerial::begin(const long bitRate){
+void WSerial::begin(const long bitRate){
     Serial.begin(bitRate);
 }
 

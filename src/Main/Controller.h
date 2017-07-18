@@ -13,20 +13,27 @@
 #include <WSerial.h>
 #include <Watchdog/State.h>
 #include <Timer/TimerPool.h>
+#include <Shared/JSONEncoder.h>
 #include <Listeners/CommandListener.h>
+#include <Gyro.h>
 
 
 class Controller {
     // Field for State object
     State *s;
 
-    void (*resetBoard)();
+    void (*resetBoard)(bool);
+
+    // JSONEncoder
+    JSONEncoder *encoder;
 
     // serial objects
-    WSerial serial;
+    WSerial *serial;
 
     // command listener
-    CommandListener listener{s};
+    CommandListener *listener;
+
+    int heartBeatMiss = 0;        /*!< Number of heartbeat misses */
 
 
     /*!
@@ -58,7 +65,7 @@ public:
      * data flow rate of Serial connection
      * @param band_rate bit rate of Serial connection
      */
-    Controller(State *s, void(*reset)());
+    Controller(State *s, void(*reset)(bool), JSONEncoder *encoder, WSerial *serial);
 
     /*!
      * Destructor deletes all the subsystems on the pod when Control
@@ -78,6 +85,12 @@ public:
      * various function modes like: Autonomous, Manual and Script
      */
     void control();
+
+    /*!
+     * This method is a heartbeat that will check if the connection wil Pi is still
+     * maintained
+     */
+    void check();
 
     /*!
      * This method is used to stop the pod. It contains the code to stop necessary

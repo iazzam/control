@@ -8,4 +8,8 @@ List of commands
 {"cmd":"auto","val":[0]}
 {"cmd":"bv","val":[0]}
 {"cmd":"dpr","val":[0]}
+
+
 {"cmd":"check","val":[1]}
+{"cmd":"connect","val":[1]}
+{"cmd":"scpt","val":[1]}

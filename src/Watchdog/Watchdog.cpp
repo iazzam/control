@@ -51,5 +51,9 @@ void Watchdog::add(State &s) {
 
 void Watchdog::restartBoard(State &s) {
     add(s);
+    restartBoard();
+}
+
+void Watchdog::restartBoard() {
     asm volatile ("  jmp 0");
 }
