@@ -1,5 +1,9 @@
 #include "WSerial.h"
 
+void WSerial::begin(const long bitRate){
+    Serial.begin(bitRate);
+}
+
 WSerial &operator<<(WSerial &serial, const String &val) {
     Serial.print(val);
     return serial;

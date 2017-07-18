@@ -8,304 +8,330 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
+				<Option working_dir="/media/deep/Data/git/waterloop_projects/control/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="PLATFORMIO_UPLOADFS">
-				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOADFS"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="PLATFORMIO_BUILD">
-				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="PLATFORMIO_UPLOAD">
-				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOAD"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="PLATFORMIO_CLEAN">
-				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_CLEAN"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="PLATFORMIO_REBUILD_PROJECT_INDEX">
-				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_REBUILD_PROJECT_INDEX"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="PLATFORMIO_TEST">
-				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_TEST"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="PLATFORMIO_PROGRAM">
-				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_PROGRAM"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="control">
-				<Option output="D:/git/waterloop_projects/control/cmake-build-debug/control.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-DF_CPU=16000000L"/>
-					<Add option="-DPLATFORMIO=30301"/>
-					<Add option="-DARDUINO_ARCH_AVR"/>
-					<Add option="-DARDUINO_AVR_UNO"/>
-					<Add option="-DARDUINO=10618"/>
-					<Add option="-D__AVR_ATmega328P__"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/ArduinoJson/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire/src"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/SparkFunLSM9DS1/src"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/shared"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/imu"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/color"/>
-					<Add directory="D:/git/waterloop_projects/control/src"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/Serial"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/Temp"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/lev"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI1/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Servo/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SoftwareSerial/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire1/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground/utility"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Bridge/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Esplora/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Ethernet/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Firmata"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Firmata/utility"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/GSM/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/HID/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Keyboard/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/LiquidCrystal/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Mouse/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Robot_Control/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Robot_Motor/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/SD/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Scheduler/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/SpacebrewYun/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Stepper/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/TFT/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Temboo/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/USBHost/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/WiFi/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/toolchain-atmelavr/avr/include"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/4.9.2/include"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/4.9.2/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 control"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="control/fast">
-				<Option output="D:/git/waterloop_projects/control/cmake-build-debug/control.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-DF_CPU=16000000L"/>
-					<Add option="-DPLATFORMIO=30301"/>
-					<Add option="-DARDUINO_ARCH_AVR"/>
-					<Add option="-DARDUINO_AVR_UNO"/>
-					<Add option="-DARDUINO=10618"/>
-					<Add option="-D__AVR_ATmega328P__"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/cores/arduino"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/variants/standard"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/ArduinoJson/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire/src"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/SparkFunLSM9DS1/src"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/shared"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/imu"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/color"/>
-					<Add directory="D:/git/waterloop_projects/control/src"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/Serial"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/Temp"/>
-					<Add directory="D:/git/waterloop_projects/control/lib/lev"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI1/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Servo/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SoftwareSerial/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire1/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground/utility"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Bridge/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Esplora/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Ethernet/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Firmata"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Firmata/utility"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/GSM/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/HID/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Keyboard/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/LiquidCrystal/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Mouse/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Robot_Control/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Robot_Motor/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/SD/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Scheduler/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/SpacebrewYun/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Stepper/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/TFT/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/Temboo/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/USBHost/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/framework-arduinoavr/libraries/WiFi/src"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/toolchain-atmelavr/avr/include"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/4.9.2/include"/>
-					<Add directory="C:/Users/Deep6/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/4.9.2/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 control/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="PLATFORMIO_UPDATE_ALL">
-				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPDATE_ALL"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/git/waterloop_projects/control/cmake-build-debug"/>
+				<Option working_dir="/media/deep/Data/git/waterloop_projects/control/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_BUILD">
+				<Option working_dir="/media/deep/Data/git/waterloop_projects/control/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_UPLOAD">
+				<Option working_dir="/media/deep/Data/git/waterloop_projects/control/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOAD"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_CLEAN">
+				<Option working_dir="/media/deep/Data/git/waterloop_projects/control/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_CLEAN"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_PROGRAM">
+				<Option working_dir="/media/deep/Data/git/waterloop_projects/control/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_PROGRAM"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/media/deep/Data/git/waterloop_projects/control/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_TEST">
+				<Option working_dir="/media/deep/Data/git/waterloop_projects/control/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_TEST"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_UPLOADFS">
+				<Option working_dir="/media/deep/Data/git/waterloop_projects/control/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOADFS"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_REBUILD_PROJECT_INDEX">
+				<Option working_dir="/media/deep/Data/git/waterloop_projects/control/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_REBUILD_PROJECT_INDEX"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PLATFORMIO_UPDATE_ALL">
+				<Option working_dir="/media/deep/Data/git/waterloop_projects/control/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPDATE_ALL"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="control">
+				<Option output="/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/control" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/deep/Data/git/waterloop_projects/control/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DF_CPU=16000000L"/>
+					<Add option="-DPLATFORMIO=30400"/>
+					<Add option="-DARDUINO_ARCH_AVR"/>
+					<Add option="-DARDUINO_AVR_MEGA2560"/>
+					<Add option="-DARDUINO=10618"/>
+					<Add option="-D__AVR_ATmega2560__"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/cores/arduino"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/variants/mega"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/lib/StandardCplusplus"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/lib/ArduinoJson/src"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/lib/Serial"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/lib/shared"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire/src"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/lib/SparkFunLSM9DS1/src"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/lib/imu"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/lib/MemoryFree"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI1/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Servo/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SoftwareSerial/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire1/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground/utility"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Bridge/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Esplora/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Ethernet/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Firmata"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Firmata/utility"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/GSM/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/HID/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Keyboard/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/LiquidCrystal/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Mouse/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Robot_Control/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Robot_Motor/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/SD/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Scheduler/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/SpacebrewYun/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Stepper/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/TFT/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Temboo/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/USBHost/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/WiFi/src"/>
+					<Add directory="/home/deep/.platformio/packages/toolchain-atmelavr/avr/include"/>
+					<Add directory="/home/deep/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/4.9.2/include-fixed"/>
+					<Add directory="/home/deep/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/4.9.2/include"/>
+					<Add directory="/home/deep/.platformio/packages/tool-unity"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 control"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="control/fast">
+				<Option output="/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/control" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/deep/Data/git/waterloop_projects/control/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DF_CPU=16000000L"/>
+					<Add option="-DPLATFORMIO=30400"/>
+					<Add option="-DARDUINO_ARCH_AVR"/>
+					<Add option="-DARDUINO_AVR_MEGA2560"/>
+					<Add option="-DARDUINO=10618"/>
+					<Add option="-D__AVR_ATmega2560__"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/cores/arduino"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/variants/mega"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/lib/StandardCplusplus"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/lib/ArduinoJson/src"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/lib/Serial"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/lib/shared"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire/src"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/lib/SparkFunLSM9DS1/src"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/lib/imu"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/lib/MemoryFree"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/EEPROM/src"/>
+					<Add directory="/media/deep/Data/git/waterloop_projects/control/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SPI1/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Servo/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/SoftwareSerial/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/__cores__/arduino/Wire1/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Adafruit_CircuitPlayground/utility"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Bridge/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Esplora/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Ethernet/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Firmata"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Firmata/utility"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/GSM/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/HID/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Keyboard/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/LiquidCrystal/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Mouse/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Robot_Control/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Robot_Motor/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/SD/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Scheduler/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/SpacebrewYun/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Stepper/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/TFT/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/Temboo/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/USBHost/src"/>
+					<Add directory="/home/deep/.platformio/packages/framework-arduinoavr/libraries/WiFi/src"/>
+					<Add directory="/home/deep/.platformio/packages/toolchain-atmelavr/avr/include"/>
+					<Add directory="/home/deep/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/4.9.2/include-fixed"/>
+					<Add directory="/home/deep/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/4.9.2/include"/>
+					<Add directory="/home/deep/.platformio/packages/tool-unity"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 control/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/deep/Data/git/waterloop_projects/control/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/git/waterloop_projects/control/src/Configurations/Config.h">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Configurations/Config.h">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/Configurations/State.h">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/DocMain.cpp">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/DocMain.cpp">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Listeners/CommandListener.cpp">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/Main/Control.cpp">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Listeners/CommandListener.h">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/Main/Controller.cpp">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Listeners/CommandPool.cpp">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/Main/Controller.h">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Listeners/CommandPool.h">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/Shared/DataHandler.cpp">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Main/Control.cpp">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/Shared/DataHandler.h">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Main/Controller.cpp">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/Subsystems/Lev/BallValve.cpp">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Main/Controller.h">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/Subsystems/Lev/BallValve.h">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Shared/JSONEncoder.cpp">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/Subsystems/Lev/LEV_README.md">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Shared/JSONEncoder.h">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/Subsystems/Lev/lev_draft.cpp">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Subsystems/Lev/BallValve.cpp">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/Timer/TimerPool.cpp">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Subsystems/Lev/BallValve.h">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/src/Timer/TimerPool.h">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Subsystems/Lev/LEV_README.md">
 			<Option target="control"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/CMakeLists.txt">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Subsystems/Lev/lev_draft.cpp">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Subsystems/LevDPR.cpp">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Subsystems/LevDPR.h">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Timer/TimerPool.cpp">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Timer/TimerPool.h">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Watchdog/State.h">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Watchdog/Watchdog.cpp">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/src/Watchdog/Watchdog.h">
+			<Option target="control"/>
+		</Unit>
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="D:/git/waterloop_projects/control/CMakeListsPrivate.txt">
+		<Unit filename="/media/deep/Data/git/waterloop_projects/control/CMakeListsPrivate.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
