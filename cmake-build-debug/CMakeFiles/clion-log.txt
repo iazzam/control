@@ -1,4 +1,4 @@
-"D:\applications\jetbrains\CLion 2017.1.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\git\waterloop_projects\control
+/home/deep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/171.4694.31/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /media/deep/Data/git/waterloop_projects/control
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/git/waterloop_projects/control/cmake-build-debug
+-- Build files have been written to: /media/deep/Data/git/waterloop_projects/control/cmake-build-debug

@@ -9,45 +9,99 @@
 
 #include <Arduino.h>
 #include <Timer/TimerPool.h>
-#include <Configurations/Config.h>
 #include "Controller.h"
+#include <Watchdog/Watchdog.h>
 
-TimerPool pool{num_timers}; /*!< Timer Pool contains Timers used to run parts at different times */
-Controller c{band_rate}; /*!< Controller runs the pod as it contains the major code */
+TimerPool pool{numTimers};    /*!< Timer Pool contains Timers used to run parts at different times */
+
+
+Controller *c;                /*!< Controller runs the pod as it contains the major code */
+
+
+Watchdog watch;               /*!< Watchdog checks for frozen arduino and always keeps it running */
+
+
+State s;                      /*!< State of the pod */
+
+
+WSerial serial;               /*!< Serial to be used */
+
+
+JSONEncoder encoder;          /*!< Encoder data that will be sent through serial */
+
 
 /*!
- * Timer interrupt calls this function to execute reading Commands. It uses
- * Controller's method to read commands
+ * This resets the board and is passed to Controller for it to call
  */
-void readCommands(){
-    c.handleCommands();
+void resetBoard(bool save){
+    serial << encoder.encodeMessage("Arduino Manually Restarted");
+
+    if (save)
+        watch.restartBoard(s);
+    else
+        watch.restartBoard();
 }
 
-// will make decisions and run everything
+
 /*!
  * Timer interrupt calls this function to execute the functioning of the pod. It uses
  * Controller's method to execute commands
  */
-void execute(){
-    c.control();
+void execute() {
+    c->control();
 }
 
 /*!
- *  Overriden from Arduino.h class and it holds the code to setup the Arduino when it runs
+ * Heartbeat used to check connection with raspberry pi. If nothing is heard from PI,
+ * stop procedure is started for the pod
  */
-void setup(){
-    // add timers
-    pool.addTimer(new TimerPool::Timer(parse_rate, readCommands));
-    pool.addTimer(new TimerPool::Timer(execute_rate, execute));
+void check(){
+    c->check();
+}
+
+
+/*!
+ *  Overridden from Arduino.h class and it holds the code to setup the Arduino when it runs
+ */
+void setup() {
+    serial.begin(bandRate);
+
+    // add timer
+    pool.addTimer(new TimerPool::Timer(executeRate, execute));
+    pool.addTimer(new TimerPool::Timer(heartbeatRate, check));
+
+    // get the state from the watchdog (this may be a saved state)
+    s = watch.get();
+
+    // start watchdog
+    watch.setup();
+
+    // create a controller
+    c = new Controller{&s, resetBoard, &encoder, &serial};
 
     // setup the controller
-    c.setup();
+    c->setup();
+
+    serial << encoder.encodeMessage("Arduino booted up");
 }
+
+
 
 /*!
  * Overriden from Arduino.h class and it updates Timers in a continuous loop and timers call
  * other parts of the code.
  */
-void loop(){
+void loop() {
     pool.handleTimers();
+    watch.reset();
 }
+
+
+/*!
+ * When watchdog resets the state of the pod is saved
+ */
+ISR(WDT_vect) {
+    serial << encoder.encodeMessage("Watchdog restarting Arduino");
+    watch.add(s);
+}
+

@@ -3,16 +3,16 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="control" targetName="PLATFORMIO_UPLOAD" />
-      <config projectName="control" targetName="PLATFORMIO_TEST" />
-      <config projectName="control" targetName="PLATFORMIO_REBUILD_PROJECT_INDEX" />
-      <config projectName="control" targetName="PLATFORMIO_CLEAN" />
       <config projectName="control" targetName="PLATFORMIO_PROGRAM" />
-      <config projectName="control" targetName="PLATFORMIO" />
       <config projectName="control" targetName="DEBUG" />
+      <config projectName="control" targetName="PLATFORMIO_TEST" />
+      <config projectName="control" targetName="PLATFORMIO_CLEAN" />
+      <config projectName="control" targetName="PLATFORMIO" />
+      <config projectName="control" targetName="PLATFORMIO_UPLOADFS" />
       <config projectName="control" targetName="control" />
       <config projectName="control" targetName="PLATFORMIO_UPDATE_ALL" />
       <config projectName="control" targetName="PLATFORMIO_BUILD" />
-      <config projectName="control" targetName="PLATFORMIO_UPLOADFS" />
+      <config projectName="control" targetName="PLATFORMIO_REBUILD_PROJECT_INDEX" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -21,7 +21,27 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec922180-b3d3-40f1-af0b-2568113a9075" name="Default" comment="" />
+    <list default="true" id="ec922180-b3d3-40f1-af0b-2568113a9075" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/shared/JSONEncoder.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/shared/JSONEncoder.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Listeners/CommandPool.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Listeners/CommandPool.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/shared/DataHandler.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/shared/DataHandler.h" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/platformio.iml" afterPath="$PROJECT_DIR$/.idea/platformio.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Serial/WSerial.cpp" afterPath="$PROJECT_DIR$/lib/Serial/WSerial.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Serial/WSerial.h" afterPath="$PROJECT_DIR$/lib/Serial/WSerial.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Configurations/Config.h" afterPath="$PROJECT_DIR$/src/Configurations/Config.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Listeners/CommandListener.cpp" afterPath="$PROJECT_DIR$/src/Listeners/CommandListener.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Listeners/CommandListener.h" afterPath="$PROJECT_DIR$/src/Listeners/CommandListener.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main/Control.cpp" afterPath="$PROJECT_DIR$/src/Main/Control.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main/Controller.cpp" afterPath="$PROJECT_DIR$/src/Main/Controller.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main/Controller.h" afterPath="$PROJECT_DIR$/src/Main/Controller.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Watchdog/State.h" afterPath="$PROJECT_DIR$/src/Watchdog/State.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Watchdog/Watchdog.cpp" afterPath="$PROJECT_DIR$/src/Watchdog/Watchdog.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Watchdog/Watchdog.h" afterPath="$PROJECT_DIR$/src/Watchdog/Watchdog.h" />
+    </list>
     <ignored path="platformio.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -40,36 +60,14 @@
     <favorites_list name="control" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Controller.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/Controller.cpp">
+    <leaf>
+      <file leaf-file-name="CommandListener.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Listeners/CommandListener.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="-1050">
+              <caret line="57" column="50" lean-forward="true" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WSerial.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/Serial/WSerial.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/Controller.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="e#221#248#0" expanded="true" />
+                <element signature="e#0#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,9 +81,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/Listeners/Command.cpp" />
+        <option value="$PROJECT_DIR$/src/Listeners/CommandPool.cpp" />
+        <option value="$PROJECT_DIR$/src/Listeners/CommandPool.h" />
+        <option value="$PROJECT_DIR$/src/Listeners/CommandListener.h" />
+        <option value="$PROJECT_DIR$/src/Configurations/Config.h" />
+        <option value="$PROJECT_DIR$/src/Watchdog/State.h" />
+        <option value="$PROJECT_DIR$/src/Watchdog/Watchdog.h" />
+        <option value="$PROJECT_DIR$/src/Watchdog/Watchdog.cpp" />
+        <option value="$PROJECT_DIR$/src/Main/Control.cpp" />
         <option value="$PROJECT_DIR$/src/Main/Controller.h" />
         <option value="$PROJECT_DIR$/src/Main/Controller.cpp" />
-        <option value="$PROJECT_DIR$/lib/Serial/WSerial.cpp" />
+        <option value="$PROJECT_DIR$/src/Listeners/CommandListener.cpp" />
       </list>
     </option>
   </component>
@@ -96,10 +103,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="y" value="28" />
+    <option name="width" value="1920" />
+    <option name="height" value="1052" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -158,56 +164,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="control" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="control" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="control" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Serial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -219,7 +175,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/platformio.ini" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -234,8 +190,102 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.PLATFORMIO_BUILD">
+    <configuration default="true" type="CLion_Remote" factoryName="GDB Remote Debug" remoteCommand="" symbolFile="" sysroot="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="control" TARGET_NAME="control" CONFIG_NAME="Debug">
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <method />
+    </configuration>
+    <configuration default="true" type="FirefoxRemoteDebugType" factoryName="Firefox Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeWebKit" factoryName="NW.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="platformio" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ReactNative" factoryName="React Native">
+      <node-interpreter value="project" />
+      <platform value="ANDROID" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="platformio" />
+      <method />
+    </configuration>
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -246,6 +296,79 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="platformio" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="platformio" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="platformio" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="platformio" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
@@ -309,26 +432,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1435919971910</updated>
-      <workItem from="1499527646001" duration="874000" />
+      <workItem from="1500343574026" duration="4040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="874000" />
+    <option name="totallyTimeSpent" value="4040000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Serial Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25295383" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Code comment" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18162394" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -363,31 +488,186 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Listeners/Command.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.platformio/packages/framework-arduinoavr/cores/arduino/Arduino.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="93" column="17" lean-forward="false" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
+          <folding>
+            <marker date="1488556914000" expanded="true" signature="0:841" ph="/.../" />
+            <marker date="1488556914000" expanded="false" signature="889:1053" ph="..." />
+            <marker date="1488556914000" expanded="false" signature="1733:1826" ph="..." />
+            <marker date="1488556914000" expanded="false" signature="1919:2070" ph="..." />
+            <marker date="1488556914000" expanded="false" signature="2380:2398" ph="..." />
+            <marker date="1488556914000" expanded="false" signature="6124:6269" ph="..." />
+            <marker date="1488556914000" expanded="false" signature="6707:6790" ph="..." />
+            <marker date="1488556914000" expanded="false" signature="6846:6907" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Listeners/CommandPool.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Listeners/CommandPool.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Watchdog/State.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <marker date="1500345472503" expanded="true" signature="82:621" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Configurations/Config.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1500345105368" expanded="true" signature="0:126" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Watchdog/Watchdog.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="47" column="78" lean-forward="true" selection-start-line="47" selection-start-column="78" selection-end-line="47" selection-end-column="78" />
+          <folding>
+            <marker date="1500347005468" expanded="true" signature="0:179" ph="/**...*/" />
+            <marker date="1500347005468" expanded="false" signature="245:316" ph="..." />
+            <marker date="1500347005468" expanded="true" signature="333:1226" ph="{...}" />
+            <marker date="1500347005468" expanded="true" signature="347:426" ph="/**...*/" />
+            <marker date="1500347005468" expanded="true" signature="450:536" ph="/**...*/" />
+            <marker date="1500347005468" expanded="true" signature="560:678" ph="/**...*/" />
+            <marker date="1500347005468" expanded="true" signature="708:918" ph="/**...*/" />
+            <marker date="1500347005468" expanded="true" signature="941:1069" ph="/**...*/" />
+            <marker date="1500347005468" expanded="true" signature="1108:1198" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Watchdog/Watchdog.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <marker date="1500347005697" expanded="true" signature="46:593" ph="{...}" />
+            <marker date="1500347005697" expanded="true" signature="162:386" ph="/.../" />
+            <marker date="1500347005697" expanded="true" signature="618:638" ph="{...}" />
+            <marker date="1500347005697" expanded="true" signature="662:902" ph="{...}" />
+            <marker date="1500347005697" expanded="true" signature="933:978" ph="{...}" />
+            <marker date="1500347005697" expanded="true" signature="1018:1053" ph="{...}" />
+            <marker date="1500347005697" expanded="true" signature="1085:1118" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Control.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <marker date="1500347005765" expanded="true" signature="0:165" ph="/**...*/" />
+            <marker date="1500347005765" expanded="true" signature="177:272" ph="..." />
+            <marker date="1500347005765" expanded="true" signature="776:851" ph="/**...*/" />
+            <marker date="1500347005765" expanded="true" signature="878:1033" ph="{...}" />
+            <marker date="1500347005765" expanded="true" signature="1036:1172" ph="/**...*/" />
+            <marker date="1500347005765" expanded="true" signature="1188:1209" ph="{...}" />
+            <marker date="1500347005765" expanded="true" signature="1211:1345" ph="/**...*/" />
+            <marker date="1500347005765" expanded="true" signature="1358:1377" ph="{...}" />
+            <marker date="1500347005765" expanded="true" signature="1380:1479" ph="/**...*/" />
+            <marker date="1500347005765" expanded="true" signature="1493:1990" ph="{...}" />
+            <marker date="1500347005765" expanded="true" signature="1994:2122" ph="/**...*/" />
+            <marker date="1500347005765" expanded="true" signature="2135:2182" ph="{...}" />
+            <marker date="1500347005765" expanded="true" signature="2185:2246" ph="/**...*/" />
+            <marker date="1500347005765" expanded="true" signature="2261:2350" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Controller.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="-954">
+          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
           <folding>
-            <element signature="e#221#248#0" expanded="true" />
+            <marker date="1500347437544" expanded="true" signature="0:152" ph="/**...*/" />
+            <marker date="1500347437544" expanded="false" signature="230:468" ph="..." />
+            <marker date="1500347437544" expanded="true" signature="488:2583" ph="{...}" />
+            <marker date="1500347437544" expanded="true" signature="787:954" ph="/**...*/" />
+            <marker date="1500347437544" expanded="true" signature="990:1145" ph="/**...*/" />
+            <marker date="1500347437544" expanded="true" signature="1176:1321" ph="/**...*/" />
+            <marker date="1500347437544" expanded="true" signature="1352:1507" ph="/**...*/" />
+            <marker date="1500347437544" expanded="true" signature="1549:1735" ph="/**...*/" />
+            <marker date="1500347437544" expanded="true" signature="1826:1932" ph="/**...*/" />
+            <marker date="1500347437544" expanded="true" signature="1957:2087" ph="/**...*/" />
+            <marker date="1500347437544" expanded="true" signature="2112:2272" ph="/**...*/" />
+            <marker date="1500347437544" expanded="true" signature="2298:2411" ph="/**...*/" />
+            <marker date="1500347437544" expanded="true" signature="2435:2564" ph="/**...*/" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Controller.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="1638">
+          <caret line="91" column="1" lean-forward="true" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1500347437607" expanded="true" signature="194:253" ph="{...}" />
+            <marker date="1500347437607" expanded="true" signature="281:305" ph="{...}" />
+            <marker date="1500347437607" expanded="true" signature="333:336" ph="{...}" />
+            <marker date="1500347437607" expanded="true" signature="375:458" ph="{...}" />
+            <marker date="1500347437607" expanded="true" signature="492:534" ph="{...}" />
+            <marker date="1500347437607" expanded="true" signature="498:532" ph="/.../" />
+            <marker date="1500347437607" expanded="true" signature="568:610" ph="{...}" />
+            <marker date="1500347437607" expanded="true" signature="574:608" ph="/.../" />
+            <marker date="1500347437607" expanded="true" signature="648:694" ph="{...}" />
+            <marker date="1500347437607" expanded="true" signature="654:692" ph="/.../" />
+            <marker date="1500347437607" expanded="true" signature="723:1539" ph="{...}" />
+            <marker date="1500347437607" expanded="true" signature="1566:1933" ph="{...}" />
+            <marker date="1500347437607" expanded="true" signature="1959:2024" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Serial/WSerial.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Listeners/CommandListener.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="510">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <marker date="1500344523752" expanded="false" signature="79:146" ph="..." />
+            <marker date="1500344523752" expanded="true" signature="232:894" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Listeners/CommandListener.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1050">
+          <caret line="57" column="50" lean-forward="true" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
