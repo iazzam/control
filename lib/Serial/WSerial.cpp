@@ -4,22 +4,22 @@ void WSerial::begin(const long bitRate){
     Serial.begin(bitRate);
 }
 
-WSerial &operator<<(WSerial &serial, const String &val) {
+WSerial &operator<<(WSerial &serial, const String val) {
     Serial.print(val);
     return serial;
 }
 
-WSerial &operator<<(WSerial &serial, const int &val) {
+WSerial &operator<<(WSerial &serial, const int val) {
     Serial.print(val);
     return serial;
 }
 
-WSerial &operator<<(WSerial &serial, const double &val) {
+WSerial &operator<<(WSerial &serial, const double val) {
     Serial.print(val);
     return serial;
 }
 
-WSerial &operator<<(WSerial &serial, const float &val) {
+WSerial &operator<<(WSerial &serial, const float val) {
     Serial.print(val);
     return serial;
 }

@@ -8,15 +8,12 @@
 #define CONTROL_POD_CONTROLLER_H
 
 #include <Arduino.h>
-#include <ArduinoJson.h>
 #include <Configurations/Config.h>
 #include <WSerial.h>
 #include <Watchdog/State.h>
-#include <Timer/TimerPool.h>
 #include <Shared/JSONEncoder.h>
 #include <Listeners/CommandListener.h>
-#include <Gyro.h>
-
+#include <Subsystems/MagWheels/MagWheels.h>
 
 class Controller {
     // Field for State object
@@ -32,8 +29,19 @@ class Controller {
 
     // command listener
     CommandListener *listener;
+    
+    // configuration file
+    Config *config;
+
+    // sybsystems
+    MagWheels *wheels;
+
 
     int heartBeatMiss = 0;        /*!< Number of heartbeat misses */
+
+    //DriveTrain1 drive{serial, s};
+
+    //MagWheels mag{serial, s};
 
 
     /*!
@@ -65,7 +73,7 @@ public:
      * data flow rate of Serial connection
      * @param band_rate bit rate of Serial connection
      */
-    Controller(State *s, void(*reset)(bool), JSONEncoder *encoder, WSerial *serial);
+    Controller(State *s, void(*reset)(bool), JSONEncoder *encoder, WSerial *serial, Config *config);
 
     /*!
      * Destructor deletes all the subsystems on the pod when Control
@@ -97,6 +105,14 @@ public:
      * components and stop the pod
      */
     void stop();
+
+    void useCurrentMode();
+
+    void useCurrentFuncState();
+
+    void useCurrentConnection();
+
+    void handleRestart();
 };
 
 

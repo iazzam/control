@@ -12,19 +12,19 @@ class WSerial{
     String readString();
     String readStringUntil(char terminator);
 
-    friend WSerial &operator<<(WSerial& serial, const String &val);
-    friend WSerial &operator<<(WSerial& serial, const int &val);
-    friend WSerial &operator<<(WSerial& serial, const double &val);
-    friend WSerial &operator<<(WSerial& serial, const float &val);
+    friend WSerial &operator<<(WSerial& serial, const String val);
+    friend WSerial &operator<<(WSerial& serial, const int val);
+    friend WSerial &operator<<(WSerial& serial, const double val);
+    friend WSerial &operator<<(WSerial& serial, const float val);
 
 public:
     void begin(const long bitRate);
 };
 
-WSerial &operator<<(WSerial& serial, const String &val);
-WSerial &operator<<(WSerial& serial, const int &val);
-WSerial &operator<<(WSerial& serial, const double &val);
-WSerial &operator<<(WSerial& serial, const float &val);
+WSerial &operator<<(WSerial& serial, const String val);
+WSerial &operator<<(WSerial& serial, const int val);
+WSerial &operator<<(WSerial& serial, const double val);
+WSerial &operator<<(WSerial& serial, const float val);
 
 
 

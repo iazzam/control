@@ -8,15 +8,15 @@
 #define LEV_LEV_H
 
 #include "Watchdog/State.h"
-#include <Arduino.h>
 #include <ArduinoJson.h>
+#include <Subsystems/Subsystem.h>
 
-class BallValve{
-    private:
-    	uint8_t relayA, relayB;
-
+class BallValve : Subsystem{
     public:
+        BallValve(State* state, WSerial* serial);
+
         void setup(uint8_t relayA, uint8_t relayB);
+
         void control(bool state);
 };
 

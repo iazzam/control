@@ -3,19 +3,19 @@
 
 
 #include <Arduino.h>
-#include <JSONEncoder.h>
-#include <StandardCplusplus.h>
+#include <Shared/JSONEncoder.h>
 
 class JSONEncoder;
 class WSerial;
 class State;
 class String;
+class Config;
 
 class CommandListener {
     State *s;
     const JSONEncoder *dh;
     WSerial *serial;
-
+    Config *config;
 
     // Fields for Serial Commands reading
     const uint8_t maxChar = 30;       /*!< Maximum length of commands allowed */
@@ -30,7 +30,7 @@ class CommandListener {
     void readCommand();
     void parseCommand(const String &command);
 public:
-    CommandListener(State *s, const JSONEncoder *dh, WSerial *serial);
+    CommandListener(State *s, const JSONEncoder *dh, WSerial *serial, Config *config);
     ~CommandListener();
     void listen();
 };

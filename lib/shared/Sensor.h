@@ -2,8 +2,8 @@
 #define CONTROL_SENSOR_H
 
 #include <WSerial.h>
-#include <JSONEncoder.h>
 #include <Arduino.h>
+#include <JSONEncoder.h>
 
 class Sensor{
     JSONEncoder dh;

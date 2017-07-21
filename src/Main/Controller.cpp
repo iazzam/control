@@ -1,8 +1,9 @@
 #include "Controller.h"
 
-Controller::Controller(State *s, void(*resetBoard)(bool), JSONEncoder *encoder, WSerial *serial)
-        : s{s}, resetBoard{resetBoard}, encoder{encoder}, serial{serial}{
-    listener = new CommandListener{s, encoder, serial};
+Controller::Controller(State *s, void(*resetBoard)(bool), 
+        JSONEncoder *encoder, WSerial *serial, Config *config)
+        : s{s}, resetBoard{resetBoard}, encoder{encoder}, serial{serial}, config{config}{
+    listener = new CommandListener{s, encoder, serial, config};
 }
 
 
@@ -12,86 +13,104 @@ Controller::~Controller(){
 
 
 void Controller::setup() {
+    wheels = new MagWheels{s, serial};
 }
 
 void Controller::emergencyProtocol() {
-    *serial << encoder->encodeMessage("Pod in Emergency") << endl;
-
     stop();
 }
 
 void Controller::handleManual() {
-    /*
-     * Manual Code here
-     */
+    wheels->control(s->speedMag);
 }
 
 void Controller::handleScript() {
+    *serial << "SS" << endl;
     /*
      * Script Code here
      */
 }
 
 void Controller::handleAutonomous() {
+    *serial << "AA" << endl;
     /*
      * Autonomous Code here
      */
 }
 
-void Controller::control() {
-    listener->listen();
-
-    // do not do anything unless you are connected;
-    if (!s->connect) return;
-
-    // emergency always has the most priority
-    if (s->emergency){
-        emergencyProtocol();
-        return;
-    }
-
-
-    // restart the pod if there is such a command
-    if (s->restartSaved){
-        s->restartSaved = false;
+void Controller::handleRestart(){
+    if (s->currentRestart == State::RESTARTS){
         resetBoard(true);
-        return;
-    } else if (s->restartUnsaved){
-        s->restartUnsaved = false;
+    } else if (s->currentRestart == State::RESTARTUS){
         resetBoard(false);
-        return;
-    }
-
-    // if pod is stopped call the stop procedure
-    if (s->stopped) {
-        stop();
-        return;
-    }
-
-    // choose appropriate mode for running
-    if (s->manual){
-        handleManual();
-    } else if (s->script){
-        handleScript();
-    } else if (s->autonomous){
-        handleAutonomous();
     }
 }
 
-void Controller::check() {
-    // do not do anything unless you are connected or pod is stopped
-    if (!s->connect || s->stopped) return;
+void Controller::useCurrentConnection() {
+    if (s->currentConnection == State::CONNECTED){
+        if (s->currentRestart != State::NONE)
+            handleRestart();
+        else
+            useCurrentFuncState();
+    }
+}
 
+void Controller::useCurrentFuncState() {
+    if (s->currentFuncState == State::EMERGENCY){
+        emergencyProtocol();
+    } else if (s->currentFuncState == State::STOP){
+        stop();
+    } else if (s->currentFuncState == State::MOVE){
+        useCurrentMode();
+    }
+}
+
+void Controller::useCurrentMode(){
+    if (s->currentMode == State::MANUAL) handleManual();
+    else if (s->currentMode == State::AUTO) handleAutonomous();
+    else if (s->currentMode == State::SCRIPT) handleScript();
+}
+
+void Controller::control() {
+    listener->listen();
+
+    // check of the initial connection with the pi
+    if (s->connectionChanged) { s->changeConnection(); }
+
+    // check for restart and adjust based on that
+    if (s->restartChanged) { s->changeRestart() ; }
+    // change the functional state of the pod if there is any change
+    else if (s->functionalStateChanged){ s->changeFuncState(); }
+    // change the mode if there is any change
+    else if (s->modeChanged){ s->changeMode(); }
+
+
+    useCurrentConnection();
+}
+
+void Controller::check() {
+    //return;
+
+
+    if (s->currentConnection == State::DISCONNECTED
+            || s->currentFuncState == State::STOP)
+        return;
+
+    return;
+    /*
     if (s->piCheck){
         heartBeatMiss = 0;
         s->piCheck = false;
     } else if (heartBeatMiss >= 2){
         *serial << encoder->encodeMessage("Check missed stopping the pod") << endl;
-        s->stopped = true;
+        s->stop = true;
     } else ++heartBeatMiss;
+     */
 }
 
 void Controller::stop() {
-    *serial << encoder->encodeMessage("Pod Stopped") << endl;
+    /*
+     * Stop code here
+     */
 }
 

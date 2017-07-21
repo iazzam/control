@@ -4,15 +4,13 @@
 
 #include <Subsystems/ECBrake/ECBrake.h>
 
+ECBrake::ECBrake(State* state, WSerial* serial)
+        :Subsystem(state, serial) { }
+
 void ECBrake::setup(uint8_t relay) {
-    this->relay = relay;
-    pinMode(relay,OUTPUT);
+    add(relay);
 }
 
 void ECBrake::control(bool state) {
-    if (state) {
-        digitalWrite(relay, HIGH);
-    } else{
-        digitalWrite(relay, LOW);
-    }
+    write(state);
 }

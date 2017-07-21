@@ -20,7 +20,7 @@ public:
      * @param counter adds another key for heartbeat
      * @return the JSON String
      */
-    String encodeSensor(const String &name, const float *sensorData,
+    String encodeSensor(const String name, const float *sensorData,
                         const int numData, const int counter=-1) const ;
 
 
@@ -29,21 +29,15 @@ public:
     * @param command_name is the name of command
     * @return the JSON String
     */
-    String encodeCommand(const String &commandName) const;
+    String encodeCommand(const String commandName) const;
 
-    /*!
-     * Creates a JSON String from the status provided
-     * @param statusName is the name of the status
-     * @return the JSON String
-     */
-    String encodeStatus(const String &statusName) const;
 
     /*!
      * Creates a JSON String from the message provided
      * @param message is the name of the message
      * @return the JSON String
      */
-    String encodeMessage(const String &message) const;
+    String encodeMessage(const String message) const;
 };
 
 #endif

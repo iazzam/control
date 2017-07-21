@@ -11,7 +11,7 @@
 #include "SparkfunIMU.h"
 #include <Sensor.h>
 
-class Accel : Sensor{
+class Accel : public Sensor{
     SparkfunIMU &imu;
 
     enum Coordinates{

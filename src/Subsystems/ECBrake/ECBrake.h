@@ -5,15 +5,15 @@
 #ifndef ECBRAKE_ECBRAKE_H
 #define ECBRAKE_ECBRAKE_H
 
-#include "Configurations/State.h"
+#include "Watchdog/State.h"
 #include <Arduino.h>
 #include <ArduinoJson.h>
+#include <Subsystems/Subsystem.h>
 
-class ECBrake{
-private:
-    uint8_t relay;
-
+class ECBrake : Subsystem{
 public:
+    ECBrake(State* state, WSerial* serial);
+
     void setup(uint8_t relay);
     void control(bool state);
 };

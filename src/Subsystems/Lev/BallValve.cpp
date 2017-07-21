@@ -5,20 +5,21 @@
 
 #include "BallValve.h"
 
-void BallValve::setup(uint8_t relayA, uint8_t relayB) {
-    this->relayA = relayA;
-    this->relayB = relayB;
+BallValve::BallValve(State* state, WSerial* serial)
+        :Subsystem(state, serial) { }
 
-    pinMode(relayA,OUTPUT);
-    pinMode(relayB,OUTPUT);
+void BallValve::setup(uint8_t relayA, uint8_t relayB) {
+    add(relayA);
+    add(relayB);
 }
 
 void BallValve::control(bool state) {
     if (state) {
-        digitalWrite(relayA, LOW);
-        digitalWrite(relayB, HIGH);
+        write(0, LOW);
+        write(1, HIGH);
     } else{
-        digitalWrite(relayA, HIGH);
-        digitalWrite(relayB, LOW);
+        write(0, HIGH);
+        write(1, LOW);
     }
 }
+

@@ -12,7 +12,6 @@
 #include <vector>
 #include "Sensor.h"
 
-
 class SensorPool {
     std::vector<Sensor*> sensors;
 
@@ -23,34 +22,17 @@ public:
     void read();
 
     /*!
-     * Allows for sensors to be added to the pool
+     * Allows for a sensors to be added to the pool
      * @param s is the sensor being added
      */
     void add(Sensor *s);
 
     /*!
-     * Gives access to the sensor being stored in the pool. If the sensor is not found,
-     * the first sensor in the pool is returned. If no sensor is in the pool, an exception
-     * is thrown
-     * @param name is the name of sensor
-     * @return the sensor with the name specified
-     */
-    Sensor &get(const String name);
-
-    /*!
-     * Gives access to the sensor being stored in the pool. If the index is not found,
-     * an exception is thrown
+     * Gives access to a sensor in the pool
      * @param index is the index of the sensor
-     * @return the sensor at the index specified
+     * @return the element
      */
-    Sensor &get(const int index);
-
-    /*!
-     * Finds the index based on the name of the sensor. If sensor is not found, -1 is returned
-     * @param name is the name of the sensor
-     * @return the index of the sensor
-     */
-    int find(const String name);
+    Sensor &operator[](const uint8_t index);
 
     /*!
      * Destroys the pool and frees up the memory

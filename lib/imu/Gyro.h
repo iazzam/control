@@ -8,7 +8,7 @@
 #define SENSORS_GYRO_H
 
 
-#include "../shared/Sensor.h"
+#include <Sensor.h>
 #include "SparkfunIMU.h"
 
 class Gyro : public Sensor {

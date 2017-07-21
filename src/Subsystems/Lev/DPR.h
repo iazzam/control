@@ -2,14 +2,14 @@
 #define _DPR_H
 
 
-#include <Arduino.h>
+#include <Subsystems/Subsystem.h>
 
-class LevDPR {
-private:
-    uint8_t relayA;
-
+class DPR : Subsystem{
 public:
+    DPR(State* state, WSerial* serial);
+
     void setup(uint8_t relayA);
+
     void control(bool state);
 };
 

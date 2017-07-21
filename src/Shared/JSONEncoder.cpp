@@ -1,7 +1,8 @@
+#include <MemoryFree.h>
 #include "JSONEncoder.h"
 
 
-String JSONEncoder::encodeSensor(const String &name, const float *sensorData,
+String JSONEncoder::encodeSensor(const String name, const float *sensorData,
                                  const int numData, const int counter) const{
     const size_t BUFFER_SIZE = JSON_OBJECT_SIZE(4) + JSON_ARRAY_SIZE(numData) + 70;
 
@@ -24,24 +25,28 @@ String JSONEncoder::encodeSensor(const String &name, const float *sensorData,
     return jsonString;
 }
 
-String encodeOneVal(const String &title, const String &name) {
-    const size_t BUFFER_SIZE = JSON_ARRAY_SIZE(2) + 10;
+String encodeOneVal(const bool command, const String &name) {
+    const size_t BUFFER_SIZE = JSON_OBJECT_SIZE(2) + 10;
 
-    StaticJsonBuffer<BUFFER_SIZE> buffer;
+    DynamicJsonBuffer buffer(BUFFER_SIZE);
 
     JsonObject& object = buffer.createObject();
     object["time"] = millis();
-    object[title] = name;
+
+    if (command)
+        object["received"] = name;
+    else
+        object["message"] = name;
 
     String jsonString;
     object.printTo(jsonString);
     return jsonString;
 }
 
-String JSONEncoder::encodeCommand(const String &commandName) const{
-    return encodeOneVal("command", commandName);
+String JSONEncoder::encodeCommand(const String commandName) const{
+    return encodeOneVal(true, commandName);
 }
 
-String JSONEncoder::encodeMessage(const String &message) const{
-    return encodeOneVal("message", message);
+String JSONEncoder::encodeMessage(const String message) const{
+    return encodeOneVal(false, message);
 }

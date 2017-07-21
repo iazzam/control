@@ -1,11 +1,9 @@
-#include <Configurations/Config.h>
 #include <Watchdog/State.h>
-#include <Shared/JSONEncoder.h>
-#include <WSerial.h>
 #include "CommandListener.h"
+#include <Configurations/Config.h>
 
-CommandListener::CommandListener(State *s, const JSONEncoder *dh, WSerial *serial)
-        : s{s}, dh{dh}, serial{serial} {
+CommandListener::CommandListener(State *s, const JSONEncoder *dh, WSerial *serial, Config *config)
+        : s{s}, dh{dh}, serial{serial}, config{config}{
     receivedChars = new char[maxChar];
 }
 
@@ -55,77 +53,98 @@ void CommandListener::readCommand() {
 }
 
 void CommandListener::parseCommand(const String &command) {
-    *serial << dh->encodeCommand(command) << endl;
-
     const int BUFFER_SIZE = JSON_OBJECT_SIZE(2) + JSON_ARRAY_SIZE(1) + 40;
     StaticJsonBuffer<BUFFER_SIZE> jsonBuffer;
     JsonObject &root = jsonBuffer.parseObject(command);
 
     if (root.success() && root.containsKey(F("cmd")) && root.containsKey(F("val"))){
         String name = root[F("cmd")];
-        uint8_t value = root[F("val")][0];
+        int value = root[F("val")][0];
 
-        if (name != SPEED && (value < 0 || value > 1)) return;
+        // no matter what always listen for connection
+        if (name == config->CONNECT){
+            s->connectionChanged = true;
+            s->connect = (bool)value;
+        }
 
-        if (name == EMERGENCY){
-            *serial << dh->encodeMessage("Entering emergency mode") << endl;
+
+        if (s->currentConnection == s->DISCONNECTED) return;
+
+
+        if ((name != config->SPEED_MAG  && name != config->SPEED_DRIVE) &&
+                (value < 0 || value > 1)) return;
+
+        if (name != "check")
+            *serial << dh->encodeCommand(command) << endl;
+
+        if (name == config->EMERGENCY){
+            s->functionalStateChanged = true;
             s->emergency = (bool)value;
         }
-        else if (name == RESTARTS){
-            *serial << dh->encodeMessage("Restart with state saved will be initiated") << endl;
+        else if (name == config->RESTARTS){
+            s->restartChanged = true;
             s->restartUnsaved = false;
             s->restartSaved = true;
         }
-        else if (name == RESTARTUS){
-            *serial << dh->encodeMessage("Restart with no state saved will be initiated") << endl;
+        else if (name == config->RESTARTUS){
+            s->restartChanged = true;
             s->restartSaved = false;
-            s->restartUnsaved = false;
+            s->restartUnsaved = true;
         }
-        else if (name == CONNECT){
-            *serial << dh->encodeMessage("Pi is connected to Arduino") << endl;
-            s->connect = (bool)value;
+        else if (name == config->PICHECK){
+            s->piCheck = true;
         }
-        else if (name == PICHECK)       s->piCheck = true;
-        else if (name == AUTONOMOUS){
-            *serial << dh->encodeMessage("Autonomous mode selected") << endl;
-            s->autonomous = (bool)value;
+        else if (name == config->AUTONOMOUS){
+            s->modeChanged = true;
+            s->autonomous = true;
             s->manual = false;
             s->script = false;
-        } else if (name == MANUAL){
-            *serial << dh->encodeMessage("Manual mode selected") << endl;
-            s->manual = (bool)value;
+        } else if (name == config->MANUAL){
+            s->modeChanged = true;
+            s->manual = true;
             s->script = false;
             s->autonomous = false;
-        } else if (name == SCRIPT) {
-            *serial << dh->encodeMessage("Script mode selected") << endl;
-            s->script = (bool) value;
+        } else if (name == config->SCRIPT) {
+            s->modeChanged = true;
+            s->script = true;
             s->manual = false;
             s->autonomous = false;
-        } else if (name == BRAKE){
-            *serial << dh->encodeMessage("Braking will be initiated") << endl;
+        } else if (name == config->BRAKE){
             s->brake = (bool)value;
         }
-        else if (name == STOP){
-            *serial << dh->encodeMessage("Pod Stop will be initiated") << endl;
-            s->stopped = (bool)value;
+        else if (name == config->STOP){
+            s->functionalStateChanged = true;
+            s->stop = (bool)value;
+            s->move = !s->stop;
         }
-        else if (name == SPEED){
-            *serial << dh->encodeMessage("Pod speed will be changed to " + value) << endl;
-            s->speed = value;
+        else if (name == config->SPEED_MAG){
+            s->speedMag = value;
+            *serial << s->speedMag << endl;
+            s->magSpeedChanged = true;
+        } else if (name == config->SPEED_DRIVE){
+            s->speedDrive = value;
+            *serial << s->speedDrive << endl;
+            s->driveSpeedChanged = true;
         }
-        else if (name == BALLValve){
+        else if (name == config->BALLValve){
             if (value)
-                *serial << dh->encodeMessage("Ball Valve state will be changed to on") << endl;
+                *serial << dh->encodeMessage("Ball Valve state changed to on") << endl;
             else
                 *serial << dh->encodeMessage("Ball Valve state will be changed to off") << endl;
             s->ballValve = (bool)value;
         }
-        else if (name == DPR){
+        else if (name == config->DPR){
             if (value)
                 *serial << dh->encodeMessage("DPR state will be changed to on") << endl;
             else
                 *serial << dh->encodeMessage("DPR state will be changed to off") << endl;
             s->dpr = (bool)value;
+        } else if (name == config->EMERGENCY_DRIVE){
+            s->emergencyDrive = (bool)value;
+            s->eDriveChanged = true;
+        } else if (name == config->EMERGENCY_DROP){
+            s->emergencyDrop = (bool)value;
+            s->eDropChanged = true;
         }
     }
 }
