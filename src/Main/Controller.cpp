@@ -74,6 +74,11 @@ void Controller::useCurrentMode(){
 void Controller::control() {
     listener->listen();
 
+    wheels->control(s->speedMag);
+
+    /*!
+     * 
+     */
     // check of the initial connection with the pi
     if (s->connectionChanged) { s->changeConnection(); }
 
