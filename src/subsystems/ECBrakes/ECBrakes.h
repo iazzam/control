@@ -1,5 +1,5 @@
 /*!
- * @author Deep Dhillon Sid Mishra
+ * @author Sid Mishra
  * @date July 08, 2017
  * @brief This library is used to control EC Brakes
  */

@@ -1,3 +1,9 @@
+/*!
+ * @authors Deep Dhillon Kelvin Tez
+ * @date July 05, 2017
+ * @brief Library for color sensor to sense the color of the tape provided
+ */
+
 #ifndef COLOR_SENSOR_H
 #define COLOR_SENSOR_H
 

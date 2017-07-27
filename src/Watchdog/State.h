@@ -1,3 +1,9 @@
+/*!
+ * @author Deep Dhillon
+ * @date July 20, 2017
+ * @brief This class contains the state of the pod
+ */
+
 #ifndef CONTROL_STATE_H
 #define CONTROL_STATE_H
 
