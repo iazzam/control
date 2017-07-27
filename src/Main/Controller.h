@@ -13,8 +13,6 @@
 #include <subsystems/MagWheels/MagWheels.h>
 #include <subsystems/DriveTrain/DriveTrain.h>
 #include <subsystems/ECBrakes/ECBrakes.h>
-#include <sensors/temp/IRTemp.h>
-#include <sensors/memory/SRAM.h>
 
 class Controller{
 	State &state;                   // state of the pod
