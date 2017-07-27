@@ -1,41 +1,72 @@
 #include "WSerial.h"
+#include <HardwareSerial.h>
+#include <USBAPI.h>
 
-void WSerial::begin(const long bitRate){
-    Serial.begin(bitRate);
-}
+namespace wlp{
+	extern WSerial serial;
 
-WSerial &operator<<(WSerial &serial, const String val) {
-    Serial.print(val);
-    return serial;
-}
+	WSerial& endl(WSerial& serial){
+		Serial.println();
+		return serial;
+	}
 
-WSerial &operator<<(WSerial &serial, const int val) {
-    Serial.print(val);
-    return serial;
-}
+	int WSerial::available(){
+		return Serial.available();
+	}
 
-WSerial &operator<<(WSerial &serial, const double val) {
-    Serial.print(val);
-    return serial;
-}
+	void WSerial::begin(const long bitRate){
+		delay(200);
+		Serial.begin(bitRate);
+		Serial.end();
+		delay(100);
+		Serial.begin(bitRate);
+	}
 
-WSerial &operator<<(WSerial &serial, const float val) {
-    Serial.print(val);
-    return serial;
-}
+	WSerial &operator<<(WSerial &serial, const String &val){
+		Serial.print(val);
+		return serial;
+	}
 
-size_t WSerial::readBytes(char *buffer, size_t length) {
-    return Serial.readBytes(buffer, length);
-}
+	WSerial& operator<<(WSerial& serial, const char* val){
+		Serial.print(val);
+		return serial;
+	}
 
-size_t WSerial::readBytesUntil(char terminator, char *buffer, size_t length) {
-    return Serial.readBytesUntil(terminator, buffer, length);
-}
+	WSerial &operator<<(WSerial &serial, const int val){
+		Serial.print(val);
+		return serial;
+	}
 
-String WSerial::readString() {
-    return Serial.readString();
-}
+	WSerial &operator<<(WSerial &serial, const char val){
+		Serial.print(val);
+		return serial;
+	}
 
-String WSerial::readStringUntil(char terminator) {
-    return Serial.readStringUntil(terminator);
-}
+	WSerial &operator<<(WSerial &serial, const double val){
+		Serial.print(val);
+		return serial;
+	}
+
+	WSerial &operator<<(WSerial &serial, const float val){
+		Serial.print(val);
+		return serial;
+	}
+
+
+	WSerial& operator<<(WSerial& serial, WSerial& (&func)(WSerial&)){
+		endl(serial);
+		return serial;
+	}
+
+	char WSerial::readChar(){
+		return Serial.read();
+	}
+
+	String WSerial::readString(){
+		return Serial.readString();
+	}
+
+	int WSerial::readInt(){
+		return Serial.parseInt();
+	}
+};

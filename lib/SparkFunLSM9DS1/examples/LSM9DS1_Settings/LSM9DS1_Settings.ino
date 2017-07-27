@@ -56,7 +56,7 @@ unsigned int gyroReadCounter = 0;
 unsigned int magReadCounter = 0;
 unsigned int tempReadCounter = 0;
 
-// Global variables to print to serial monitor at a steady rate
+// Global variables to print to Serial monitor at a steady rate
 unsigned long lastPrint = 0;
 const unsigned int PRINT_RATE = 500;
 

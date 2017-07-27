@@ -10,7 +10,7 @@
 void setup() {
   Serial.begin(9600);
   while (!Serial) {
-    // wait serial port initialization
+    // wait Serial port initialization
   }
 
   // Memory pool for JSON object tree.

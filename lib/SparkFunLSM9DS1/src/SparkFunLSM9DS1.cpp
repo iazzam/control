@@ -327,7 +327,7 @@ void LSM9DS1::initAccel()
 }
 
 // This is a function that uses the FIFO to accumulate sample of accelerometer and gyro data, average
-// them, scales them to  gs and deg/s, respectively, and then passes the biases to the main sketch
+// them, scales them to  gs and deg/s, respectively, and then passes the biases to the Main sketch
 // for subtraction from all subsequent data. There are no gyro and accelerometer bias registers to store
 // the data as there are in the ADXL345, a precursor to the LSM9DS0, or the MPU-9150, so we have to
 // subtract the biases ourselves. This results in a more accurate measurement in general and can

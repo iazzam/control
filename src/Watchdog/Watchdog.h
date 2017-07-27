@@ -8,8 +8,6 @@
 #ifndef SENSORS_WATCHDOG_H
 #define SENSORS_WATCHDOG_H
 
-#include <avr/wdt.h>
-#include <Arduino.h>
 #include <EEPROM.h>
 #include "State.h"
 

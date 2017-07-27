@@ -16,7 +16,7 @@ EthernetClient client;
 
 const char* server = "jsonplaceholder.typicode.com";  // server's address
 const char* resource = "/users/1";                    // http resource
-const unsigned long BAUD_RATE = 9600;                 // serial connection speed
+const unsigned long BAUD_RATE = 9600;                 // Serial connection speed
 const unsigned long HTTP_TIMEOUT = 10000;  // max respone time from server
 const size_t MAX_CONTENT_SIZE = 512;       // max size of the HTTP response
 
@@ -50,7 +50,7 @@ void loop() {
 void initSerial() {
   Serial.begin(BAUD_RATE);
   while (!Serial) {
-    ;  // wait for serial port to initialize
+    ;  // wait for Serial port to initialize
   }
   Serial.println("Serial ready");
 }

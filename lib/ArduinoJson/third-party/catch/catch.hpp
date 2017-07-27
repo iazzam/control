@@ -9660,14 +9660,14 @@ namespace Catch {
 
             // *** Please Note ***:
             // - If you end up here looking at a compiler error because it's trying to register
-            // your custom reporter class be aware that the native reporter interface has changed
+            // your Custom reporter class be aware that the native reporter interface has changed
             // to IStreamingReporter. The "legacy" interface, IReporter, is still supported via
             // an adapter. Just use REGISTER_LEGACY_REPORTER to take advantage of the adapter.
             // However please consider updating to the new interface as the old one is now
             // deprecated and will probably be removed quite soon!
             // Please contact me via github if you have any questions at all about this.
             // In fact, ideally, please contact me anyway to let me know you've hit this - as I have
-            // no idea who is actually using custom reporters at all (possibly no-one!).
+            // no idea who is actually using Custom reporters at all (possibly no-one!).
             // The new interface is designed to minimise exposure to interface changes in the future.
             virtual IStreamingReporter* create( ReporterConfig const& config ) const {
                 return new T( config );
@@ -11213,8 +11213,8 @@ namespace Catch {
 
 #ifndef __OBJC__
 
-// Standard C/C++ main entry point
-int main (int argc, char * argv[]) {
+// Standard C/C++ Main entry point
+int Main (int argc, char * argv[]) {
 	int result = Catch::Session().run( argc, argv );
     return ( result < 0xff ? result : 0xff );
 }
@@ -11222,7 +11222,7 @@ int main (int argc, char * argv[]) {
 #else // __OBJC__
 
 // Objective-C entry point
-int main (int argc, char * const argv[]) {
+int Main (int argc, char * const argv[]) {
 #if !CATCH_ARC_ENABLED
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 #endif
