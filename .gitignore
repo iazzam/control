@@ -64,10 +64,5 @@ fabric.properties
 
 # End of https://www.gitignore.io/api/clion
 .pioenvs
-<<<<<<< HEAD
 .piolibdeps
-
 CMakeListsPrivate.txt
-=======
-.piolibdeps
->>>>>>> dd197ea542af491feee22ee181c08d724e4be70d

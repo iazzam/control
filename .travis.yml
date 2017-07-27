@@ -37,8 +37,7 @@
      - pip install -U platformio
 
  script:
-     - platformio run
-
+     - platformio ci --board=megaatmega2560
 
 #
 # Template #2: The project is intended to by used as a library with examples
