@@ -1,7 +1,7 @@
 // Copyright Benoit Blanchon 2014-2017
 // MIT License
 //
-// Arduino JSON library
+// Arduino Json library
 // https://bblanchon.github.io/ArduinoJson/
 // If you like this project, please add a star!
 
@@ -35,7 +35,7 @@ class List {
   // Returns true if the object is valid
   // Would return false in the following situation:
   // - the memory allocation failed (StaticJsonBuffer was too small)
-  // - the JSON parsing failed
+  // - the Json parsing failed
   bool success() const {
     return _buffer != NULL;
   }

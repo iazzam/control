@@ -36,12 +36,6 @@ This project is created using a library called `platformio`. In order for you to
 
 * Install Platformio based on your machine. Click on [**``install``**](http://docs.platformio.org/en/latest/installation.html)
   and follow the instructions.
-* Go to the project folder and using system terminal type `platformio init --ide clion --board megaatmega2560`. This `board` option
-    can be different based on what board you are using. Click on [`available boards`](http://docs.platformio.org/en/latest/platforms/atmelavr.html)
-    to learn more.
-* Every time you add a library or copy paste some files or change the structure, you have to repeat the above
-    step.
-
 * For writing code, you have two options:
     
 **Use PlatformIo IDE (Atom)**

@@ -4,7 +4,7 @@
 // Copyright Benoit Blanchon 2014-2017
 // MIT License
 //
-// Arduino JSON library
+// Arduino Json library
 // https://bblanchon.github.io/ArduinoJson/
 // If you like this project, please add a star!
 
@@ -108,8 +108,8 @@ bool skipResponseHeaders() {
   return ok;
 }
 
-// Parse the JSON from the input string and extract the interesting values
-// Here is the JSON we need to parse
+// Parse the Json from the input string and extract the interesting values
+// Here is the Json we need to parse
 // {
 //   "id": 1,
 //   "name": "Leanne Graham",
@@ -134,7 +134,7 @@ bool skipResponseHeaders() {
 //   }
 // }
 bool readReponseContent(struct UserData* userData) {
-  // Compute optimal size of the JSON buffer according to what we need to parse.
+  // Compute optimal size of the Json buffer according to what we need to parse.
   // See https://bblanchon.github.io/ArduinoJson/assistant/
   const size_t BUFFER_SIZE =
       JSON_OBJECT_SIZE(8)    // the root object has 8 elements
@@ -149,7 +149,7 @@ bool readReponseContent(struct UserData* userData) {
   JsonObject& root = jsonBuffer.parseObject(client);
 
   if (!root.success()) {
-    Serial.println("JSON parsing failed!");
+    Serial.println("Json parsing failed!");
     return false;
   }
 
@@ -163,7 +163,7 @@ bool readReponseContent(struct UserData* userData) {
   return true;
 }
 
-// Print the data extracted from the JSON
+// Print the data extracted from the Json
 void printUserData(const struct UserData* userData) {
   Serial.print("Name = ");
   Serial.println(userData->name);

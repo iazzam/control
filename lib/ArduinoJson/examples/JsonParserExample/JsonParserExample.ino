@@ -1,7 +1,7 @@
 // Copyright Benoit Blanchon 2014-2017
 // MIT License
 //
-// Arduino JSON library
+// Arduino Json library
 // https://bblanchon.github.io/ArduinoJson/
 // If you like this project, please add a star!
 
@@ -13,10 +13,10 @@ void setup() {
     // wait Serial port initialization
   }
 
-  // Memory pool for JSON object tree.
+  // Memory pool for Json object tree.
   //
   // Inside the brackets, 200 is the size of the pool in bytes,
-  // If the JSON object is more complex, you need to increase that value.
+  // If the Json object is more complex, you need to increase that value.
   // See https://bblanchon.github.io/ArduinoJson/assistant/
   StaticJsonBuffer<200> jsonBuffer;
 
@@ -25,7 +25,7 @@ void setup() {
   //
   // DynamicJsonBuffer  jsonBuffer(200);
 
-  // JSON input string.
+  // Json input string.
   //
   // It's better to use a char[] as shown here.
   // If you use a const char* or a String, ArduinoJson will

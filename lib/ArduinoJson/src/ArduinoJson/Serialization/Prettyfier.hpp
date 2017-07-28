@@ -1,7 +1,7 @@
 // Copyright Benoit Blanchon 2014-2017
 // MIT License
 //
-// Arduino JSON library
+// Arduino Json library
 // https://bblanchon.github.io/ArduinoJson/
 // If you like this project, please add a star!
 
@@ -12,7 +12,7 @@
 namespace ArduinoJson {
 namespace Internals {
 
-// Converts a compact JSON string into an indented one.
+// Converts a compact Json string into an indented one.
 template <typename Print>
 class Prettyfier {
  public:

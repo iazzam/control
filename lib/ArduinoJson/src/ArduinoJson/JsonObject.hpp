@@ -1,7 +1,7 @@
 // Copyright Benoit Blanchon 2014-2017
 // MIT License
 //
-// Arduino JSON library
+// Arduino Json library
 // https://bblanchon.github.io/ArduinoJson/
 // If you like this project, please add a star!
 
@@ -34,8 +34,8 @@ class JsonBuffer;
 //
 // The constructor is private, instances must be created via
 // JsonBuffer::createObject() or JsonBuffer::parseObject().
-// A JsonObject can be serialized to a JSON string via JsonObject::printTo().
-// It can also be deserialized from a JSON string via JsonBuffer::parseObject().
+// A JsonObject can be serialized to a Json string via JsonObject::printTo().
+// It can also be deserialized from a Json string via JsonBuffer::parseObject().
 class JsonObject : public Internals::JsonPrintable<JsonObject>,
                    public Internals::ReferenceType,
                    public Internals::List<JsonPair>,
@@ -282,7 +282,7 @@ class JsonObject : public Internals::JsonPrintable<JsonObject>,
 
   // Returns a reference an invalid JsonObject.
   // This object is meant to replace a NULL pointer.
-  // This is used when memory allocation or JSON parsing fail.
+  // This is used when memory allocation or Json parsing fail.
   static JsonObject& invalid() {
     static JsonObject instance(NULL);
     return instance;

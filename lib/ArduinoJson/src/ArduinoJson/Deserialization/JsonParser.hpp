@@ -1,7 +1,7 @@
 // Copyright Benoit Blanchon 2014-2017
 // MIT License
 //
-// Arduino JSON library
+// Arduino Json library
 // https://bblanchon.github.io/ArduinoJson/
 // If you like this project, please add a star!
 
@@ -15,7 +15,7 @@
 namespace ArduinoJson {
 namespace Internals {
 
-// Parse JSON string to create JsonArrays and JsonObjects
+// Parse Json string to create JsonArrays and JsonObjects
 // This internal class is not indended to be used directly.
 // Instead, use JsonBuffer.parseArray() or .parseObject()
 template <typename TReader, typename TWriter>

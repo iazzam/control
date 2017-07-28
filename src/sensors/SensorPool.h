@@ -36,6 +36,19 @@ public:
     Sensor &operator[](const uint8_t index);
 
     /*!
+     * Gives access to the actual read object rather than Sensor object
+     * @tparam T type of Object user wants
+     * @param index index of the sensor
+     * @return the element
+     */
+    template <typename T>
+        T &getSensor(int index){
+            Sensor *sensor = sensors[index];
+
+            return *static_cast<T*>(sensor);
+        }
+
+    /*!
      * Destroys the pool and frees up the memory
      */
     void destroy();

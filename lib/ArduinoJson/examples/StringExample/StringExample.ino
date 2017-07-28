@@ -1,7 +1,7 @@
 // Copyright Benoit Blanchon 2014-2017
 // MIT License
 //
-// Arduino JSON library
+// Arduino Json library
 // https://bblanchon.github.io/ArduinoJson/
 // If you like this project, please add a star!
 
@@ -17,7 +17,7 @@
 void setup() {
   DynamicJsonBuffer jsonBuffer;
 
-  // You can use a String as your JSON input.
+  // You can use a String as your Json input.
   // WARNING: the content of the String will be duplicated in the JsonBuffer.
   String input =
       "{\"sensor\":\"gps\",\"time\":1351824120,\"data\":[48.756080,2.302038]}";
@@ -53,7 +53,7 @@ void setup() {
     // ...
   }
 
-  // Lastly, you can print the resulting JSON to a String
+  // Lastly, you can print the resulting Json to a String
   String output;
   root.printTo(output);
 }

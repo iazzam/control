@@ -1,7 +1,7 @@
 // Copyright Benoit Blanchon 2014-2017
 // MIT License
 //
-// Arduino JSON library
+// Arduino Json library
 // https://bblanchon.github.io/ArduinoJson/
 // If you like this project, please add a star!
 
@@ -35,8 +35,8 @@ class JsonArraySubscript;
 //
 // The constructor is private, instances must be created via
 // JsonBuffer::createArray() or JsonBuffer::parseArray().
-// A JsonArray can be serialized to a JSON string via JsonArray::printTo().
-// It can also be deserialized from a JSON string via JsonBuffer::parseArray().
+// A JsonArray can be serialized to a Json string via JsonArray::printTo().
+// It can also be deserialized from a Json string via JsonBuffer::parseArray().
 class JsonArray : public Internals::JsonPrintable<JsonArray>,
                   public Internals::ReferenceType,
                   public Internals::List<JsonVariant>,
@@ -139,7 +139,7 @@ class JsonArray : public Internals::JsonPrintable<JsonArray>,
 
   // Returns a reference an invalid JsonArray.
   // This object is meant to replace a NULL pointer.
-  // This is used when memory allocation or JSON parsing fail.
+  // This is used when memory allocation or Json parsing fail.
   static JsonArray &invalid() {
     static JsonArray instance(NULL);
     return instance;

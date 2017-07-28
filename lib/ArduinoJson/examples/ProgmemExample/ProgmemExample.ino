@@ -1,7 +1,7 @@
 // Copyright Benoit Blanchon 2014-2017
 // MIT License
 //
-// Arduino JSON library
+// Arduino Json library
 // https://bblanchon.github.io/ArduinoJson/
 // If you like this project, please add a star!
 
@@ -18,7 +18,7 @@ void setup() {
 #ifdef PROGMEM
   DynamicJsonBuffer jsonBuffer;
 
-  // You can use a Flash String as your JSON input.
+  // You can use a Flash String as your Json input.
   // WARNING: the content of the Flash String will be duplicated in the
   // JsonBuffer.
   JsonObject& root =

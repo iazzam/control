@@ -1,7 +1,7 @@
 // Copyright Benoit Blanchon 2014-2017
 // MIT License
 //
-// Arduino JSON library
+// Arduino Json library
 // https://bblanchon.github.io/ArduinoJson/
 // If you like this project, please add a star!
 
@@ -32,7 +32,7 @@ namespace ArduinoJson {
 class JsonArray;
 class JsonObject;
 
-// A variant that can be a any value serializable to a JSON value.
+// A variant that can be a any value serializable to a Json value.
 //
 // It can be set to:
 // - a boolean
@@ -48,7 +48,7 @@ class JsonVariant : public JsonVariantBase<JsonVariant> {
   JsonVariant() : _type(Internals::JSON_UNDEFINED) {}
 
   // Create a JsonVariant containing a boolean value.
-  // It will be serialized as "true" or "false" in JSON.
+  // It will be serialized as "true" or "false" in Json.
   JsonVariant(bool value) {
     using namespace Internals;
     _type = JSON_BOOLEAN;

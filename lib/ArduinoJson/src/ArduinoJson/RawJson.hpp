@@ -1,7 +1,7 @@
 // Copyright Benoit Blanchon 2014-2017
 // MIT License
 //
-// Arduino JSON library
+// Arduino Json library
 // https://bblanchon.github.io/ArduinoJson/
 // If you like this project, please add a star!
 
@@ -9,7 +9,7 @@
 
 namespace ArduinoJson {
 
-// A special type of data that can be used to insert pregenerated JSON portions.
+// A special type of data that can be used to insert pregenerated Json portions.
 class RawJson {
  public:
   explicit RawJson(const char* str) : _str(str) {}

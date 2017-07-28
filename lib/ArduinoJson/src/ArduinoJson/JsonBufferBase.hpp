@@ -1,7 +1,7 @@
 // Copyright Benoit Blanchon 2014-2017
 // MIT License
 //
-// Arduino JSON library
+// Arduino Json library
 // https://bblanchon.github.io/ArduinoJson/
 // If you like this project, please add a star!
 
@@ -23,9 +23,9 @@ namespace ArduinoJson {
 template <typename TDerived>
 class JsonBufferBase : public JsonBuffer {
  public:
-  // Allocates and populate a JsonArray from a JSON string.
+  // Allocates and populate a JsonArray from a Json string.
   //
-  // The First argument is a pointer to the JSON string, the memory must be
+  // The First argument is a pointer to the Json string, the memory must be
   // writable
   // because the parser will insert null-terminators and replace escaped chars.
   //
@@ -61,9 +61,9 @@ class JsonBufferBase : public JsonBuffer {
     return Internals::makeParser(that(), json, nestingLimit).parseArray();
   }
 
-  // Allocates and populate a JsonObject from a JSON string.
+  // Allocates and populate a JsonObject from a Json string.
   //
-  // The First argument is a pointer to the JSON string, the memory must be
+  // The First argument is a pointer to the Json string, the memory must be
   // writable
   // because the parser will insert null-terminators and replace escaped chars.
   //

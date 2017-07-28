@@ -20,7 +20,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
   memstream json(data, size);
   JsonVariant variant = jsonBuffer.parse(json);
   if (variant.success()) {
-    variant.as<std::string>();  // <- serialize to JSON
+    variant.as<std::string>();  // <- serialize to Json
   }
   return 0;
 }

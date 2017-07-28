@@ -1,7 +1,7 @@
 // Copyright Benoit Blanchon 2014-2017
 // MIT License
 //
-// Arduino JSON library
+// Arduino Json library
 // https://bblanchon.github.io/ArduinoJson/
 // If you like this project, please add a star!
 
@@ -19,7 +19,7 @@
 namespace ArduinoJson {
 namespace Internals {
 
-// Writes the JSON tokens to a Print implementation
+// Writes the Json tokens to a Print implementation
 // This class is used by:
 // - JsonArray::writeTo()
 // - JsonObject::writeTo()
