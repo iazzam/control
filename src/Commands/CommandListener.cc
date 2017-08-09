@@ -71,7 +71,7 @@ void CommandListener::readCommand(){
 }
 
 void CommandListener::parseCommand(const String command){
-	serial << json.encodeCommand(command) << endl;
+	//serial << json.encodeCommand(command) << endl;
 
 	std::pair<String, int> cmd = json.decodeCommand(command);
 

@@ -6,9 +6,9 @@ using namespace wlp;
 
 bool Command::podStart = false;
 
-Command::Command(const String name, uint8_t &state): name{name}, state{state}{}
+Command::Command(const String name, int &state): name{name}, state{state}{}
 
-bool Command::notiy(const std::pair<String, uint8_t> command){
+bool Command::notiy(const std::pair<String, int> command){
 	// handle start and stop commands differently
 	if (command.first == name && name == "stop"){
 		handleStartAndStop(command);
@@ -25,9 +25,6 @@ bool Command::notiy(const std::pair<String, uint8_t> command){
 
 		if(command.second != state){
 			state = command.second;
-
-			if(command.first != "check")
-				serial << json.encodeMessage("command changed state") << endl;
 		} else
 			serial << json.encodeMessage("command had no effect") << endl;
 		return true;
@@ -62,4 +59,4 @@ void Command::handleStartAndStop(const std::pair<String, uint8_t> command){
 	}
 }
 
-static void Command::setOnState(bool stop){ podStart = !stop; }
+void Command::setOnState(bool stop){ podStart = !stop; }

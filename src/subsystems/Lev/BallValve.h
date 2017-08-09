@@ -24,7 +24,7 @@ public:
 	 * Controls ball valve based on the state provided
 	 * @param state state to be changed to
 	 */
-	void control(Subsystem::State state);
+	void control(Subsystem::BinaryState state);
 };
 
 #endif //CONTROL_NEW_BALLVALVE_H

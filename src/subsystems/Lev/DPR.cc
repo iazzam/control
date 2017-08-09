@@ -9,14 +9,14 @@ DPR::DPR(const uint8_t relayPin) : relayPin{relayPin}{
 	pinMode(relayPin, OUTPUT);
 }
 
-void DPR::control(Subsystem::State state){
+void DPR::control(Subsystem::BinaryState state){
 	if (!shouldControl(state)) return;
 
-	if (state == Subsystem::State::On){
-		digitalWrite(relayPin, true);
+	if (state == Subsystem::BinaryState::On){
+		digitalWrite(relayPin, HIGH);
 		serial << json.encodeMessage("dpr state changed to on") << endl;
 	} else{
-		digitalWrite(relayPin, false);
+		digitalWrite(relayPin, LOW);
 		serial << json.encodeMessage("dpr state changed to off") << endl;
 	}
 }

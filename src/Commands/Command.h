@@ -16,7 +16,7 @@ class Command{
 	static bool podStart;
 
 	// variables to manipulate in State class
-	uint8_t &state;
+	int &state;
 
 	/*!
 	 * Stop command is used to determine a lot of things like if to process
@@ -30,14 +30,14 @@ public:
 	 * @param name name of the command
 	 * @param state state to manipulate
 	 */
-	Command(const String name, uint8_t &state);
+	Command(const String name, int &state);
 
 	/*!
 	 * When a command is received, this is called to process is the command
 	 * @param decoder command that is parsed
 	 * @return true or false based on if command is processed
 	 */
-	bool notiy(const std::pair<String, uint8_t> command);
+	bool notiy(const std::pair<String, int> command);
 
 	/*!
 	 * Sets the initial on state for the pod so that commands know if the

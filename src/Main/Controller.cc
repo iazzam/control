@@ -3,20 +3,21 @@
 #include <JsonHandler.h>
 #include "Controller.h"
 #include "Config.h"
+#include "SensorReader.h"
 
 using namespace wlp;
 
-Controller::Controller(State &s, void(*restart)(bool))
-		: state(s), restart{restart}, listener{s}{
+Controller::Controller(State &s, SensorReader &reader, void(*restart)(bool))
+		: state(s), reader(reader), restart{restart}{
 	setup();
 }
 
 void Controller::setup(){
 	ballValve = new BallValve{config.ballValveRelayA, config.ballValveRelayB};
 	dpr = new DPR{config.dprRelay};
-	magWheels = new MagWheels{config.magFlp, config.magFrp, config.magRlp,
+	magWheels = new MagWheels{state, config.magFlp, config.magFrp, config.magRlp,
 	                          config.magRrp};
-	driveTrain = new DriveTrain{config.driveRelayA, config.driveRelayB,
+	driveTrain = new DriveTrain{config.driveRelay, config.drivePin,
 	                            config.dropRelay};
 	brakes = new ECBrakes{config.brakesRelay};
 }
@@ -53,7 +54,13 @@ void Controller::handleAutonomous(){
 }
 
 void Controller::stop(){
-	serial << "Stop" << endl;
+	state.driveSpeed = 50;
+	state.magSpeed = 0;
+	state.brakes = true;
+	
+	driveTrain->control(state.driveSpeed);
+	magWheels->control(state.magSpeed);
+	brakes->control(Subsystem::getState(state.brakes));
 }
 
 void Controller::check(){
@@ -70,8 +77,6 @@ void Controller::check(){
 }
 
 void Controller::control(){
-	listener.listen();
-
 	// restart the pod if instructed to do so
 	if (state.restart == state.restartSaved) restart(true);
 	else if (state.restart == state.restartUnsaved) restart(false);

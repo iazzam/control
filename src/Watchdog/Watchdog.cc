@@ -3,7 +3,7 @@
 #include "Watchdog.h"
 
 void Watchdog::setup() {
-    wdt_disable();
+    disable();
 
     cli();          // disable all interrupts
     wdt_reset();    // reset the WDT timer
@@ -14,7 +14,7 @@ void Watchdog::setup() {
     WDE = 1 :Reset Enable
     WDP3 = 0 :For 250ms Time-out
     WDP2 = 1 :For 250ms Time-out
-    WDP1 = 1 :For 250ms Time-out
+    WDP1 = 0 :For 250ms Time-out
     WDP0 = 0 :For 250ms Time-out
     */
 
@@ -22,7 +22,7 @@ void Watchdog::setup() {
     WDTCSR |= (1<<WDCE) | (1<<WDE);
 
     // Set Watchdog settings:
-    WDTCSR = (1<<WDIE) | (1<<WDE) | (0<<WDP3) | (1<<WDP2) | (1<<WDP1) | (0<<WDP0);
+    WDTCSR = (1<<WDIE) | (1<<WDE) | (0<<WDP3) | (1<<WDP2) | (0<<WDP1) | (0<<WDP0);
 
     sei();
 }
@@ -40,7 +40,7 @@ State Watchdog::get() {
     if (readState.reset)
         returnState = readState;
 
-    for (int i = 0; i <= sizeof(readState); ++i)
+    for (unsigned int i = 0; i <= sizeof(readState); ++i)
         EEPROM.write(i, 0);
 
     return returnState;
@@ -58,4 +58,8 @@ void Watchdog::restartBoard(State &s) {
 
 void Watchdog::restartBoard() {
     asm volatile ("  jmp 0");
+}
+
+void Watchdog::disable(){
+    wdt_disable();
 }

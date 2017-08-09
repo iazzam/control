@@ -11,11 +11,23 @@
 #include <subsystems/Subsystem.h>
 #include <Servo.h>
 
+class State;
+
 class MagWheels : public Subsystem{
 	Servo flServo;
 	Servo frServo;
 	Servo rlServo;
 	Servo rrServo;
+
+	int servoCurrSpeed;
+	int servoLastSpeed;
+	bool throttling;
+	int throttleValue;
+	int servoGivenSpeed;
+	bool slowingDown;
+
+	State &s;
+
 public:
 	/*!
 	 * Single Constructor creates MagWheels
@@ -24,7 +36,7 @@ public:
 	 * @param rlp motor controller pin for rear left motor
 	 * @param rrp motor controller pin for rea right motor
 	 */
-	MagWheels(const uint8_t flp, const uint8_t frp, const uint8_t rlp,
+	MagWheels(State &s, const uint8_t flp, const uint8_t frp, const uint8_t rlp,
 	          const uint8_t rrp);
 
 	/*!
@@ -32,6 +44,12 @@ public:
 	 * @param speed speed of mag wheels
 	 */
 	void control(const int speed);
+
+	/*!
+	 * Gives slowly increase and decrease in speed to the motor for gradual
+	 * speed increase
+	 */
+	void throttle();
 };
 
 #endif //CONTROL_NEW_MAGWHEELS_H

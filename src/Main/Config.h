@@ -16,11 +16,13 @@ public:
 	// Serial and timer configurations
 	const long bandRate = 115200;
 
-	const int numTimers = 2;
+	const int numTimers = 5;
 
-	const unsigned long executeRate = (1000000/180);
-
-	const unsigned long heartbeatRate = (500000000);
+	const unsigned long controlRate = (1000000/120);
+	const unsigned long cmdListenRate = (1000000/120);
+	const unsigned long sensorReadRate = (1000000/260);
+	const unsigned long connectionCheck = (1000000);
+	const unsigned long watchdogReset = (200000);
 
 	// number of prints and reads per second for each sensor
 	const uint8_t COLOR_FREQ = 60;
@@ -32,17 +34,17 @@ public:
 	const uint8_t TEMP_FREQ = 5;
 
 	// io pins for subsystems
-	const uint8_t ballValveRelayA = 0;
-	const uint8_t ballValveRelayB = 1;
+	const uint8_t ballValveRelayA = 3;
+	const uint8_t ballValveRelayB = 4;
 	const uint8_t dprRelay = 2;
-	const uint8_t magFlp = 3;
-	const uint8_t magFrp = 4;
-	const uint8_t magRlp = 5;
-	const uint8_t magRrp = 6;
-	const uint8_t driveRelayA = 7;
-	const uint8_t driveRelayB = 8;
-	const uint8_t dropRelay = 9;
-	const uint8_t brakesRelay = 10;
+	const uint8_t magFlp = 5;
+	const uint8_t magFrp = 6;
+	const uint8_t magRlp = 7;
+	const uint8_t magRrp = 8;
+	const uint8_t driveRelay = 9;
+	const uint8_t drivePin = 10;
+	const uint8_t dropRelay = 11;
+	const uint8_t brakesRelay = 12;
 
 	// io pins for sensors
 };

@@ -22,7 +22,7 @@ public:
 	 * Controls EC Brakes based on the state provided
 	 * @param state state to be changed to
 	 */
-	void control(Subsystem::State state);
+	void control(Subsystem::BinaryState state);
 };
 
 #endif //CONTROL_NEW_ECBRAKES_H

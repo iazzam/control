@@ -14,12 +14,14 @@
 #include <subsystems/DriveTrain/DriveTrain.h>
 #include <subsystems/ECBrakes/ECBrakes.h>
 
+class SensorReader;
+
 class Controller{
 	State &state;                   // state of the pod
 
-	void(*restart)(bool);           // function to restart the board
+	SensorReader &reader;           // listener for commands
 
-	CommandListener listener;       // listener for commands
+	void(*restart)(bool);           // function to restart the board
 
 	// create subsystem objects
 	BallValve *ballValve;
@@ -58,7 +60,7 @@ public:
      * @param state State of the pod to use
      * @param reset function to restart the board
      */
-	Controller(State &state, void(*reset)(bool));
+	Controller(State &state, SensorReader &reader, void(*reset)(bool));
 
 	/*!
 	 * Destructor deletes all the subsystems on the pod when Control

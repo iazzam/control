@@ -12,7 +12,7 @@
 
 class Subsystem{
 public:
-	enum class State{
+	enum class BinaryState{
 		On,
 		Off
 	};
@@ -28,7 +28,7 @@ public:
 	 * Controls the state of the Subsystem based on a state given
 	 * @param state of the system
 	 */
-	virtual void control(const Subsystem::State state);
+	virtual void control(const Subsystem::BinaryState state);
 
 	/*!
 	 * Controls the State of the Subsystem based on a value given
@@ -43,12 +43,12 @@ public:
 	 * @param value value to be converted
 	 * @return the state
 	 */
-	static State getState(uint8_t value);
+	static BinaryState getState(uint8_t value);
 
 private:
 	const bool constantApply;
 	int lastValue;
-	Subsystem::State lastState;
+	Subsystem::BinaryState lastState;
 
 protected:
 	/*!
@@ -63,7 +63,7 @@ protected:
 	 * @param currentState is the new state
 	 * @return true or false
 	 */
-	bool shouldControl(const Subsystem::State currentState);
+	bool shouldControl(const Subsystem::BinaryState currentState);
 
 	/*!
 	 * Gives access to the last value of the system

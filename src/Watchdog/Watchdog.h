@@ -24,6 +24,11 @@ public:
     void reset();
 
     /*!
+     * Disables the watchdog
+     */
+    void disable();
+
+    /*!
      * Stores state of the board in non volatile memory (EEPROM)
      * @param s is the State of the board
      */

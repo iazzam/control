@@ -21,21 +21,30 @@ public:
 	static const uint8_t restartSaved = 1;
 	static const uint8_t restartUnsaved = 2;
 
-	uint8_t mode = 0;
-	uint8_t restart = restartNone;
-	uint8_t emergency = (uint8_t) false;
-	uint8_t stop = (uint8_t) true;
-	uint8_t check = (uint8_t) true;
+	int mode = manual;
+	int restart = restartNone;
+	int emergency = (uint8_t) false;
+	int stop = (uint8_t) false;
+	int check = (uint8_t) true;
 
-	uint8_t brakes = (uint8_t) false;
-	uint8_t magSpeed = 0;
-	uint8_t driveSpeed = 0;
-	uint8_t drop = (uint8_t) false;
-	uint8_t dpr = (uint8_t) false;
-	uint8_t ballValve = (uint8_t) false;
+	int brakes = (uint8_t) false;
+	int magSpeed = 0;
+	int driveSpeed = 0;
+	int drop = (uint8_t) false;
+	int dpr = (uint8_t) false;
+	int ballValve = (uint8_t) false;
 
-	uint8_t heartbeatMiss = 0;
+	int heartbeatMiss = 0;
 	bool reset = false;
+
+	// magWheel stuff
+	int servoLastSpeed = 1000;
+	int servoGivenSpeed = 1000;
+	int servoCurrSpeed = 1000;
+	bool throttling = false;
+	int throttleValue = 10;
+
+	bool stateSaved = false;
 };
 
 
