@@ -13,6 +13,7 @@
 #include <subsystems/MagWheels/MagWheels.h>
 #include <subsystems/DriveTrain/DriveTrain.h>
 #include <subsystems/ECBrakes/ECBrakes.h>
+#include <subsystems/MagWheels/MagController.h>
 
 class SensorReader;
 
@@ -27,6 +28,7 @@ class Controller{
 	BallValve *ballValve;
 	DPR *dpr;
 	MagWheels *magWheels;
+	MagController *magController;
 	DriveTrain *driveTrain;
 	ECBrakes *brakes;
 

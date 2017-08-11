@@ -1,71 +1,52 @@
+#include <Arduino.h>
 #include <USBAPI.h>
 #include "Rpm.h"
 
+boolean flag = false;
+
+volatile int rpmCount = 0;
+
+void rpmInc();
+
 Rpm::Rpm(const String &name, const uint8_t rate, const uint8_t pin)
 		:Sensor(name, rate, 1), pin{pin}{
-	sensor = new Photoelectric{"rpmphoto", rate, pin};
-	counts = 0;
-	rps = rpm = 0;
-	flag = true;
-	lastTime = millis();
+	attachInterrupt(digitalPinToInterrupt(pin), rpmInc, FALLING);
+	pinMode(pin, INPUT);
 }
 
-Rpm::~Rpm(){ delete sensor; }
-
-float rpmCounter = 0;
-
 float Rpm::read(){
-	float distance = sensor->read();
-	//add(distance);
+	/*
+	int value = digitalRead(pin);
 
-	if (distance < 60 && flag){
-		++counts;
-		add(counts);
+	if (value == 1 && flag){
+		++rpmCount;
+		//Serial.println("Got it: " + String(rpmCount));
 		flag = false;
 	}
 
-	if (distance >= 60){
+	if (value == 0){
 		flag = true;
 	}
+	 */
 
-	if (counts == 8){
-		++rpmCounter;
-	}
+	if (millis() - lastMillis >= 250){
+		detachInterrupt(digitalPinToInterrupt(pin));
 
-	if (millis() -  lastTime >= 1000){
-		rpm = (60 / 8)*1000/(millis() - lastTime)*counts;
-		lastTime = millis();
-		counts = 0;
+		rpm = rpmCount * (240 / 8);
+		rpmCount = 0;
+		lastMillis = millis();
+		attachInterrupt(digitalPinToInterrupt(pin), rpmInc, FALLING);
 	}
 
 	add(rpm);
-
-
-	/*
-	if (millis() - lastTime >= 100){
-		avg += counts / 8.0;
-		avg_counter++;
-
-		if (avg_counter == 10) {
-			rps = avg; // print this
-			avg = 0;
-			avg_counter = 0;
-			//add(rps);
-		}
-
-		// 570
-		// 565
-
-
-		// rpm = rps * 60.0;
-		//counts = 0;
-		lastTime = millis();
-	}
-*/
 	return get(0);
 }
 
-float Rpm::getRps(){
-	return rps;
+void rpmInc(){
+	++rpmCount;
+	//Serial.println("Got it: " + String(rpmCount));
 }
 
+float Rpm::getRps(){
+	return rpm;
+}

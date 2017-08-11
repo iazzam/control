@@ -9,7 +9,7 @@
 
 #include <stdint.h>
 #include <subsystems/Subsystem.h>
-#include <Servo.h>
+#include <ESC.h>
 
 class State;
 
@@ -19,12 +19,10 @@ class MagWheels : public Subsystem{
 	Servo rlServo;
 	Servo rrServo;
 
-	int servoCurrSpeed;
-	int servoLastSpeed;
-	bool throttling;
-	int throttleValue;
-	int servoGivenSpeed;
-	bool slowingDown;
+	float flCurrValue;
+	float frCurrValue;
+	float rlCurrValue;
+	float rrCurrValue;
 
 	State &s;
 
@@ -43,13 +41,13 @@ public:
 	 * Controls mag wheels' speed based on the speed provided
 	 * @param speed speed of mag wheels
 	 */
-	void control(const int speed);
+	void control(const float speed, uint8_t motorNum);
 
 	/*!
 	 * Gives slowly increase and decrease in speed to the motor for gradual
 	 * speed increase
 	 */
-	void throttle();
+	int getValue(uint8_t motorNum);
 };
 
 #endif //CONTROL_NEW_MAGWHEELS_H

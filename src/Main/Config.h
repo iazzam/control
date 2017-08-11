@@ -18,7 +18,7 @@ public:
 
 	const int numTimers = 5;
 
-	const unsigned long controlRate = (1000000/120);
+	const unsigned long controlRate = (1000000/30);
 	const unsigned long cmdListenRate = (1000000/120);
 	const unsigned long sensorReadRate = (1000000/260);
 	const unsigned long connectionCheck = (1000000);
@@ -45,6 +45,12 @@ public:
 	const uint8_t drivePin = 10;
 	const uint8_t dropRelay = 11;
 	const uint8_t brakesRelay = 12;
+
+	// for techometers
+	const uint8_t flmSensor = 18;
+	const uint8_t frmSensor = 19;
+	const uint8_t rlmSensor = 20;
+	const uint8_t rrmSensor = 21;
 
 	// io pins for sensors
 };

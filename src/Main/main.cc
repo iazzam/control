@@ -86,7 +86,7 @@ void initialize(){
 }
 
 void systemCheck(){
-	serial << "Memory: " << freeMemory() << endl;
+	serial << json.encodeMessage("Memory: " + String(freeMemory())) << endl;
 }
 
 // tasks
@@ -101,7 +101,7 @@ void taskCmdListen(){
 }
 
 void taskSensorRead(){
-	//reader->read();
+	reader->read();
 	//serial << "read" << endl;
 	flags[2] = true;
 }

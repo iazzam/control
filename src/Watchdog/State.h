@@ -42,9 +42,15 @@ public:
 	int servoGivenSpeed = 1000;
 	int servoCurrSpeed = 1000;
 	bool throttling = false;
-	int throttleValue = 10;
+	float throttleValue = .3;
 
 	bool stateSaved = false;
+
+	// mag wheel sensor values
+	float currRpmFL = 0;
+	float currRpmFR = 0;
+	float currRpmRL = 0;
+	float currRpmRR = 0;
 };
 
 

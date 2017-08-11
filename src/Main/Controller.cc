@@ -20,6 +20,7 @@ void Controller::setup(){
 	driveTrain = new DriveTrain{config.driveRelay, config.drivePin,
 	                            config.dropRelay};
 	brakes = new ECBrakes{config.brakesRelay};
+	magController = new MagController{*magWheels, state};
 }
 
 Controller::~Controller(){
@@ -42,7 +43,7 @@ void Controller::handleManual(){
 	brakes->control(Subsystem::getState(state.brakes));
 
 	driveTrain->control(state.driveSpeed);
-	magWheels->control(state.magSpeed);
+	magController->control(state.magSpeed);
 }
 
 void Controller::handleScript(){
@@ -59,7 +60,7 @@ void Controller::stop(){
 	state.brakes = true;
 	
 	driveTrain->control(state.driveSpeed);
-	magWheels->control(state.magSpeed);
+	magController->control(state.magSpeed);
 	brakes->control(Subsystem::getState(state.brakes));
 }
 
