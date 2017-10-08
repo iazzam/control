@@ -7,8 +7,8 @@
 long lastTime = millis();
 
 SensorReader::SensorReader(State &state) : state(state){
-	flmRpm = new Rpm{"rpmflm", 260, config.flmSensor};
-	frmRpm = new Rpm{"rpmfrm", 260, config.frmSensor};
+	flmRpm = new Rpm{"rpmflm", static_cast<uint8_t>(260), config.flmSensor};
+	frmRpm = new Rpm{"rpmfrm", static_cast<uint8_t>(260), config.frmSensor};
 }
 
 void SensorReader::read(){
